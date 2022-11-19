@@ -1,0 +1,1 @@
+#define SERVER_LOCAL 0 // (1 - JUST RP | 2 - FIVE RP | 3 - TEST)

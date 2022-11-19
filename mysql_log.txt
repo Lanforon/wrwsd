@@ -1,0 +1,733 @@
+[20:36:50] [WARNING] CMySQLResult::GetRowData - invalid row ('0') or field index ('25')
+[20:36:50] [WARNING] CMySQLResult::GetRowData - invalid row ('8') or field index ('1')
+[20:36:50] [ERROR] cache_get_row_int - invalid datatype
+[20:36:50] [WARNING] CMySQLResult::GetRowData - invalid row ('8') or field index ('2')
+[20:36:50] [ERROR] cache_get_row_int - invalid datatype
+[20:36:50] [WARNING] CMySQLResult::GetRowData - invalid row ('8') or field index ('3')
+[20:36:50] [ERROR] cache_get_row_int - invalid datatype
+[05:10:55] [WARNING] CMySQLConnection::Disconnect - no connection available
+[05:11:07] [WARNING] CMySQLResult::GetRowData - invalid row ('0') or field index ('25')
+[05:11:07] [WARNING] CMySQLResult::GetRowData - invalid row ('8') or field index ('1')
+[05:11:07] [ERROR] cache_get_row_int - invalid datatype
+[05:11:07] [WARNING] CMySQLResult::GetRowData - invalid row ('8') or field index ('2')
+[05:11:07] [ERROR] cache_get_row_int - invalid datatype
+[05:11:07] [WARNING] CMySQLResult::GetRowData - invalid row ('8') or field index ('3')
+[05:11:07] [ERROR] cache_get_row_int - invalid datatype
+[15:29:09] [WARNING] CMySQLResult::GetRowData - invalid row ('0') or field index ('25')
+[15:29:09] [WARNING] CMySQLResult::GetRowData - invalid row ('8') or field index ('1')
+[15:29:09] [ERROR] cache_get_row_int - invalid datatype
+[15:29:09] [WARNING] CMySQLResult::GetRowData - invalid row ('8') or field index ('2')
+[15:29:09] [ERROR] cache_get_row_int - invalid datatype
+[15:29:09] [WARNING] CMySQLResult::GetRowData - invalid row ('8') or field index ('3')
+[15:29:09] [ERROR] cache_get_row_int - invalid datatype
+[16:19:15] [WARNING] CMySQLResult::GetRowData - invalid row ('0') or field index ('25')
+[16:19:15] [WARNING] CMySQLResult::GetRowData - invalid row ('8') or field index ('1')
+[16:19:15] [ERROR] cache_get_row_int - invalid datatype
+[16:19:15] [WARNING] CMySQLResult::GetRowData - invalid row ('8') or field index ('2')
+[16:19:15] [ERROR] cache_get_row_int - invalid datatype
+[16:19:15] [WARNING] CMySQLResult::GetRowData - invalid row ('8') or field index ('3')
+[16:19:15] [ERROR] cache_get_row_int - invalid datatype
+[18:15:20] [WARNING] CMySQLResult::GetRowData - invalid row ('0') or field index ('25')
+[18:15:20] [WARNING] CMySQLResult::GetRowData - invalid row ('8') or field index ('1')
+[18:15:20] [ERROR] cache_get_row_int - invalid datatype
+[18:15:20] [WARNING] CMySQLResult::GetRowData - invalid row ('8') or field index ('2')
+[18:15:20] [ERROR] cache_get_row_int - invalid datatype
+[18:15:20] [WARNING] CMySQLResult::GetRowData - invalid row ('8') or field index ('3')
+[18:15:20] [ERROR] cache_get_row_int - invalid datatype
+[19:58:29] [ERROR] CMySQLQuery::Execute[] - (error #1054) Unknown column 'hID' in 'where clause'
+[19:59:25] [ERROR] CMySQLQuery::Execute[] - (error #1054) Unknown column 'hID' in 'where clause'
+[20:18:11] [ERROR] CMySQLQuery::Execute[] - (error #1054) Unknown column 'hID' in 'where clause'
+[20:34:24] [ERROR] CMySQLQuery::Execute[] - (error #1054) Unknown column 'hID' in 'where clause'
+[20:42:36] [ERROR] CMySQLQuery::Execute[] - (error #1054) Unknown column 'hID' in 'where clause'
+[03:01:44] [WARNING] CMySQLResult::GetRowData - invalid row ('0') or field index ('25')
+[03:01:44] [WARNING] CMySQLResult::GetRowData - invalid row ('8') or field index ('1')
+[03:01:44] [ERROR] cache_get_row_int - invalid datatype
+[03:01:44] [WARNING] CMySQLResult::GetRowData - invalid row ('8') or field index ('2')
+[03:01:44] [ERROR] cache_get_row_int - invalid datatype
+[03:01:44] [WARNING] CMySQLResult::GetRowData - invalid row ('8') or field index ('3')
+[03:01:44] [ERROR] cache_get_row_int - invalid datatype
+[05:10:49] [WARNING] CMySQLConnection::Disconnect - no connection available
+[05:11:01] [WARNING] CMySQLResult::GetRowData - invalid row ('0') or field index ('25')
+[05:11:01] [WARNING] CMySQLResult::GetRowData - invalid row ('8') or field index ('1')
+[05:11:01] [ERROR] cache_get_row_int - invalid datatype
+[05:11:01] [WARNING] CMySQLResult::GetRowData - invalid row ('8') or field index ('2')
+[05:11:01] [ERROR] cache_get_row_int - invalid datatype
+[05:11:01] [WARNING] CMySQLResult::GetRowData - invalid row ('8') or field index ('3')
+[05:11:01] [ERROR] cache_get_row_int - invalid datatype
+[12:01:26] [WARNING] CMySQLResult::GetRowData - invalid row ('0') or field index ('25')
+[12:01:26] [WARNING] CMySQLResult::GetRowData - invalid row ('8') or field index ('1')
+[12:01:26] [ERROR] cache_get_row_int - invalid datatype
+[12:01:26] [WARNING] CMySQLResult::GetRowData - invalid row ('8') or field index ('2')
+[12:01:26] [ERROR] cache_get_row_int - invalid datatype
+[12:01:26] [WARNING] CMySQLResult::GetRowData - invalid row ('8') or field index ('3')
+[12:01:26] [ERROR] cache_get_row_int - invalid datatype
+[05:10:31] [WARNING] CMySQLConnection::Disconnect - no connection available
+[05:10:43] [WARNING] CMySQLResult::GetRowData - invalid row ('0') or field index ('25')
+[05:10:43] [WARNING] CMySQLResult::GetRowData - invalid row ('8') or field index ('1')
+[05:10:43] [ERROR] cache_get_row_int - invalid datatype
+[05:10:43] [WARNING] CMySQLResult::GetRowData - invalid row ('8') or field index ('2')
+[05:10:43] [ERROR] cache_get_row_int - invalid datatype
+[05:10:43] [WARNING] CMySQLResult::GetRowData - invalid row ('8') or field index ('3')
+[05:10:43] [ERROR] cache_get_row_int - invalid datatype
+[05:10:48] [WARNING] CMySQLConnection::Disconnect - no connection available
+[05:11:00] [WARNING] CMySQLResult::GetRowData - invalid row ('0') or field index ('25')
+[05:11:00] [WARNING] CMySQLResult::GetRowData - invalid row ('8') or field index ('1')
+[05:11:00] [ERROR] cache_get_row_int - invalid datatype
+[05:11:00] [WARNING] CMySQLResult::GetRowData - invalid row ('8') or field index ('2')
+[05:11:00] [ERROR] cache_get_row_int - invalid datatype
+[05:11:00] [WARNING] CMySQLResult::GetRowData - invalid row ('8') or field index ('3')
+[05:11:00] [ERROR] cache_get_row_int - invalid datatype
+[05:10:05] [WARNING] CMySQLConnection::Disconnect - no connection available
+[05:10:17] [WARNING] CMySQLResult::GetRowData - invalid row ('0') or field index ('25')
+[05:10:17] [WARNING] CMySQLResult::GetRowData - invalid row ('8') or field index ('1')
+[05:10:17] [ERROR] cache_get_row_int - invalid datatype
+[05:10:17] [WARNING] CMySQLResult::GetRowData - invalid row ('8') or field index ('2')
+[05:10:17] [ERROR] cache_get_row_int - invalid datatype
+[05:10:17] [WARNING] CMySQLResult::GetRowData - invalid row ('8') or field index ('3')
+[05:10:17] [ERROR] cache_get_row_int - invalid datatype
+[05:10:23] [WARNING] CMySQLConnection::Disconnect - no connection available
+[05:10:35] [WARNING] CMySQLResult::GetRowData - invalid row ('0') or field index ('25')
+[05:10:35] [WARNING] CMySQLResult::GetRowData - invalid row ('8') or field index ('1')
+[05:10:35] [ERROR] cache_get_row_int - invalid datatype
+[05:10:35] [WARNING] CMySQLResult::GetRowData - invalid row ('8') or field index ('2')
+[05:10:35] [ERROR] cache_get_row_int - invalid datatype
+[05:10:35] [WARNING] CMySQLResult::GetRowData - invalid row ('8') or field index ('3')
+[05:10:35] [ERROR] cache_get_row_int - invalid datatype
+[05:10:40] [WARNING] CMySQLConnection::Disconnect - no connection available
+[05:10:52] [WARNING] CMySQLResult::GetRowData - invalid row ('0') or field index ('25')
+[05:10:52] [WARNING] CMySQLResult::GetRowData - invalid row ('8') or field index ('1')
+[05:10:52] [ERROR] cache_get_row_int - invalid datatype
+[05:10:52] [WARNING] CMySQLResult::GetRowData - invalid row ('8') or field index ('2')
+[05:10:52] [ERROR] cache_get_row_int - invalid datatype
+[05:10:52] [WARNING] CMySQLResult::GetRowData - invalid row ('8') or field index ('3')
+[05:10:52] [ERROR] cache_get_row_int - invalid datatype
+[05:11:10] [WARNING] CMySQLResult::GetRowData - invalid row ('0') or field index ('25')
+[05:11:10] [WARNING] CMySQLResult::GetRowData - invalid row ('8') or field index ('1')
+[05:11:10] [ERROR] cache_get_row_int - invalid datatype
+[05:11:10] [WARNING] CMySQLResult::GetRowData - invalid row ('8') or field index ('2')
+[05:11:10] [ERROR] cache_get_row_int - invalid datatype
+[05:11:10] [WARNING] CMySQLResult::GetRowData - invalid row ('8') or field index ('3')
+[05:11:10] [ERROR] cache_get_row_int - invalid datatype
+[11:53:47] [WARNING] CMySQLResult::GetRowData - invalid row ('0') or field index ('25')
+[11:53:47] [WARNING] CMySQLResult::GetRowData - invalid row ('8') or field index ('1')
+[11:53:47] [ERROR] cache_get_row_int - invalid datatype
+[11:53:47] [WARNING] CMySQLResult::GetRowData - invalid row ('8') or field index ('2')
+[11:53:47] [ERROR] cache_get_row_int - invalid datatype
+[11:53:47] [WARNING] CMySQLResult::GetRowData - invalid row ('8') or field index ('3')
+[11:53:47] [ERROR] cache_get_row_int - invalid datatype
+[05:10:52] [WARNING] CMySQLConnection::Disconnect - no connection available
+[05:11:05] [WARNING] CMySQLResult::GetRowData - invalid row ('0') or field index ('25')
+[05:11:05] [WARNING] CMySQLResult::GetRowData - invalid row ('8') or field index ('1')
+[05:11:05] [ERROR] cache_get_row_int - invalid datatype
+[05:11:05] [WARNING] CMySQLResult::GetRowData - invalid row ('8') or field index ('2')
+[05:11:05] [ERROR] cache_get_row_int - invalid datatype
+[05:11:05] [WARNING] CMySQLResult::GetRowData - invalid row ('8') or field index ('3')
+[05:11:05] [ERROR] cache_get_row_int - invalid datatype
+[05:10:10] [WARNING] CMySQLConnection::Disconnect - no connection available
+[05:10:23] [WARNING] CMySQLResult::GetRowData - invalid row ('0') or field index ('25')
+[05:10:23] [WARNING] CMySQLResult::GetRowData - invalid row ('8') or field index ('1')
+[05:10:23] [ERROR] cache_get_row_int - invalid datatype
+[05:10:23] [WARNING] CMySQLResult::GetRowData - invalid row ('8') or field index ('2')
+[05:10:23] [ERROR] cache_get_row_int - invalid datatype
+[05:10:23] [WARNING] CMySQLResult::GetRowData - invalid row ('8') or field index ('3')
+[05:10:23] [ERROR] cache_get_row_int - invalid datatype
+[05:10:42] [WARNING] CMySQLResult::GetRowData - invalid row ('0') or field index ('25')
+[05:10:42] [WARNING] CMySQLResult::GetRowData - invalid row ('8') or field index ('1')
+[05:10:42] [ERROR] cache_get_row_int - invalid datatype
+[05:10:42] [WARNING] CMySQLResult::GetRowData - invalid row ('8') or field index ('2')
+[05:10:42] [ERROR] cache_get_row_int - invalid datatype
+[05:10:42] [WARNING] CMySQLResult::GetRowData - invalid row ('8') or field index ('3')
+[05:10:42] [ERROR] cache_get_row_int - invalid datatype
+[05:10:48] [WARNING] CMySQLConnection::Disconnect - no connection available
+[05:11:02] [WARNING] CMySQLResult::GetRowData - invalid row ('0') or field index ('25')
+[05:11:02] [WARNING] CMySQLResult::GetRowData - invalid row ('8') or field index ('1')
+[05:11:02] [ERROR] cache_get_row_int - invalid datatype
+[05:11:02] [WARNING] CMySQLResult::GetRowData - invalid row ('8') or field index ('2')
+[05:11:02] [ERROR] cache_get_row_int - invalid datatype
+[05:11:02] [WARNING] CMySQLResult::GetRowData - invalid row ('8') or field index ('3')
+[05:11:02] [ERROR] cache_get_row_int - invalid datatype
+[10:17:06] [WARNING] CMySQLResult::GetRowData - invalid row ('0') or field index ('25')
+[10:17:06] [WARNING] CMySQLResult::GetRowData - invalid row ('8') or field index ('1')
+[10:17:06] [ERROR] cache_get_row_int - invalid datatype
+[10:17:06] [WARNING] CMySQLResult::GetRowData - invalid row ('8') or field index ('2')
+[10:17:06] [ERROR] cache_get_row_int - invalid datatype
+[10:17:06] [WARNING] CMySQLResult::GetRowData - invalid row ('8') or field index ('3')
+[10:17:06] [ERROR] cache_get_row_int - invalid datatype
+[10:28:07] [WARNING] CMySQLResult::GetRowData - invalid row ('0') or field index ('25')
+[10:28:07] [WARNING] CMySQLResult::GetRowData - invalid row ('8') or field index ('1')
+[10:28:07] [ERROR] cache_get_row_int - invalid datatype
+[10:28:07] [WARNING] CMySQLResult::GetRowData - invalid row ('8') or field index ('2')
+[10:28:07] [ERROR] cache_get_row_int - invalid datatype
+[10:28:07] [WARNING] CMySQLResult::GetRowData - invalid row ('8') or field index ('3')
+[10:28:07] [ERROR] cache_get_row_int - invalid datatype
+[11:04:11] [WARNING] CMySQLResult::GetRowData - invalid row ('0') or field index ('25')
+[11:04:11] [WARNING] CMySQLResult::GetRowData - invalid row ('8') or field index ('1')
+[11:04:11] [ERROR] cache_get_row_int - invalid datatype
+[11:04:11] [WARNING] CMySQLResult::GetRowData - invalid row ('8') or field index ('2')
+[11:04:11] [ERROR] cache_get_row_int - invalid datatype
+[11:04:11] [WARNING] CMySQLResult::GetRowData - invalid row ('8') or field index ('3')
+[11:04:11] [ERROR] cache_get_row_int - invalid datatype
+[11:22:51] [WARNING] CMySQLResult::GetRowData - invalid row ('0') or field index ('25')
+[11:22:51] [WARNING] CMySQLResult::GetRowData - invalid row ('8') or field index ('1')
+[11:22:51] [ERROR] cache_get_row_int - invalid datatype
+[11:22:51] [WARNING] CMySQLResult::GetRowData - invalid row ('8') or field index ('2')
+[11:22:51] [ERROR] cache_get_row_int - invalid datatype
+[11:22:51] [WARNING] CMySQLResult::GetRowData - invalid row ('8') or field index ('3')
+[11:22:51] [ERROR] cache_get_row_int - invalid datatype
+[11:54:47] [WARNING] CMySQLResult::GetRowData - invalid row ('0') or field index ('25')
+[11:54:47] [WARNING] CMySQLResult::GetRowData - invalid row ('8') or field index ('1')
+[11:54:47] [ERROR] cache_get_row_int - invalid datatype
+[11:54:47] [WARNING] CMySQLResult::GetRowData - invalid row ('8') or field index ('2')
+[11:54:47] [ERROR] cache_get_row_int - invalid datatype
+[11:54:47] [WARNING] CMySQLResult::GetRowData - invalid row ('8') or field index ('3')
+[11:54:47] [ERROR] cache_get_row_int - invalid datatype
+[11:58:48] [WARNING] CMySQLResult::GetRowData - invalid row ('0') or field index ('25')
+[11:58:48] [WARNING] CMySQLResult::GetRowData - invalid row ('8') or field index ('1')
+[11:58:48] [ERROR] cache_get_row_int - invalid datatype
+[11:58:48] [WARNING] CMySQLResult::GetRowData - invalid row ('8') or field index ('2')
+[11:58:48] [ERROR] cache_get_row_int - invalid datatype
+[11:58:48] [WARNING] CMySQLResult::GetRowData - invalid row ('8') or field index ('3')
+[11:58:48] [ERROR] cache_get_row_int - invalid datatype
+[12:03:08] [WARNING] CMySQLResult::GetRowData - invalid row ('0') or field index ('25')
+[12:03:08] [WARNING] CMySQLResult::GetRowData - invalid row ('8') or field index ('1')
+[12:03:08] [ERROR] cache_get_row_int - invalid datatype
+[12:03:08] [WARNING] CMySQLResult::GetRowData - invalid row ('8') or field index ('2')
+[12:03:08] [ERROR] cache_get_row_int - invalid datatype
+[12:03:08] [WARNING] CMySQLResult::GetRowData - invalid row ('8') or field index ('3')
+[12:03:08] [ERROR] cache_get_row_int - invalid datatype
+[12:11:49] [WARNING] CMySQLResult::GetRowData - invalid row ('0') or field index ('25')
+[12:11:49] [WARNING] CMySQLResult::GetRowData - invalid row ('8') or field index ('1')
+[12:11:49] [ERROR] cache_get_row_int - invalid datatype
+[12:11:49] [WARNING] CMySQLResult::GetRowData - invalid row ('8') or field index ('2')
+[12:11:49] [ERROR] cache_get_row_int - invalid datatype
+[12:11:49] [WARNING] CMySQLResult::GetRowData - invalid row ('8') or field index ('3')
+[12:11:49] [ERROR] cache_get_row_int - invalid datatype
+[13:39:06] [WARNING] CMySQLResult::GetRowData - invalid row ('0') or field index ('25')
+[13:39:06] [WARNING] CMySQLResult::GetRowData - invalid row ('8') or field index ('1')
+[13:39:06] [ERROR] cache_get_row_int - invalid datatype
+[13:39:06] [WARNING] CMySQLResult::GetRowData - invalid row ('8') or field index ('2')
+[13:39:06] [ERROR] cache_get_row_int - invalid datatype
+[13:39:06] [WARNING] CMySQLResult::GetRowData - invalid row ('8') or field index ('3')
+[13:39:06] [ERROR] cache_get_row_int - invalid datatype
+[17:21:36] [WARNING] CMySQLResult::GetRowData - invalid row ('0') or field index ('25')
+[17:21:36] [WARNING] CMySQLResult::GetRowData - invalid row ('8') or field index ('1')
+[17:21:36] [ERROR] cache_get_row_int - invalid datatype
+[17:21:36] [WARNING] CMySQLResult::GetRowData - invalid row ('8') or field index ('2')
+[17:21:36] [ERROR] cache_get_row_int - invalid datatype
+[17:21:36] [WARNING] CMySQLResult::GetRowData - invalid row ('8') or field index ('3')
+[17:21:36] [ERROR] cache_get_row_int - invalid datatype
+[17:21:45] [WARNING] CMySQLResult::GetRowData - invalid row ('0') or field index ('25')
+[17:21:45] [WARNING] CMySQLResult::GetRowData - invalid row ('8') or field index ('1')
+[17:21:45] [ERROR] cache_get_row_int - invalid datatype
+[17:21:45] [WARNING] CMySQLResult::GetRowData - invalid row ('8') or field index ('2')
+[17:21:45] [ERROR] cache_get_row_int - invalid datatype
+[17:21:45] [WARNING] CMySQLResult::GetRowData - invalid row ('8') or field index ('3')
+[17:21:45] [ERROR] cache_get_row_int - invalid datatype
+[05:10:51] [WARNING] CMySQLConnection::Disconnect - no connection available
+[05:11:03] [WARNING] CMySQLResult::GetRowData - invalid row ('0') or field index ('25')
+[05:11:03] [WARNING] CMySQLResult::GetRowData - invalid row ('8') or field index ('1')
+[05:11:03] [ERROR] cache_get_row_int - invalid datatype
+[05:11:03] [WARNING] CMySQLResult::GetRowData - invalid row ('8') or field index ('2')
+[05:11:03] [ERROR] cache_get_row_int - invalid datatype
+[05:11:03] [WARNING] CMySQLResult::GetRowData - invalid row ('8') or field index ('3')
+[05:11:03] [ERROR] cache_get_row_int - invalid datatype
+[05:10:08] [WARNING] CMySQLConnection::Disconnect - no connection available
+[05:10:20] [WARNING] CMySQLResult::GetRowData - invalid row ('0') or field index ('25')
+[05:10:20] [WARNING] CMySQLResult::GetRowData - invalid row ('8') or field index ('1')
+[05:10:20] [ERROR] cache_get_row_int - invalid datatype
+[05:10:20] [WARNING] CMySQLResult::GetRowData - invalid row ('8') or field index ('2')
+[05:10:20] [ERROR] cache_get_row_int - invalid datatype
+[05:10:20] [WARNING] CMySQLResult::GetRowData - invalid row ('8') or field index ('3')
+[05:10:20] [ERROR] cache_get_row_int - invalid datatype
+[05:10:25] [WARNING] CMySQLConnection::Disconnect - no connection available
+[05:10:37] [WARNING] CMySQLResult::GetRowData - invalid row ('0') or field index ('25')
+[05:10:37] [WARNING] CMySQLResult::GetRowData - invalid row ('8') or field index ('1')
+[05:10:37] [ERROR] cache_get_row_int - invalid datatype
+[05:10:37] [WARNING] CMySQLResult::GetRowData - invalid row ('8') or field index ('2')
+[05:10:37] [ERROR] cache_get_row_int - invalid datatype
+[05:10:37] [WARNING] CMySQLResult::GetRowData - invalid row ('8') or field index ('3')
+[05:10:37] [ERROR] cache_get_row_int - invalid datatype
+[05:10:54] [WARNING] CMySQLResult::GetRowData - invalid row ('0') or field index ('25')
+[05:10:54] [WARNING] CMySQLResult::GetRowData - invalid row ('8') or field index ('1')
+[05:10:54] [ERROR] cache_get_row_int - invalid datatype
+[05:10:54] [WARNING] CMySQLResult::GetRowData - invalid row ('8') or field index ('2')
+[05:10:54] [ERROR] cache_get_row_int - invalid datatype
+[05:10:54] [WARNING] CMySQLResult::GetRowData - invalid row ('8') or field index ('3')
+[05:10:54] [ERROR] cache_get_row_int - invalid datatype
+[05:11:11] [WARNING] CMySQLResult::GetRowData - invalid row ('0') or field index ('25')
+[05:11:11] [WARNING] CMySQLResult::GetRowData - invalid row ('8') or field index ('1')
+[05:11:11] [ERROR] cache_get_row_int - invalid datatype
+[05:11:11] [WARNING] CMySQLResult::GetRowData - invalid row ('8') or field index ('2')
+[05:11:11] [ERROR] cache_get_row_int - invalid datatype
+[05:11:11] [WARNING] CMySQLResult::GetRowData - invalid row ('8') or field index ('3')
+[05:11:11] [ERROR] cache_get_row_int - invalid datatype
+[11:24:14] [WARNING] CMySQLResult::GetRowData - invalid row ('0') or field index ('25')
+[11:24:14] [WARNING] CMySQLResult::GetRowData - invalid row ('8') or field index ('1')
+[11:24:14] [ERROR] cache_get_row_int - invalid datatype
+[11:24:14] [WARNING] CMySQLResult::GetRowData - invalid row ('8') or field index ('2')
+[11:24:14] [ERROR] cache_get_row_int - invalid datatype
+[11:24:14] [WARNING] CMySQLResult::GetRowData - invalid row ('8') or field index ('3')
+[11:24:14] [ERROR] cache_get_row_int - invalid datatype
+[11:32:34] [WARNING] CMySQLResult::GetRowData - invalid row ('0') or field index ('25')
+[11:32:34] [WARNING] CMySQLResult::GetRowData - invalid row ('8') or field index ('1')
+[11:32:34] [ERROR] cache_get_row_int - invalid datatype
+[11:32:34] [WARNING] CMySQLResult::GetRowData - invalid row ('8') or field index ('2')
+[11:32:34] [ERROR] cache_get_row_int - invalid datatype
+[11:32:34] [WARNING] CMySQLResult::GetRowData - invalid row ('8') or field index ('3')
+[11:32:34] [ERROR] cache_get_row_int - invalid datatype
+[20:09:27] [WARNING] CMySQLResult::GetRowData - invalid row ('0') or field index ('25')
+[20:09:27] [WARNING] CMySQLResult::GetRowData - invalid row ('8') or field index ('1')
+[20:09:27] [ERROR] cache_get_row_int - invalid datatype
+[20:09:27] [WARNING] CMySQLResult::GetRowData - invalid row ('8') or field index ('2')
+[20:09:27] [ERROR] cache_get_row_int - invalid datatype
+[20:09:27] [WARNING] CMySQLResult::GetRowData - invalid row ('8') or field index ('3')
+[20:09:27] [ERROR] cache_get_row_int - invalid datatype
+[21:11:14] [WARNING] CMySQLResult::GetRowData - invalid row ('0') or field index ('25')
+[21:11:14] [WARNING] CMySQLResult::GetRowData - invalid row ('8') or field index ('1')
+[21:11:14] [ERROR] cache_get_row_int - invalid datatype
+[21:11:14] [WARNING] CMySQLResult::GetRowData - invalid row ('8') or field index ('2')
+[21:11:14] [ERROR] cache_get_row_int - invalid datatype
+[21:11:14] [WARNING] CMySQLResult::GetRowData - invalid row ('8') or field index ('3')
+[21:11:14] [ERROR] cache_get_row_int - invalid datatype
+[21:34:59] [WARNING] CMySQLResult::GetRowData - invalid row ('0') or field index ('25')
+[21:34:59] [WARNING] CMySQLResult::GetRowData - invalid row ('8') or field index ('1')
+[21:34:59] [ERROR] cache_get_row_int - invalid datatype
+[21:34:59] [WARNING] CMySQLResult::GetRowData - invalid row ('8') or field index ('2')
+[21:34:59] [ERROR] cache_get_row_int - invalid datatype
+[21:34:59] [WARNING] CMySQLResult::GetRowData - invalid row ('8') or field index ('3')
+[21:34:59] [ERROR] cache_get_row_int - invalid datatype
+[21:35:23] [WARNING] CMySQLResult::GetRowData - invalid row ('0') or field index ('25')
+[21:35:23] [WARNING] CMySQLResult::GetRowData - invalid row ('8') or field index ('1')
+[21:35:23] [ERROR] cache_get_row_int - invalid datatype
+[21:35:23] [WARNING] CMySQLResult::GetRowData - invalid row ('8') or field index ('2')
+[21:35:23] [ERROR] cache_get_row_int - invalid datatype
+[21:35:23] [WARNING] CMySQLResult::GetRowData - invalid row ('8') or field index ('3')
+[21:35:23] [ERROR] cache_get_row_int - invalid datatype
+[22:07:35] [WARNING] CMySQLResult::GetRowData - invalid row ('0') or field index ('25')
+[22:07:35] [WARNING] CMySQLResult::GetRowData - invalid row ('8') or field index ('1')
+[22:07:35] [ERROR] cache_get_row_int - invalid datatype
+[22:07:35] [WARNING] CMySQLResult::GetRowData - invalid row ('8') or field index ('2')
+[22:07:35] [ERROR] cache_get_row_int - invalid datatype
+[22:07:35] [WARNING] CMySQLResult::GetRowData - invalid row ('8') or field index ('3')
+[22:07:35] [ERROR] cache_get_row_int - invalid datatype
+[22:07:47] [WARNING] CMySQLResult::GetRowData - invalid row ('0') or field index ('25')
+[22:07:47] [WARNING] CMySQLResult::GetRowData - invalid row ('8') or field index ('1')
+[22:07:47] [ERROR] cache_get_row_int - invalid datatype
+[22:07:47] [WARNING] CMySQLResult::GetRowData - invalid row ('8') or field index ('2')
+[22:07:47] [ERROR] cache_get_row_int - invalid datatype
+[22:07:47] [WARNING] CMySQLResult::GetRowData - invalid row ('8') or field index ('3')
+[22:07:47] [ERROR] cache_get_row_int - invalid datatype
+[05:10:52] [WARNING] CMySQLConnection::Disconnect - no connection available
+[05:11:04] [WARNING] CMySQLResult::GetRowData - invalid row ('0') or field index ('25')
+[05:11:04] [WARNING] CMySQLResult::GetRowData - invalid row ('8') or field index ('1')
+[05:11:04] [ERROR] cache_get_row_int - invalid datatype
+[05:11:04] [WARNING] CMySQLResult::GetRowData - invalid row ('8') or field index ('2')
+[05:11:04] [ERROR] cache_get_row_int - invalid datatype
+[05:11:04] [WARNING] CMySQLResult::GetRowData - invalid row ('8') or field index ('3')
+[05:11:04] [ERROR] cache_get_row_int - invalid datatype
+[16:56:06] [WARNING] CMySQLResult::GetRowData - invalid row ('0') or field index ('25')
+[16:56:06] [WARNING] CMySQLResult::GetRowData - invalid row ('8') or field index ('1')
+[16:56:06] [ERROR] cache_get_row_int - invalid datatype
+[16:56:06] [WARNING] CMySQLResult::GetRowData - invalid row ('8') or field index ('2')
+[16:56:06] [ERROR] cache_get_row_int - invalid datatype
+[16:56:06] [WARNING] CMySQLResult::GetRowData - invalid row ('8') or field index ('3')
+[16:56:06] [ERROR] cache_get_row_int - invalid datatype
+[16:56:18] [WARNING] CMySQLResult::GetRowData - invalid row ('0') or field index ('25')
+[16:56:18] [WARNING] CMySQLResult::GetRowData - invalid row ('8') or field index ('1')
+[16:56:18] [ERROR] cache_get_row_int - invalid datatype
+[16:56:18] [WARNING] CMySQLResult::GetRowData - invalid row ('8') or field index ('2')
+[16:56:18] [ERROR] cache_get_row_int - invalid datatype
+[16:56:18] [WARNING] CMySQLResult::GetRowData - invalid row ('8') or field index ('3')
+[16:56:18] [ERROR] cache_get_row_int - invalid datatype
+[05:10:23] [WARNING] CMySQLConnection::Disconnect - no connection available
+[05:10:35] [WARNING] CMySQLResult::GetRowData - invalid row ('0') or field index ('25')
+[05:10:35] [WARNING] CMySQLResult::GetRowData - invalid row ('8') or field index ('1')
+[05:10:35] [ERROR] cache_get_row_int - invalid datatype
+[05:10:35] [WARNING] CMySQLResult::GetRowData - invalid row ('8') or field index ('2')
+[05:10:35] [ERROR] cache_get_row_int - invalid datatype
+[05:10:35] [WARNING] CMySQLResult::GetRowData - invalid row ('8') or field index ('3')
+[05:10:35] [ERROR] cache_get_row_int - invalid datatype
+[05:10:40] [WARNING] CMySQLConnection::Disconnect - no connection available
+[05:10:52] [WARNING] CMySQLResult::GetRowData - invalid row ('0') or field index ('25')
+[05:10:52] [WARNING] CMySQLResult::GetRowData - invalid row ('8') or field index ('1')
+[05:10:52] [ERROR] cache_get_row_int - invalid datatype
+[05:10:52] [WARNING] CMySQLResult::GetRowData - invalid row ('8') or field index ('2')
+[05:10:52] [ERROR] cache_get_row_int - invalid datatype
+[05:10:52] [WARNING] CMySQLResult::GetRowData - invalid row ('8') or field index ('3')
+[05:10:52] [ERROR] cache_get_row_int - invalid datatype
+[05:11:09] [WARNING] CMySQLResult::GetRowData - invalid row ('0') or field index ('25')
+[05:11:09] [WARNING] CMySQLResult::GetRowData - invalid row ('8') or field index ('1')
+[05:11:09] [ERROR] cache_get_row_int - invalid datatype
+[05:11:09] [WARNING] CMySQLResult::GetRowData - invalid row ('8') or field index ('2')
+[05:11:09] [ERROR] cache_get_row_int - invalid datatype
+[05:11:09] [WARNING] CMySQLResult::GetRowData - invalid row ('8') or field index ('3')
+[05:11:09] [ERROR] cache_get_row_int - invalid datatype
+[06:08:51] [WARNING] CMySQLResult::GetRowData - invalid row ('0') or field index ('25')
+[06:08:51] [WARNING] CMySQLResult::GetRowData - invalid row ('8') or field index ('1')
+[06:08:51] [ERROR] cache_get_row_int - invalid datatype
+[06:08:51] [WARNING] CMySQLResult::GetRowData - invalid row ('8') or field index ('2')
+[06:08:51] [ERROR] cache_get_row_int - invalid datatype
+[06:08:51] [WARNING] CMySQLResult::GetRowData - invalid row ('8') or field index ('3')
+[06:08:51] [ERROR] cache_get_row_int - invalid datatype
+[05:10:56] [WARNING] CMySQLConnection::Disconnect - no connection available
+[05:11:08] [WARNING] CMySQLResult::GetRowData - invalid row ('0') or field index ('25')
+[05:11:08] [WARNING] CMySQLResult::GetRowData - invalid row ('8') or field index ('1')
+[05:11:08] [ERROR] cache_get_row_int - invalid datatype
+[05:11:08] [WARNING] CMySQLResult::GetRowData - invalid row ('8') or field index ('2')
+[05:11:08] [ERROR] cache_get_row_int - invalid datatype
+[05:11:08] [WARNING] CMySQLResult::GetRowData - invalid row ('8') or field index ('3')
+[05:11:08] [ERROR] cache_get_row_int - invalid datatype
+[07:27:19] [WARNING] CMySQLResult::GetRowData - invalid row ('0') or field index ('25')
+[07:27:19] [WARNING] CMySQLResult::GetRowData - invalid row ('8') or field index ('1')
+[07:27:19] [ERROR] cache_get_row_int - invalid datatype
+[07:27:19] [WARNING] CMySQLResult::GetRowData - invalid row ('8') or field index ('2')
+[07:27:19] [ERROR] cache_get_row_int - invalid datatype
+[07:27:19] [WARNING] CMySQLResult::GetRowData - invalid row ('8') or field index ('3')
+[07:27:19] [ERROR] cache_get_row_int - invalid datatype
+[05:10:24] [WARNING] CMySQLConnection::Disconnect - no connection available
+[05:10:36] [WARNING] CMySQLResult::GetRowData - invalid row ('0') or field index ('25')
+[05:10:36] [WARNING] CMySQLResult::GetRowData - invalid row ('8') or field index ('1')
+[05:10:36] [ERROR] cache_get_row_int - invalid datatype
+[05:10:36] [WARNING] CMySQLResult::GetRowData - invalid row ('8') or field index ('2')
+[05:10:36] [ERROR] cache_get_row_int - invalid datatype
+[05:10:36] [WARNING] CMySQLResult::GetRowData - invalid row ('8') or field index ('3')
+[05:10:36] [ERROR] cache_get_row_int - invalid datatype
+[05:10:41] [WARNING] CMySQLConnection::Disconnect - no connection available
+[05:10:53] [WARNING] CMySQLResult::GetRowData - invalid row ('0') or field index ('25')
+[05:10:53] [WARNING] CMySQLResult::GetRowData - invalid row ('8') or field index ('1')
+[05:10:53] [ERROR] cache_get_row_int - invalid datatype
+[05:10:53] [WARNING] CMySQLResult::GetRowData - invalid row ('8') or field index ('2')
+[05:10:53] [ERROR] cache_get_row_int - invalid datatype
+[05:10:53] [WARNING] CMySQLResult::GetRowData - invalid row ('8') or field index ('3')
+[05:10:53] [ERROR] cache_get_row_int - invalid datatype
+[05:11:10] [WARNING] CMySQLResult::GetRowData - invalid row ('0') or field index ('25')
+[05:11:10] [WARNING] CMySQLResult::GetRowData - invalid row ('8') or field index ('1')
+[05:11:10] [ERROR] cache_get_row_int - invalid datatype
+[05:11:10] [WARNING] CMySQLResult::GetRowData - invalid row ('8') or field index ('2')
+[05:11:10] [ERROR] cache_get_row_int - invalid datatype
+[05:11:10] [WARNING] CMySQLResult::GetRowData - invalid row ('8') or field index ('3')
+[05:11:10] [ERROR] cache_get_row_int - invalid datatype
+[05:10:15] [WARNING] CMySQLConnection::Disconnect - no connection available
+[05:10:27] [WARNING] CMySQLResult::GetRowData - invalid row ('0') or field index ('25')
+[05:10:27] [WARNING] CMySQLResult::GetRowData - invalid row ('8') or field index ('1')
+[05:10:27] [ERROR] cache_get_row_int - invalid datatype
+[05:10:27] [WARNING] CMySQLResult::GetRowData - invalid row ('8') or field index ('2')
+[05:10:27] [ERROR] cache_get_row_int - invalid datatype
+[05:10:27] [WARNING] CMySQLResult::GetRowData - invalid row ('8') or field index ('3')
+[05:10:27] [ERROR] cache_get_row_int - invalid datatype
+[05:10:32] [WARNING] CMySQLConnection::Disconnect - no connection available
+[05:10:44] [WARNING] CMySQLResult::GetRowData - invalid row ('0') or field index ('25')
+[05:10:44] [WARNING] CMySQLResult::GetRowData - invalid row ('8') or field index ('1')
+[05:10:44] [ERROR] cache_get_row_int - invalid datatype
+[05:10:44] [WARNING] CMySQLResult::GetRowData - invalid row ('8') or field index ('2')
+[05:10:44] [ERROR] cache_get_row_int - invalid datatype
+[05:10:44] [WARNING] CMySQLResult::GetRowData - invalid row ('8') or field index ('3')
+[05:10:44] [ERROR] cache_get_row_int - invalid datatype
+[05:11:01] [WARNING] CMySQLResult::GetRowData - invalid row ('0') or field index ('25')
+[05:11:01] [WARNING] CMySQLResult::GetRowData - invalid row ('8') or field index ('1')
+[05:11:01] [ERROR] cache_get_row_int - invalid datatype
+[05:11:01] [WARNING] CMySQLResult::GetRowData - invalid row ('8') or field index ('2')
+[05:11:01] [ERROR] cache_get_row_int - invalid datatype
+[05:11:01] [WARNING] CMySQLResult::GetRowData - invalid row ('8') or field index ('3')
+[05:11:01] [ERROR] cache_get_row_int - invalid datatype
+[17:17:42] [WARNING] CMySQLResult::GetRowData - invalid row ('0') or field index ('25')
+[17:17:42] [WARNING] CMySQLResult::GetRowData - invalid row ('8') or field index ('1')
+[17:17:42] [ERROR] cache_get_row_int - invalid datatype
+[17:17:42] [WARNING] CMySQLResult::GetRowData - invalid row ('8') or field index ('2')
+[17:17:42] [ERROR] cache_get_row_int - invalid datatype
+[17:17:42] [WARNING] CMySQLResult::GetRowData - invalid row ('8') or field index ('3')
+[17:17:42] [ERROR] cache_get_row_int - invalid datatype
+[05:10:47] [WARNING] CMySQLConnection::Disconnect - no connection available
+[05:10:59] [WARNING] CMySQLResult::GetRowData - invalid row ('0') or field index ('25')
+[05:10:59] [WARNING] CMySQLResult::GetRowData - invalid row ('8') or field index ('1')
+[05:10:59] [ERROR] cache_get_row_int - invalid datatype
+[05:10:59] [WARNING] CMySQLResult::GetRowData - invalid row ('8') or field index ('2')
+[05:10:59] [ERROR] cache_get_row_int - invalid datatype
+[05:10:59] [WARNING] CMySQLResult::GetRowData - invalid row ('8') or field index ('3')
+[05:10:59] [ERROR] cache_get_row_int - invalid datatype
+[05:11:04] [WARNING] CMySQLConnection::Disconnect - no connection available
+[05:11:16] [WARNING] CMySQLResult::GetRowData - invalid row ('0') or field index ('25')
+[05:11:16] [WARNING] CMySQLResult::GetRowData - invalid row ('8') or field index ('1')
+[05:11:16] [ERROR] cache_get_row_int - invalid datatype
+[05:11:16] [WARNING] CMySQLResult::GetRowData - invalid row ('8') or field index ('2')
+[05:11:16] [ERROR] cache_get_row_int - invalid datatype
+[05:11:16] [WARNING] CMySQLResult::GetRowData - invalid row ('8') or field index ('3')
+[05:11:16] [ERROR] cache_get_row_int - invalid datatype
+[16:53:01] [WARNING] CMySQLResult::GetRowData - invalid row ('0') or field index ('25')
+[16:53:01] [WARNING] CMySQLResult::GetRowData - invalid row ('8') or field index ('1')
+[16:53:01] [ERROR] cache_get_row_int - invalid datatype
+[16:53:01] [WARNING] CMySQLResult::GetRowData - invalid row ('8') or field index ('2')
+[16:53:01] [ERROR] cache_get_row_int - invalid datatype
+[16:53:01] [WARNING] CMySQLResult::GetRowData - invalid row ('8') or field index ('3')
+[16:53:01] [ERROR] cache_get_row_int - invalid datatype
+[17:29:32] [WARNING] CMySQLResult::GetRowData - invalid row ('0') or field index ('25')
+[17:29:32] [WARNING] CMySQLResult::GetRowData - invalid row ('8') or field index ('1')
+[17:29:32] [ERROR] cache_get_row_int - invalid datatype
+[17:29:32] [WARNING] CMySQLResult::GetRowData - invalid row ('8') or field index ('2')
+[17:29:32] [ERROR] cache_get_row_int - invalid datatype
+[17:29:32] [WARNING] CMySQLResult::GetRowData - invalid row ('8') or field index ('3')
+[17:29:32] [ERROR] cache_get_row_int - invalid datatype
+[17:40:20] [WARNING] CMySQLResult::GetRowData - invalid row ('0') or field index ('25')
+[17:40:20] [WARNING] CMySQLResult::GetRowData - invalid row ('8') or field index ('1')
+[17:40:20] [ERROR] cache_get_row_int - invalid datatype
+[17:40:20] [WARNING] CMySQLResult::GetRowData - invalid row ('8') or field index ('2')
+[17:40:20] [ERROR] cache_get_row_int - invalid datatype
+[17:40:20] [WARNING] CMySQLResult::GetRowData - invalid row ('8') or field index ('3')
+[17:40:20] [ERROR] cache_get_row_int - invalid datatype
+[19:48:00] [ERROR] CMySQLQuery::Execute[GetLogs] - (error #1054) Unknown column 'wrp_log.id' in 'order clause'
+[05:10:25] [WARNING] CMySQLConnection::Disconnect - no connection available
+[05:10:37] [WARNING] CMySQLResult::GetRowData - invalid row ('0') or field index ('25')
+[05:10:37] [WARNING] CMySQLResult::GetRowData - invalid row ('8') or field index ('1')
+[05:10:37] [ERROR] cache_get_row_int - invalid datatype
+[05:10:37] [WARNING] CMySQLResult::GetRowData - invalid row ('8') or field index ('2')
+[05:10:37] [ERROR] cache_get_row_int - invalid datatype
+[05:10:37] [WARNING] CMySQLResult::GetRowData - invalid row ('8') or field index ('3')
+[05:10:37] [ERROR] cache_get_row_int - invalid datatype
+[05:10:42] [WARNING] CMySQLConnection::Disconnect - no connection available
+[05:10:54] [WARNING] CMySQLResult::GetRowData - invalid row ('0') or field index ('25')
+[05:10:54] [WARNING] CMySQLResult::GetRowData - invalid row ('8') or field index ('1')
+[05:10:54] [ERROR] cache_get_row_int - invalid datatype
+[05:10:54] [WARNING] CMySQLResult::GetRowData - invalid row ('8') or field index ('2')
+[05:10:54] [ERROR] cache_get_row_int - invalid datatype
+[05:10:54] [WARNING] CMySQLResult::GetRowData - invalid row ('8') or field index ('3')
+[05:10:54] [ERROR] cache_get_row_int - invalid datatype
+[05:10:59] [WARNING] CMySQLConnection::Disconnect - no connection available
+[05:11:11] [WARNING] CMySQLResult::GetRowData - invalid row ('0') or field index ('25')
+[05:11:11] [WARNING] CMySQLResult::GetRowData - invalid row ('8') or field index ('1')
+[05:11:11] [ERROR] cache_get_row_int - invalid datatype
+[05:11:11] [WARNING] CMySQLResult::GetRowData - invalid row ('8') or field index ('2')
+[05:11:11] [ERROR] cache_get_row_int - invalid datatype
+[05:11:11] [WARNING] CMySQLResult::GetRowData - invalid row ('8') or field index ('3')
+[05:11:11] [ERROR] cache_get_row_int - invalid datatype
+[12:02:04] [WARNING] CMySQLHandle::DeleteSavedResult - invalid result id ('2')
+[05:10:16] [WARNING] CMySQLConnection::Disconnect - no connection available
+[05:10:28] [WARNING] CMySQLResult::GetRowData - invalid row ('0') or field index ('25')
+[05:10:28] [WARNING] CMySQLResult::GetRowData - invalid row ('8') or field index ('1')
+[05:10:28] [ERROR] cache_get_row_int - invalid datatype
+[05:10:28] [WARNING] CMySQLResult::GetRowData - invalid row ('8') or field index ('2')
+[05:10:28] [ERROR] cache_get_row_int - invalid datatype
+[05:10:28] [WARNING] CMySQLResult::GetRowData - invalid row ('8') or field index ('3')
+[05:10:28] [ERROR] cache_get_row_int - invalid datatype
+[05:10:33] [WARNING] CMySQLConnection::Disconnect - no connection available
+[05:10:45] [WARNING] CMySQLResult::GetRowData - invalid row ('0') or field index ('25')
+[05:10:45] [WARNING] CMySQLResult::GetRowData - invalid row ('8') or field index ('1')
+[05:10:45] [ERROR] cache_get_row_int - invalid datatype
+[05:10:45] [WARNING] CMySQLResult::GetRowData - invalid row ('8') or field index ('2')
+[05:10:45] [ERROR] cache_get_row_int - invalid datatype
+[05:10:45] [WARNING] CMySQLResult::GetRowData - invalid row ('8') or field index ('3')
+[05:10:45] [ERROR] cache_get_row_int - invalid datatype
+[05:10:50] [WARNING] CMySQLConnection::Disconnect - no connection available
+[05:11:02] [WARNING] CMySQLResult::GetRowData - invalid row ('0') or field index ('25')
+[05:11:02] [WARNING] CMySQLResult::GetRowData - invalid row ('8') or field index ('1')
+[05:11:02] [ERROR] cache_get_row_int - invalid datatype
+[05:11:02] [WARNING] CMySQLResult::GetRowData - invalid row ('8') or field index ('2')
+[05:11:02] [ERROR] cache_get_row_int - invalid datatype
+[05:11:02] [WARNING] CMySQLResult::GetRowData - invalid row ('8') or field index ('3')
+[05:11:02] [ERROR] cache_get_row_int - invalid datatype
+[05:10:07] [WARNING] CMySQLConnection::Disconnect - no connection available
+[05:10:19] [WARNING] CMySQLResult::GetRowData - invalid row ('0') or field index ('25')
+[05:10:19] [WARNING] CMySQLResult::GetRowData - invalid row ('8') or field index ('1')
+[05:10:19] [ERROR] cache_get_row_int - invalid datatype
+[05:10:19] [WARNING] CMySQLResult::GetRowData - invalid row ('8') or field index ('2')
+[05:10:19] [ERROR] cache_get_row_int - invalid datatype
+[05:10:19] [WARNING] CMySQLResult::GetRowData - invalid row ('8') or field index ('3')
+[05:10:19] [ERROR] cache_get_row_int - invalid datatype
+[05:10:36] [WARNING] CMySQLResult::GetRowData - invalid row ('0') or field index ('25')
+[05:10:36] [WARNING] CMySQLResult::GetRowData - invalid row ('8') or field index ('1')
+[05:10:36] [ERROR] cache_get_row_int - invalid datatype
+[05:10:36] [WARNING] CMySQLResult::GetRowData - invalid row ('8') or field index ('2')
+[05:10:36] [ERROR] cache_get_row_int - invalid datatype
+[05:10:36] [WARNING] CMySQLResult::GetRowData - invalid row ('8') or field index ('3')
+[05:10:36] [ERROR] cache_get_row_int - invalid datatype
+[05:10:41] [WARNING] CMySQLConnection::Disconnect - no connection available
+[05:10:53] [WARNING] CMySQLResult::GetRowData - invalid row ('0') or field index ('25')
+[05:10:53] [WARNING] CMySQLResult::GetRowData - invalid row ('8') or field index ('1')
+[05:10:53] [ERROR] cache_get_row_int - invalid datatype
+[05:10:53] [WARNING] CMySQLResult::GetRowData - invalid row ('8') or field index ('2')
+[05:10:53] [ERROR] cache_get_row_int - invalid datatype
+[05:10:53] [WARNING] CMySQLResult::GetRowData - invalid row ('8') or field index ('3')
+[05:10:53] [ERROR] cache_get_row_int - invalid datatype
+[05:11:10] [WARNING] CMySQLResult::GetRowData - invalid row ('0') or field index ('25')
+[05:11:11] [WARNING] CMySQLResult::GetRowData - invalid row ('8') or field index ('1')
+[05:11:11] [ERROR] cache_get_row_int - invalid datatype
+[05:11:11] [WARNING] CMySQLResult::GetRowData - invalid row ('8') or field index ('2')
+[05:11:11] [ERROR] cache_get_row_int - invalid datatype
+[05:11:11] [WARNING] CMySQLResult::GetRowData - invalid row ('8') or field index ('3')
+[05:11:11] [ERROR] cache_get_row_int - invalid datatype
+[20:11:48] [WARNING] CMySQLResult::GetRowData - invalid row ('0') or field index ('25')
+[20:11:48] [WARNING] CMySQLResult::GetRowData - invalid row ('8') or field index ('1')
+[20:11:48] [ERROR] cache_get_row_int - invalid datatype
+[20:11:48] [WARNING] CMySQLResult::GetRowData - invalid row ('8') or field index ('2')
+[20:11:48] [ERROR] cache_get_row_int - invalid datatype
+[20:11:48] [WARNING] CMySQLResult::GetRowData - invalid row ('8') or field index ('3')
+[20:11:48] [ERROR] cache_get_row_int - invalid datatype
+[20:55:42] [WARNING] CMySQLResult::GetRowData - invalid row ('0') or field index ('25')
+[20:55:42] [WARNING] CMySQLResult::GetRowData - invalid row ('8') or field index ('1')
+[20:55:42] [ERROR] cache_get_row_int - invalid datatype
+[20:55:42] [WARNING] CMySQLResult::GetRowData - invalid row ('8') or field index ('2')
+[20:55:42] [ERROR] cache_get_row_int - invalid datatype
+[20:55:42] [WARNING] CMySQLResult::GetRowData - invalid row ('8') or field index ('3')
+[20:55:42] [ERROR] cache_get_row_int - invalid datatype
+[21:28:28] [WARNING] CMySQLResult::GetRowData - invalid row ('0') or field index ('25')
+[21:28:29] [WARNING] CMySQLResult::GetRowData - invalid row ('8') or field index ('1')
+[21:28:29] [ERROR] cache_get_row_int - invalid datatype
+[21:28:29] [WARNING] CMySQLResult::GetRowData - invalid row ('8') or field index ('2')
+[21:28:29] [ERROR] cache_get_row_int - invalid datatype
+[21:28:29] [WARNING] CMySQLResult::GetRowData - invalid row ('8') or field index ('3')
+[21:28:29] [ERROR] cache_get_row_int - invalid datatype
+[05:10:34] [WARNING] CMySQLConnection::Disconnect - no connection available
+[05:10:48] [WARNING] CMySQLResult::GetRowData - invalid row ('0') or field index ('25')
+[05:10:48] [WARNING] CMySQLResult::GetRowData - invalid row ('8') or field index ('1')
+[05:10:48] [ERROR] cache_get_row_int - invalid datatype
+[05:10:48] [WARNING] CMySQLResult::GetRowData - invalid row ('8') or field index ('2')
+[05:10:48] [ERROR] cache_get_row_int - invalid datatype
+[05:10:48] [WARNING] CMySQLResult::GetRowData - invalid row ('8') or field index ('3')
+[05:10:48] [ERROR] cache_get_row_int - invalid datatype
+[05:11:08] [WARNING] CMySQLResult::GetRowData - invalid row ('0') or field index ('25')
+[05:11:08] [WARNING] CMySQLResult::GetRowData - invalid row ('8') or field index ('1')
+[05:11:08] [ERROR] cache_get_row_int - invalid datatype
+[05:11:08] [WARNING] CMySQLResult::GetRowData - invalid row ('8') or field index ('2')
+[05:11:08] [ERROR] cache_get_row_int - invalid datatype
+[05:11:08] [WARNING] CMySQLResult::GetRowData - invalid row ('8') or field index ('3')
+[05:11:08] [ERROR] cache_get_row_int - invalid datatype
+[07:06:38] [WARNING] CMySQLResult::GetRowData - invalid row ('0') or field index ('25')
+[07:06:38] [WARNING] CMySQLResult::GetRowData - invalid row ('8') or field index ('1')
+[07:06:38] [ERROR] cache_get_row_int - invalid datatype
+[07:06:38] [WARNING] CMySQLResult::GetRowData - invalid row ('8') or field index ('2')
+[07:06:38] [ERROR] cache_get_row_int - invalid datatype
+[07:06:38] [WARNING] CMySQLResult::GetRowData - invalid row ('8') or field index ('3')
+[07:06:38] [ERROR] cache_get_row_int - invalid datatype
+[14:34:41] [ERROR] CMySQLQuery::Execute[] - (error #1062) Duplicate entry '140' for key 'PRIMARY'
+[20:21:06] [WARNING] CMySQLHandle::DeleteSavedResult - invalid result id ('31')
+[20:27:20] [WARNING] CMySQLHandle::DeleteSavedResult - invalid result id ('43')
+[05:10:43] [WARNING] CMySQLConnection::Disconnect - no connection available
+[05:10:57] [WARNING] CMySQLResult::GetRowData - invalid row ('0') or field index ('25')
+[05:10:57] [WARNING] CMySQLResult::GetRowData - invalid row ('8') or field index ('1')
+[05:10:57] [ERROR] cache_get_row_int - invalid datatype
+[05:10:57] [WARNING] CMySQLResult::GetRowData - invalid row ('8') or field index ('2')
+[05:10:57] [ERROR] cache_get_row_int - invalid datatype
+[05:10:57] [WARNING] CMySQLResult::GetRowData - invalid row ('8') or field index ('3')
+[05:10:57] [ERROR] cache_get_row_int - invalid datatype
+[05:11:02] [WARNING] CMySQLConnection::Disconnect - no connection available
+[05:11:17] [WARNING] CMySQLResult::GetRowData - invalid row ('0') or field index ('25')
+[05:11:17] [WARNING] CMySQLResult::GetRowData - invalid row ('8') or field index ('1')
+[05:11:17] [ERROR] cache_get_row_int - invalid datatype
+[05:11:17] [WARNING] CMySQLResult::GetRowData - invalid row ('8') or field index ('2')
+[05:11:17] [ERROR] cache_get_row_int - invalid datatype
+[05:11:17] [WARNING] CMySQLResult::GetRowData - invalid row ('8') or field index ('3')
+[05:11:17] [ERROR] cache_get_row_int - invalid datatype
+[05:10:22] [WARNING] CMySQLConnection::Disconnect - no connection available
+[05:10:36] [WARNING] CMySQLResult::GetRowData - invalid row ('0') or field index ('25')
+[05:10:36] [WARNING] CMySQLResult::GetRowData - invalid row ('8') or field index ('1')
+[05:10:36] [ERROR] cache_get_row_int - invalid datatype
+[05:10:36] [WARNING] CMySQLResult::GetRowData - invalid row ('8') or field index ('2')
+[05:10:36] [ERROR] cache_get_row_int - invalid datatype
+[05:10:36] [WARNING] CMySQLResult::GetRowData - invalid row ('8') or field index ('3')
+[05:10:36] [ERROR] cache_get_row_int - invalid datatype
+[05:10:42] [WARNING] CMySQLConnection::Disconnect - no connection available
+[05:10:56] [WARNING] CMySQLResult::GetRowData - invalid row ('0') or field index ('25')
+[05:10:56] [WARNING] CMySQLResult::GetRowData - invalid row ('8') or field index ('1')
+[05:10:56] [ERROR] cache_get_row_int - invalid datatype
+[05:10:56] [WARNING] CMySQLResult::GetRowData - invalid row ('8') or field index ('2')
+[05:10:56] [ERROR] cache_get_row_int - invalid datatype
+[05:10:56] [WARNING] CMySQLResult::GetRowData - invalid row ('8') or field index ('3')
+[05:10:56] [ERROR] cache_get_row_int - invalid datatype
+[05:11:01] [WARNING] CMySQLConnection::Disconnect - no connection available
+[05:11:16] [WARNING] CMySQLResult::GetRowData - invalid row ('0') or field index ('25')
+[05:11:16] [WARNING] CMySQLResult::GetRowData - invalid row ('8') or field index ('1')
+[05:11:16] [ERROR] cache_get_row_int - invalid datatype
+[05:11:16] [WARNING] CMySQLResult::GetRowData - invalid row ('8') or field index ('2')
+[05:11:16] [ERROR] cache_get_row_int - invalid datatype
+[05:11:16] [WARNING] CMySQLResult::GetRowData - invalid row ('8') or field index ('3')
+[05:11:16] [ERROR] cache_get_row_int - invalid datatype
+[12:03:23] [WARNING] CMySQLResult::GetRowData - invalid row ('0') or field index ('25')
+[12:03:23] [WARNING] CMySQLResult::GetRowData - invalid row ('8') or field index ('1')
+[12:03:23] [ERROR] cache_get_row_int - invalid datatype
+[12:03:23] [WARNING] CMySQLResult::GetRowData - invalid row ('8') or field index ('2')
+[12:03:23] [ERROR] cache_get_row_int - invalid datatype
+[12:03:23] [WARNING] CMySQLResult::GetRowData - invalid row ('8') or field index ('3')
+[12:03:23] [ERROR] cache_get_row_int - invalid datatype
+[12:53:03] [WARNING] CMySQLResult::GetRowData - invalid row ('0') or field index ('25')
+[12:53:03] [WARNING] CMySQLResult::GetRowData - invalid row ('8') or field index ('1')
+[12:53:03] [ERROR] cache_get_row_int - invalid datatype
+[12:53:03] [WARNING] CMySQLResult::GetRowData - invalid row ('8') or field index ('2')
+[12:53:03] [ERROR] cache_get_row_int - invalid datatype
+[12:53:03] [WARNING] CMySQLResult::GetRowData - invalid row ('8') or field index ('3')
+[12:53:03] [ERROR] cache_get_row_int - invalid datatype
+[13:25:47] [WARNING] CMySQLResult::GetRowData - invalid row ('0') or field index ('25')
+[13:25:47] [WARNING] CMySQLResult::GetRowData - invalid row ('8') or field index ('1')
+[13:25:47] [ERROR] cache_get_row_int - invalid datatype
+[13:25:47] [WARNING] CMySQLResult::GetRowData - invalid row ('8') or field index ('2')
+[13:25:47] [ERROR] cache_get_row_int - invalid datatype
+[13:25:47] [WARNING] CMySQLResult::GetRowData - invalid row ('8') or field index ('3')
+[13:25:47] [ERROR] cache_get_row_int - invalid datatype
+[13:34:55] [WARNING] CMySQLResult::GetRowData - invalid row ('0') or field index ('25')
+[13:34:55] [WARNING] CMySQLResult::GetRowData - invalid row ('8') or field index ('1')
+[13:34:55] [ERROR] cache_get_row_int - invalid datatype
+[13:34:55] [WARNING] CMySQLResult::GetRowData - invalid row ('8') or field index ('2')
+[13:34:55] [ERROR] cache_get_row_int - invalid datatype
+[13:34:55] [WARNING] CMySQLResult::GetRowData - invalid row ('8') or field index ('3')
+[13:34:55] [ERROR] cache_get_row_int - invalid datatype
+[17:04:26] [WARNING] CMySQLResult::GetRowData - invalid row ('0') or field index ('25')
+[17:04:26] [WARNING] CMySQLResult::GetRowData - invalid row ('8') or field index ('1')
+[17:04:26] [ERROR] cache_get_row_int - invalid datatype
+[17:04:26] [WARNING] CMySQLResult::GetRowData - invalid row ('8') or field index ('2')
+[17:04:26] [ERROR] cache_get_row_int - invalid datatype
+[17:04:26] [WARNING] CMySQLResult::GetRowData - invalid row ('8') or field index ('3')
+[17:04:26] [ERROR] cache_get_row_int - invalid datatype
+[18:26:42] [WARNING] CMySQLHandle::DeleteSavedResult - invalid result id ('4')
+[18:59:22] [WARNING] CMySQLResult::GetRowData - invalid row ('0') or field index ('25')
+[18:59:22] [WARNING] CMySQLResult::GetRowData - invalid row ('8') or field index ('1')
+[18:59:22] [ERROR] cache_get_row_int - invalid datatype
+[18:59:22] [WARNING] CMySQLResult::GetRowData - invalid row ('8') or field index ('2')
+[18:59:22] [ERROR] cache_get_row_int - invalid datatype
+[18:59:22] [WARNING] CMySQLResult::GetRowData - invalid row ('8') or field index ('3')
+[18:59:22] [ERROR] cache_get_row_int - invalid datatype
+[05:10:27] [WARNING] CMySQLConnection::Disconnect - no connection available
+[05:10:40] [WARNING] CMySQLResult::GetRowData - invalid row ('0') or field index ('25')
+[05:10:40] [WARNING] CMySQLResult::GetRowData - invalid row ('8') or field index ('1')
+[05:10:40] [ERROR] cache_get_row_int - invalid datatype
+[05:10:40] [WARNING] CMySQLResult::GetRowData - invalid row ('8') or field index ('2')
+[05:10:40] [ERROR] cache_get_row_int - invalid datatype
+[05:10:40] [WARNING] CMySQLResult::GetRowData - invalid row ('8') or field index ('3')
+[05:10:40] [ERROR] cache_get_row_int - invalid datatype
+[05:10:45] [WARNING] CMySQLConnection::Disconnect - no connection available
+[05:10:59] [WARNING] CMySQLResult::GetRowData - invalid row ('0') or field index ('25')
+[05:10:59] [WARNING] CMySQLResult::GetRowData - invalid row ('8') or field index ('1')
+[05:10:59] [ERROR] cache_get_row_int - invalid datatype
+[05:10:59] [WARNING] CMySQLResult::GetRowData - invalid row ('8') or field index ('2')
+[05:10:59] [ERROR] cache_get_row_int - invalid datatype
+[05:10:59] [WARNING] CMySQLResult::GetRowData - invalid row ('8') or field index ('3')
+[05:10:59] [ERROR] cache_get_row_int - invalid datatype
+[05:11:04] [WARNING] CMySQLConnection::Disconnect - no connection available
+[05:11:17] [WARNING] CMySQLResult::GetRowData - invalid row ('0') or field index ('25')
+[05:11:17] [WARNING] CMySQLResult::GetRowData - invalid row ('8') or field index ('1')
+[05:11:17] [ERROR] cache_get_row_int - invalid datatype
+[05:11:17] [WARNING] CMySQLResult::GetRowData - invalid row ('8') or field index ('2')
+[05:11:17] [ERROR] cache_get_row_int - invalid datatype
+[05:11:17] [WARNING] CMySQLResult::GetRowData - invalid row ('8') or field index ('3')
+[05:11:17] [ERROR] cache_get_row_int - invalid datatype
+[05:10:23] [WARNING] CMySQLConnection::Disconnect - no connection available
+[05:10:36] [WARNING] CMySQLResult::GetRowData - invalid row ('0') or field index ('25')
+[05:10:36] [WARNING] CMySQLResult::GetRowData - invalid row ('8') or field index ('1')
+[05:10:36] [ERROR] cache_get_row_int - invalid datatype
+[05:10:36] [WARNING] CMySQLResult::GetRowData - invalid row ('8') or field index ('2')
+[05:10:36] [ERROR] cache_get_row_int - invalid datatype
+[05:10:36] [WARNING] CMySQLResult::GetRowData - invalid row ('8') or field index ('3')
+[05:10:36] [ERROR] cache_get_row_int - invalid datatype
+[05:10:41] [WARNING] CMySQLConnection::Disconnect - no connection available
+[05:10:55] [WARNING] CMySQLResult::GetRowData - invalid row ('0') or field index ('25')
+[05:10:55] [WARNING] CMySQLResult::GetRowData - invalid row ('8') or field index ('1')
+[05:10:55] [ERROR] cache_get_row_int - invalid datatype
+[05:10:55] [WARNING] CMySQLResult::GetRowData - invalid row ('8') or field index ('2')
+[05:10:55] [ERROR] cache_get_row_int - invalid datatype
+[05:10:55] [WARNING] CMySQLResult::GetRowData - invalid row ('8') or field index ('3')
+[05:10:55] [ERROR] cache_get_row_int - invalid datatype
+[05:11:00] [WARNING] CMySQLConnection::Disconnect - no connection available
+[05:11:13] [WARNING] CMySQLResult::GetRowData - invalid row ('0') or field index ('25')
+[05:11:13] [WARNING] CMySQLResult::GetRowData - invalid row ('8') or field index ('1')
+[05:11:13] [ERROR] cache_get_row_int - invalid datatype
+[05:11:13] [WARNING] CMySQLResult::GetRowData - invalid row ('8') or field index ('2')
+[05:11:13] [ERROR] cache_get_row_int - invalid datatype
+[05:11:13] [WARNING] CMySQLResult::GetRowData - invalid row ('8') or field index ('3')
+[05:11:13] [ERROR] cache_get_row_int - invalid datatype

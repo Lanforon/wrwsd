@@ -1,0 +1,5 @@
+#include "../include/protection/ac_health.inc"
+#include "../include/protection/ac_fastspawn.inc"
+#include "../include/protection/ac_vehspawn.inc"
+#include "../include/protection/ac_armour.inc"
+#include "../include/protection/ac_surfing.inc"

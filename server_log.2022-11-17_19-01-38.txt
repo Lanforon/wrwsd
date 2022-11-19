@@ -1,0 +1,132 @@
+
+----------
+Loaded log file: "server_log.txt".
+----------
+
+SA-MP Dedicated Server
+----------------------
+v0.3e, (C)2005-2012 SA-MP Team
+
+[17:04:23] filterscripts = ""  (string)
+[17:04:23] 
+[17:04:23] Server Plugins
+[17:04:23] --------------
+[17:04:23]  Loading plugin: mysql.so
+[17:04:23]   Failed (libmysqlclient.so.18: cannot open shared object file: No such file or directory)
+[17:04:23]  Loading plugin: streamer.so
+[17:04:23] 
+
+*** Streamer Plugin v2.9.1 by Incognito loaded ***
+
+[17:04:23]   Loaded.
+[17:04:23]  Loading plugin: pawncmd.so
+[17:04:23] Pawn.CMD plugin v3.1.2 by urShadow loaded
+[17:04:23]   Loaded.
+[17:04:23]  Loading plugin: sscanf.so
+[17:04:23] 
+
+[17:04:23]  ===============================
+
+[17:04:23]       sscanf plugin loaded.     
+
+[17:04:23]          Version:  2.8.1        
+
+[17:04:23]    (c) 2012 Alex "Y_Less" Cole  
+
+[17:04:23]  ===============================
+
+[17:04:23]   Loaded.
+[17:04:23]  Loading plugin: profiler.so
+[17:04:23]   Profiler v2.14.1 is OK.
+[17:04:23]   Loaded.
+[17:04:23]  Loading plugin: regex.so
+[17:04:23] 
+
+[17:04:23] ______________________________________
+
+[17:04:23]  Regular Expression Plugin v0.2.1 loaded
+[17:04:23] ______________________________________
+
+[17:04:23]  By: Fro (c) Copyright <TBG> 2009-2011
+[17:04:23] ______________________________________
+
+[17:04:23]   Loaded.
+[17:04:23]  Loading plugin: CRP.so
+[17:04:23] 
+
+[17:04:23] ______________________________________
+
+[17:04:23]  Convert Rus To Pwn v0.1.1 loaded
+[17:04:23] ______________________________________
+
+[17:04:23]  By: Fro (c) Copyright <TBG> 2009-2011
+[17:04:23] ______________________________________
+
+[17:04:23]   Loaded.
+[17:04:23]  Loading plugin: mysql_static.so
+[17:04:23]  >> plugin.mysql: R39-5 successfully loaded.
+[17:04:23]   Loaded.
+[17:04:23]  Loading plugin: TOTP.so
+[17:04:23] TOTP plugin v1.0.1 by Games loaded.
+[17:04:23]   Loaded.
+[17:04:23]  Loaded 8 plugins.
+
+[17:04:23] 
+[17:04:23] Filterscripts
+[17:04:23] ---------------
+[17:04:23]   Loaded 0 filterscripts.
+
+[17:04:24]  
+[17:04:24]  
+[17:04:24]  
+[17:04:24]  ======================================= 
+[17:04:24]  |                                     | 
+[17:04:24]  |        YSI version 3.09.0684        | 
+[17:04:24]  |        By Alex "Y_Less" Cole        | 
+[17:04:24]  |                                     | 
+[17:04:24]  ======================================= 
+[17:04:24]  
+[17:04:25] -> Динамических объектов: 32202
+[17:04:25] -> Статических объектов: 0
+[17:04:25] -> Видимых объектов (стример): 500
+[17:04:25] _______________________________________________________
+[17:04:25]  HCS --> Cunbers --> Only Roleplay
+[17:04:25]  Автор доработки: Slaughter
+[17:04:25]  Для проекта Only RP | (c) 2018
+[17:04:25] _______________________________________________________
+[17:04:25] Number of vehicle models: 2
+[17:04:25] [Загружено орг/раб. автомобилей]: <139>. Потрачено: <4 ms>.
+[17:04:25] [Загружено бизнесов]: <13>. Потрачено: <1 ms>.
+[17:04:25] [Загружено домов]: <536>. Потрачено: <188 ms>.
+[17:04:25] [Загружено банкоматов]: <0>. Потрачено: <0 ms>.
+[17:04:25] [Загружено автоматов с газировкой]: <3>. Потрачено: <0 ms>.
+[17:04:25] [Загружено остальное]: Потрачено: <0 ms>.
+[17:04:25] [Загружено радаров]: <8>. Потрачено: <0 ms>.
+[17:04:25] [Загружено семей]: <0>. Потрачено: <->.
+[17:04:25] [Загружено подъездов]: <152>. Потрачено: <2 ms>.
+[17:04:26] [Загружено квартир]: <2026>. Потрачено: <396 ms>.
+[17:04:26] [Фракционные настройки]: Потрачено: <1 ms>.
+[17:04:26] [Фракционные склады]: <26>. Потрачено: <0 ms>.
+[17:04:26] [Фракционные ранги]: <525>. Потрачено: <2 ms>.
+[17:04:26] [Организации]: <26>. Потрачено: <1 ms>.
+[17:04:26] Load garages. Load: 7 g. Time: 0 ms.
+[17:04:26] -> Ворота загружены (0 ворот)
+[17:04:26] -> Areas загружены (1 areas)
+[17:04:26] -> Домашний транспорт загружен (0 т/с)
+[17:04:26] [Repositories]: Все склады загружнены
+[17:04:38] Incoming connection: 217.118.90.241:61019
+[17:04:39] [join] Lufix_Coderx has joined the server (0:217.118.90.241)
+[17:05:13] Incoming connection: 94.41.205.172:65352
+[17:05:13] [join] Egor_Arkushin has joined the server (1:94.41.205.172)
+[17:46:32] [chat] [Lufix_Coderx]: .
+[17:46:38] [chat] [Lufix_Coderx]: delveh
+[18:02:38] [chat] [Lufix_Coderx]:  /createradar
+[18:30:55] Egor_Arkushin[1] kicked by KickEx
+[18:30:55] [part] Egor_Arkushin has left the server (1:0)
+[18:30:55] Egor_Arkushin[1] kicked by DisconnectPlayer
+[18:31:28] Incoming connection: 94.41.205.172:59856
+[18:31:31] [join] Egor_Arkushin has joined the server (1:94.41.205.172)
+[18:40:15] [chat] [Egor_Arkushin]: .гтыг
+[18:53:12] Lufix_Coderx[0] kicked by KickEx
+[18:53:12] [part] Lufix_Coderx has left the server (0:1)
+[18:53:12] Lufix_Coderx[0] kicked by DisconnectPlayer
