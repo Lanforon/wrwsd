@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="ISO-8859-1"?>
 <?xml-stylesheet href="file:///C|/Users/haliaf/Desktop/GTA 3-2/pawno/xml/pawndoc.xsl" type="text/xsl"?>
-<doc source="C:\Users\haliaf\Desktop\new.pwn">
+<doc source="C:\Users\haliaf\Desktop\GTA 3-2\gamemodes\new.pwn">
 	<assembly>
 		<name>new.pwn</name>
 	</assembly>
@@ -3415,6 +3415,7 @@
 			<referrer name="OnPlayerEnterDynamicCP"/>
 			<referrer name="CreateFactoryProd"/>
 			<referrer name="OnPlayerPickUpDynamicPickup"/>
+			<referrer name="PlayerHealInBolnicaPickups"/>
 			<referrer name="OnPlayerClickPlayerTextDraw"/>
 			<referrer name="OnPlayerClickTextDraw"/>
 			<referrer name="OnPlayerKeyStateChange"/>
@@ -4880,6 +4881,7 @@
 			<referrer name="SpawnPlayerOnly"/>
 			<referrer name="OnPlayerDeath"/>
 			<referrer name="OnPlayerPickUpDynamicPickup"/>
+			<referrer name="PlayerHealInBolnicaPickups"/>
 			<referrer name="pc_cmd_heal"/>
 			<referrer name="PlayerTimer"/>
 			<referrer name="SetPlayerDataToDefault"/>
@@ -4893,6 +4895,7 @@
 			<referrer name="SetHealth"/>
 			<referrer name="OnPlayerTakeDamage"/>
 			<referrer name="OnPlayerPickUpDynamicPickup"/>
+			<referrer name="PlayerHealInBolnicaPickups"/>
 			<referrer name="OnPlayerKeyStateChange"/>
 			<referrer name="OnDialogResponse"/>
 			<referrer name="pc_cmd_spec"/>
@@ -9476,7 +9479,7 @@
 			<tagname value="bool"/>
 			<stacksize value="4"/>
 			<referrer name="UpdateSpeedometr"/>
-			<referrer name="OnPlayerPickUpDynamicPickup"/>
+			<referrer name="PlayerHealInBolnicaPickups"/>
 			<referrer name="OnPlayerUpdate"/>
 			<referrer name="pc_cmd_changeskin"/>
 			<referrer name="pc_cmd_finvite"/>
@@ -9820,6 +9823,7 @@
 			<referrer name="OnPlayerSpawn"/>
 			<referrer name="SpawnPlayerOnly"/>
 			<referrer name="OnPlayerDeath"/>
+			<referrer name="Spawn"/>
 			<referrer name="OnPlayerEnterDynamicArea"/>
 			<referrer name="OnPlayerStateChange"/>
 			<referrer name="OnPlayerEnterRaceCheckpoint"/>
@@ -13507,7 +13511,7 @@
 			<referrer name="CreateFactoryProd"/>
 			<referrer name="OnPlayerEnterCheckpoint"/>
 			<referrer name="OnPlayerEnterRaceCheckpoint"/>
-			<referrer name="OnPlayerPickUpDynamicPickup"/>
+			<referrer name="PlayerHealInBolnicaPickups"/>
 			<referrer name="OnPlayerKeyStateChange"/>
 			<referrer name="OnDialogResponse"/>
 			<referrer name="pc_cmd_lock"/>
@@ -15770,7 +15774,7 @@
 			<attribute name="native"/>
 			<referrer name="SpawnPlayerOnly"/>
 			<referrer name="OnPlayerEnterCheckpoint"/>
-			<referrer name="OnPlayerPickUpDynamicPickup"/>
+			<referrer name="PlayerHealInBolnicaPickups"/>
 			<referrer name="OnPlayerKeyStateChange"/>
 			<referrer name="OnDialogResponse"/>
 			<referrer name="GiveMoney"/>
@@ -21348,7 +21352,6 @@
 			<dependency name="format"/>
 			<dependency name="gRegSkins"/>
 			<dependency name="gRegSkins"/>
-			<dependency name="gettime"/>
 			<dependency name="hOwner"/>
 			<dependency name="helpstr"/>
 			<dependency name="idaofcar"/>
@@ -21557,6 +21560,7 @@
 			<dependency name="SetPlayerInterior"/>
 			<dependency name="SetPlayerSpecialAction"/>
 			<dependency name="SetPlayerWantedLevel"/>
+			<dependency name="SetTimer"/>
 			<dependency name="SimulatorUse"/>
 			<dependency name="SleepTime"/>
 			<dependency name="SmsNews"/>
@@ -23253,7 +23257,6 @@
 			<attribute name="public"/>
 			<stacksize value="1928"/>
 			<dependency name="Float:operator=(_:)"/>
-			<dependency name="operator&gt;(Float:,Float:)"/>
 			<dependency name="operator&lt;(Float:,Float:)"/>
 			<dependency name="AC_SetPlayerPos"/>
 			<dependency name="ApplyAnimation"/>
@@ -23267,11 +23270,9 @@
 			<dependency name="D_NULL"/>
 			<dependency name="D_TICKETPAY"/>
 			<dependency name="DeletePVar"/>
-			<dependency name="GameTextForPlayerRus"/>
 			<dependency name="GetMedicines"/>
 			<dependency name="GetPVarInt"/>
 			<dependency name="GiveHunger"/>
-			<dependency name="GivePlayerMoney"/>
 			<dependency name="IsAArmy"/>
 			<dependency name="IsACop"/>
 			<dependency name="IsAMafia"/>
@@ -23283,6 +23284,7 @@
 			<dependency name="Pickupfly"/>
 			<dependency name="PlayerDied"/>
 			<dependency name="PlayerHP"/>
+			<dependency name="PlayerHealInBolnicaPickups"/>
 			<dependency name="PlayerPlaySound"/>
 			<dependency name="STRING_GLOBAL"/>
 			<dependency name="SendClientMessage"/>
@@ -23290,7 +23292,6 @@
 			<dependency name="SendInf"/>
 			<dependency name="SetArmour"/>
 			<dependency name="SetCameraBehindPlayer"/>
-			<dependency name="SetHealth"/>
 			<dependency name="SetHunger"/>
 			<dependency name="SetPVarInt"/>
 			<dependency name="SetPlayerAttachedObject"/>
@@ -24061,7 +24062,6 @@
 			<dependency name="STRING_GLOBAL"/>
 			<dependency name="SendClientMessage"/>
 			<dependency name="SendErr"/>
-			<dependency name="SetPVarInt"/>
 			<dependency name="SetPlayerChatBubble"/>
 			<dependency name="SetString"/>
 			<dependency name="SetTimerEx"/>
@@ -24782,6 +24782,22 @@
 			</param>
 			<param name="text">
 				<paraminfo> [] </paraminfo>
+			</param>
+		</member>
+		<member name="M:PlayerHealInBolnicaPickups" syntax="PlayerHealInBolnicaPickups(playerid)">
+			<stacksize value="7"/>
+			<referrer name="OnPlayerPickUpDynamicPickup"/>
+			<dependency name="operator&gt;(Float:,Float:)"/>
+			<dependency name="GameTextForPlayerRus"/>
+			<dependency name="GivePlayerMoney"/>
+			<dependency name="PlayerDied"/>
+			<dependency name="PlayerHP"/>
+			<dependency name="SendClientMessage"/>
+			<dependency name="SendErr"/>
+			<dependency name="SetHealth"/>
+			<dependency name="SetPVarInt"/>
+			<dependency name="true"/>
+			<param name="playerid">
 			</param>
 		</member>
 		<member name="M:PlayerPlaySound" syntax="PlayerPlaySound(playerid, soundid, x, y, z)">
@@ -26528,6 +26544,7 @@
 			<referrer name="OnPlayerEnterCheckpoint"/>
 			<referrer name="OnPlayerEnterRaceCheckpoint"/>
 			<referrer name="OnPlayerPickUpDynamicPickup"/>
+			<referrer name="PlayerHealInBolnicaPickups"/>
 			<referrer name="OnPlayerPickUpPickup"/>
 			<referrer name="OnPlayerClickPlayerTextDraw"/>
 			<referrer name="OnPlayerClickTextDraw"/>
@@ -26793,6 +26810,7 @@
 			<referrer name="OnPlayerEnterDynamicCP"/>
 			<referrer name="OnPlayerEnterRaceCheckpoint"/>
 			<referrer name="OnPlayerPickUpDynamicPickup"/>
+			<referrer name="PlayerHealInBolnicaPickups"/>
 			<referrer name="OnPlayerClickPlayerTextDraw"/>
 			<referrer name="OnPlayerClickTextDraw"/>
 			<referrer name="OnPlayerKeyStateChange"/>
@@ -27743,8 +27761,9 @@
 			<referrer name="SecTimer"/>
 			<referrer name="SpawnPlayerOnly"/>
 			<referrer name="OnPlayerDeath"/>
+			<referrer name="Spawn"/>
 			<referrer name="OnPlayerEnterDynamicArea"/>
-			<referrer name="OnPlayerPickUpDynamicPickup"/>
+			<referrer name="PlayerHealInBolnicaPickups"/>
 			<referrer name="OnPlayerKeyStateChange"/>
 			<referrer name="OnDialogResponse"/>
 			<referrer name="pc_cmd_sethp"/>
@@ -27930,9 +27949,9 @@
 			<referrer name="Itter_OnPlayerDisconnect"/>
 			<referrer name="SpawnPlayerOnly"/>
 			<referrer name="OnPlayerDeath"/>
+			<referrer name="Spawn"/>
 			<referrer name="OnVehicleSpawn"/>
 			<referrer name="OnVehicleDeath"/>
-			<referrer name="OnPlayerText"/>
 			<referrer name="OnPlayerExitVehicle"/>
 			<referrer name="OnPlayerEnterDynamicArea"/>
 			<referrer name="OnPlayerStateChange"/>
@@ -27941,6 +27960,7 @@
 			<referrer name="OnPlayerEnterRaceCheckpoint"/>
 			<referrer name="ResetAntiFloodPick"/>
 			<referrer name="OnPlayerPickUpDynamicPickup"/>
+			<referrer name="PlayerHealInBolnicaPickups"/>
 			<referrer name="OnPlayerClickPlayerTextDraw"/>
 			<referrer name="OnPlayerClickTextDraw"/>
 			<referrer name="OnPlayerKeyStateChange"/>
@@ -29145,6 +29165,7 @@
 			<referrer name="player_join"/>
 			<referrer name="OnPlayerSpawn"/>
 			<referrer name="SpawnPlayerOnly"/>
+			<referrer name="Spawn"/>
 			<referrer name="OnPlayerEnterDynamicArea"/>
 			<referrer name="OnPlayerPickUpDynamicPickup"/>
 			<referrer name="OnPlayerClickTextDraw"/>
@@ -29334,6 +29355,7 @@
 			<attribute name="native"/>
 			<referrer name="MinuteTimer"/>
 			<referrer name="Itter_OnGameModeInit"/>
+			<referrer name="OnPlayerDeath"/>
 			<referrer name="pc_cmd_gmx"/>
 			<referrer name="StartZaezdGO"/>
 			<referrer name="StartCS"/>
@@ -30415,6 +30437,16 @@
 			<dependency name="Float:operator=(_:)"/>
 			<dependency name="GetPlayerPing"/>
 			<dependency name="floatround"/>
+			<param name="playerid">
+			</param>
+		</member>
+		<member name="M:Spawn" syntax="Spawn(playerid)">
+			<attribute name="public"/>
+			<stacksize value="8"/>
+			<dependency name="AC_SetPlayerPos"/>
+			<dependency name="SetHealth"/>
+			<dependency name="SetPVarInt"/>
+			<dependency name="SetPlayerVirtualWorld"/>
 			<param name="playerid">
 			</param>
 		</member>
@@ -33856,7 +33888,6 @@
 			<referrer name="OnPlayerEnterDynamicArea"/>
 			<referrer name="OnPlayerPickUpDynamicPickup"/>
 			<referrer name="OnPlayerClickPlayerTextDraw"/>
-			<referrer name="OnPlayerClickTextDraw"/>
 			<referrer name="OnPlayerKeyStateChange"/>
 			<referrer name="OnDialogResponse"/>
 			<referrer name="pc_cmd_spawn"/>

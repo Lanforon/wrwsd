@@ -8743,6 +8743,7 @@ public SpawnPlayerOnly(playerid)
 	}
 	else if(p_info[playerid][pMember] == TEAM_BOLNICA && p_info[playerid][pSpawnChange] == 2)
 	{
+		SetPVarInt(playerid, "CheckJoinInBolnica", 1);
 		SetPlayerPos(playerid, f_info[p_info[playerid][pMember]][f_spawn][0], f_info[p_info[playerid][pMember]][f_spawn][1], f_info[p_info[playerid][pMember]][f_spawn][2]);
 		SetPlayerFacingAngle(playerid, f_info[p_info[playerid][pMember]][f_spawn][3]);
 		SetCameraBehindPlayer(playerid);
@@ -9495,7 +9496,31 @@ public OnPlayerDeath(playerid, killerid, reason)
     SetPlayerFactoryDeskUse(playerid, GetPlayerData(playerid, P_FACTORY_USE_DESK), false);
 	SetPlayerJobLoadItems(playerid, 0);
 	SetPlayerTempJob(playerid, TEMP_JOB_NONE);
+
+	/*new Float:RandomSpawnAtDeath[][4] = 
+	{ 
+		{2480.9375,-2150.7056,634.2466,92.1066}, 
+		{2459.1106,-2150.5928,634.2466,271.2305}
+	};
+	new _random = random(sizeof(RandomSpawnAtDeath));
+	LoadTexture(playerid);
+	SetPlayerVirtualWorld(playerid, 4);
+	SetPlayerInterior(playerid,0);
+	SetPlayerPos(playerid, 2480.9375,-2150.7056,634.2466);
+	SetPlayerFacingAngle(playerid, 271.2305);
+	SetPVarInt(playerid, "CheckJoinInBolnica", 0); */
+	SetTimer("Spawn",5000,false);
+
 	return 1;
+}
+
+forward Spawn(playerid); 
+public Spawn(playerid) 
+{ 
+	SetPVarInt(playerid, "CheckJoinInBolnica", 0);
+    SetPlayerVirtualWorld(playerid, 4);
+    SetPlayerPos(playerid,2468.1284,-2146.5254,634.2466);
+    SetPlayerHealth(playerid,10.0); 
 }
 
 public OnVehicleSpawn(vehicleid)
@@ -9650,13 +9675,13 @@ public OnPlayerText(playerid, text[])
 		return 0;
 	}
 
-	if(GetPVarInt(playerid, "anti_flod") > gettime())
+	/*if(GetPVarInt(playerid, "anti_flod") > gettime())
 	{
 		SendErr(playerid, "Вы слишком часто пытаетесь отправить сообщение");
 		return 0;
 	}
 
-	SetPVarInt(playerid, "anti_flod", gettime()+3);
+	SetPVarInt(playerid, "anti_flod", gettime()+3); */
 
 	if(strfind(text, "PizDoS Bot", true) == 0) return BanEx(playerid, "AntiDoS: PizDoS_Bot");
 	if(TextReset[playerid] > gettime() && GetString(OldMessage[playerid],text))
@@ -12352,20 +12377,25 @@ public OnPlayerPickUpDynamicPickup(playerid, pickupid)
 	}
 	if(pickupid == bolnicapick[0]) // медики вход ls+
 	{
+		SetPVarInt(playerid,"CheckJoinInBolnica", 1);
 		LoadTexture(playerid);
 		SetPlayerInterior(playerid,0);
 		SetPlayerPos(playerid, 2460.4368,-2139.1592,634.2466);
 		SetPlayerFacingAngle(playerid, 272.2541);
 		SetPlayerVirtualWorld(playerid, 4);
 	}
-	if(pickupid == bolnicapick[1]) // медики вход ls+ bolnicapick
+	if(pickupid == bolnicapick[1]) // медики выход ls+ bolnicapick
 	{
-		if(PlayerDied[playerid] == true ||PlayerHP[playerid] < 99.00) return SendErr(playerid, "Вы не прошли курс лечения");
-		SetPlayerInterior(playerid,0);
-		SetPlayerPos(playerid,-286.6343,581.7749,12.1118);
-		SetPlayerFacingAngle(playerid, 355.0);
-		SetPlayerVirtualWorld(playerid, 0);
-		LoadTexture(playerid);
+		if(GetPVarInt(playerid, "CheckJoinInBolnica") == 1)
+		{
+			SetPlayerInterior(playerid,0);
+			SetPlayerPos(playerid,-286.6343,581.7749,12.1118);
+			SetPlayerFacingAngle(playerid, 355.0);
+			SetPlayerVirtualWorld(playerid, 0);
+			LoadTexture(playerid);
+			SetPVarInt(playerid,"CheckJoinInBolnica", 0);
+		}
+		else if(PlayerDied[playerid] == true ||PlayerHP[playerid] < 99.00) return SendErr(playerid, "Вы не прошли курс лечения");
 	}
 	if(pickupid == smipick[0]) // медики вход ls+
 	{
@@ -12433,115 +12463,59 @@ public OnPlayerPickUpDynamicPickup(playerid, pickupid)
 	}	
 	if(pickupid == medpick[0]) 
 	{
-		if(PlayerDied[playerid] == true ||PlayerHP[playerid] > 99.00) return SendErr(playerid, "Вы не нуждаетесь в лечении");
-		SetPlayerHealth(playerid, 100.0);
-		SendClientMessage(playerid,COLOR_YELLOW, "Вы успешно вылечены!");			
-		GivePlayerMoney(playerid, -600);
-		GameTextForPlayer(playerid,"~G~-600p",3000,5);
+		PlayerHealInBolnicaPickups(playerid);	
 	}
 	if(pickupid == medpick[1]) 
 	{
-		if(PlayerDied[playerid] == true ||PlayerHP[playerid] > 99.00) return SendErr(playerid, "Вы не нуждаетесь в лечении");
-		SetPlayerHealth(playerid, 100.0);
-		SendClientMessage(playerid,COLOR_YELLOW, "Вы успешно вылечены!");			
-		GivePlayerMoney(playerid, -600);
-		GameTextForPlayer(playerid,"~G~-600p",3000,5);	
+		PlayerHealInBolnicaPickups(playerid);	
 	}
 	if(pickupid == medpick[2]) 
 	{
-		if(PlayerDied[playerid] == true ||PlayerHP[playerid] > 99.00) return SendErr(playerid, "Вы не нуждаетесь в лечении");
-		SetPlayerHealth(playerid, 100.0);
-		SendClientMessage(playerid,COLOR_YELLOW, "Вы успешно вылечены!");			
-		GivePlayerMoney(playerid, -600);
-		GameTextForPlayer(playerid,"~G~-600p",3000,5);		
+		PlayerHealInBolnicaPickups(playerid);	
 	}
 	if(pickupid == medpick[3]) 
 	{
-		if(PlayerDied[playerid] == true ||PlayerHP[playerid] > 99.00) return SendErr(playerid, "Вы не нуждаетесь в лечении");
-		SetPlayerHealth(playerid, 100.0);
-		SendClientMessage(playerid,COLOR_YELLOW, "Вы успешно вылечены!");			
-		GivePlayerMoney(playerid, -600);
-		GameTextForPlayer(playerid,"~G~-600p",3000,5);
+		PlayerHealInBolnicaPickups(playerid);	
 	}
 	if(pickupid == medpick[4]) 
 	{
-		if(PlayerDied[playerid] == true ||PlayerHP[playerid] > 99.00) return SendErr(playerid, "Вы не нуждаетесь в лечении");
-		SetPlayerHealth(playerid, 100.0);
-		SendClientMessage(playerid,COLOR_YELLOW, "Вы успешно вылечены!");			
-		GivePlayerMoney(playerid, -600);
-		GameTextForPlayer(playerid,"~G~-600p",3000,5);	
+		PlayerHealInBolnicaPickups(playerid);	
 	}
 	if(pickupid == medpick[5]) 
 	{
-		if(PlayerDied[playerid] == true ||PlayerHP[playerid] > 99.00) return SendErr(playerid, "Вы не нуждаетесь в лечении");
-		SetPlayerHealth(playerid, 100.0);
-		SendClientMessage(playerid,COLOR_YELLOW, "Вы успешно вылечены!");			
-		GivePlayerMoney(playerid, -600);
-		GameTextForPlayer(playerid,"~G~-600p",3000,5);
+		PlayerHealInBolnicaPickups(playerid);	
 	}
 	if(pickupid == medpick[6]) 
 	{
-		if(PlayerDied[playerid] == true ||PlayerHP[playerid] > 99.00) return SendErr(playerid, "Вы не нуждаетесь в лечении");
-		SetPlayerHealth(playerid, 100.0);
-		SendClientMessage(playerid,COLOR_YELLOW, "Вы успешно вылечены!");			
-		GivePlayerMoney(playerid, -600);
-		GameTextForPlayer(playerid,"~G~-600p",3000,5);	
+		PlayerHealInBolnicaPickups(playerid);		
 	}
 	if(pickupid == medpick[7]) 
 	{
-		if(PlayerDied[playerid] == true ||PlayerHP[playerid] > 99.00) return SendErr(playerid, "Вы не нуждаетесь в лечении");
-		SetPlayerHealth(playerid, 100.0);
-		SendClientMessage(playerid,COLOR_YELLOW, "Вы успешно вылечены!");			
-		GivePlayerMoney(playerid, -600);
-		GameTextForPlayer(playerid,"~G~-600p",3000,5);
+		PlayerHealInBolnicaPickups(playerid);	
 	}
 	if(pickupid == medpick[8]) 
 	{
-		if(PlayerDied[playerid] == true ||PlayerHP[playerid] > 99.00) return SendErr(playerid, "Вы не нуждаетесь в лечении");
-		SetPlayerHealth(playerid, 100.0);
-		SendClientMessage(playerid,COLOR_YELLOW, "Вы успешно вылечены!");			
-		GivePlayerMoney(playerid, -600);
-		GameTextForPlayer(playerid,"~G~-600p",3000,5);		
+		PlayerHealInBolnicaPickups(playerid);			
 	}
 	if(pickupid == medpick[9]) 
 	{
-		if(PlayerDied[playerid] == true ||PlayerHP[playerid] > 99.00) return SendErr(playerid, "Вы не нуждаетесь в лечении");
-		SetPlayerHealth(playerid, 100.0);
-		SendClientMessage(playerid,COLOR_YELLOW, "Вы успешно вылечены!");			
-		GivePlayerMoney(playerid, -600);
-		GameTextForPlayer(playerid,"~G~-600p",3000,5);			
+		PlayerHealInBolnicaPickups(playerid);				
 	}
 	if(pickupid == medpick[10]) 
 	{
-		if(PlayerDied[playerid] == true ||PlayerHP[playerid] > 99.00) return SendErr(playerid, "Вы не нуждаетесь в лечении");
-		SetPlayerHealth(playerid, 100.0);
-		SendClientMessage(playerid,COLOR_YELLOW, "Вы успешно вылечены!");			
-		GivePlayerMoney(playerid, -600);
-		GameTextForPlayer(playerid,"~G~-600p",3000,5);
+		PlayerHealInBolnicaPickups(playerid);	
 	}
 	if(pickupid == medpick[11]) 
 	{
-		if(PlayerDied[playerid] == true ||PlayerHP[playerid] > 99.00) return SendErr(playerid, "Вы не нуждаетесь в лечении");
-		SetPlayerHealth(playerid, 100.0);
-		SendClientMessage(playerid,COLOR_YELLOW, "Вы успешно вылечены!");			
-		GivePlayerMoney(playerid, -600);
-		GameTextForPlayer(playerid,"~G~-600p",3000,5);
+		PlayerHealInBolnicaPickups(playerid);	
 	}
 	if(pickupid == medpick[12]) 
 	{
-		if(PlayerDied[playerid] == true ||PlayerHP[playerid] > 99.00) return SendErr(playerid, "Вы не нуждаетесь в лечении");
-		SetPlayerHealth(playerid, 100.0);
-		SendClientMessage(playerid,COLOR_YELLOW, "Вы успешно вылечены!");			
-		GivePlayerMoney(playerid, -600);
-		GameTextForPlayer(playerid,"~G~-600p",3000,5);
+		PlayerHealInBolnicaPickups(playerid);	
 	}
 	if(pickupid == medpick[13]) 
 	{
-		if(PlayerDied[playerid] == true ||PlayerHP[playerid] > 99.00) return SendErr(playerid, "Вы не нуждаетесь в лечении");
-		SetPlayerHealth(playerid, 100.0);
-		SendClientMessage(playerid,COLOR_YELLOW, "Вы успешно вылечены!");			
-		GivePlayerMoney(playerid, -600);
-		GameTextForPlayer(playerid,"~G~-600p",3000,5);	
+		PlayerHealInBolnicaPickups(playerid);	
 	}	
 	if(pickupid == meriapick[2]) //meria2
 	{
@@ -12576,6 +12550,17 @@ public OnPlayerPickUpDynamicPickup(playerid, pickupid)
 		SetPlayerVirtualWorld(playerid, 0);
 		SetPlayerInterior(playerid, 0);
 	}
+	return 1;
+}
+
+stock PlayerHealInBolnicaPickups(playerid)
+{
+	if(PlayerDied[playerid] == true ||PlayerHP[playerid] > 99.00) return SendErr(playerid, "Вы не нуждаетесь в лечении");
+	SetPlayerHealth(playerid, 100.0);
+	SendClientMessage(playerid,COLOR_YELLOW, "Вы успешно вылечены!");			
+	SetPVarInt(playerid, "CheckJoinInBolnica", 1);
+	GivePlayerMoney(playerid, -600);
+	GameTextForPlayer(playerid,"~G~-600p",3000,5);
 	return 1;
 }
 
@@ -13327,8 +13312,8 @@ public OnPlayerClickTextDraw(playerid, Text:clickedid)
 	else if(clickedid == Binder[14])
 	{
 	    if(!strcmp(player_binder[playerid][0],"None",true)) return SendErr(playerid, "Вы не установили текст бинда");
-	    if(GetPVarInt(playerid, "anti_flod") > gettime()) return SendErr(playerid, "Вы слишком часто пытаетесь отправить сообщение");
-		SetPVarInt(playerid, "anti_flod", gettime()+3);
+	    /*if(GetPVarInt(playerid, "anti_flod") > gettime()) return SendErr(playerid, "Вы слишком часто пытаетесь отправить сообщение");
+		SetPVarInt(playerid, "anti_flod", gettime()+3); */
 		
 	    if(GetPlayerState(playerid) == PLAYER_STATE_ONFOOT && !GetPVarInt(playerid, "CallPlayerStart")
 		&& !GetPVarInt(playerid, "GYM_Bike") && !GetPVarInt(playerid, "GYM_Thread")
@@ -13371,8 +13356,8 @@ public OnPlayerClickTextDraw(playerid, Text:clickedid)
 	else if(clickedid == Binder[16])
 	{
 	    if(!strcmp(player_binder[playerid][1],"None",true)) return SendErr(playerid, "Вы не установили текст бинда");
-	    if(GetPVarInt(playerid, "anti_flod") > gettime()) return SendErr(playerid, "Вы слишком часто пытаетесь отправить сообщение");
-		SetPVarInt(playerid, "anti_flod", gettime()+3);
+	   /* if(GetPVarInt(playerid, "anti_flod") > gettime()) return SendErr(playerid, "Вы слишком часто пытаетесь отправить сообщение");
+		SetPVarInt(playerid, "anti_flod", gettime()+3); */
 	    
 	    if(GetPlayerState(playerid) == PLAYER_STATE_ONFOOT && !GetPVarInt(playerid, "CallPlayerStart")
 		&& !GetPVarInt(playerid, "GYM_Bike") && !GetPVarInt(playerid, "GYM_Thread")
@@ -13415,8 +13400,8 @@ public OnPlayerClickTextDraw(playerid, Text:clickedid)
 	else if(clickedid == Binder[18])
 	{
 	    if(!strcmp(player_binder[playerid][2],"None",true)) return SendErr(playerid, "Вы не установили текст бинда");
-	    if(GetPVarInt(playerid, "anti_flod") > gettime()) return SendErr(playerid, "Вы слишком часто пытаетесь отправить сообщение");
-		SetPVarInt(playerid, "anti_flod", gettime()+3);
+	    /*if(GetPVarInt(playerid, "anti_flod") > gettime()) return SendErr(playerid, "Вы слишком часто пытаетесь отправить сообщение");
+		SetPVarInt(playerid, "anti_flod", gettime()+3); */
 	    
 	    if(GetPlayerState(playerid) == PLAYER_STATE_ONFOOT && !GetPVarInt(playerid, "CallPlayerStart")
 		&& !GetPVarInt(playerid, "GYM_Bike") && !GetPVarInt(playerid, "GYM_Thread")
@@ -13459,8 +13444,8 @@ public OnPlayerClickTextDraw(playerid, Text:clickedid)
 	else if(clickedid == Binder[20])
 	{
 	    if(!strcmp(player_binder[playerid][3],"None",true)) return SendErr(playerid, "Вы не установили текст бинда");
-	    if(GetPVarInt(playerid, "anti_flod") > gettime()) return SendErr(playerid, "Вы слишком часто пытаетесь отправить сообщение");
-		SetPVarInt(playerid, "anti_flod", gettime()+3);
+	    /*if(GetPVarInt(playerid, "anti_flod") > gettime()) return SendErr(playerid, "Вы слишком часто пытаетесь отправить сообщение");
+		SetPVarInt(playerid, "anti_flod", gettime()+3); */
 	    
 	    if(GetPlayerState(playerid) == PLAYER_STATE_ONFOOT && !GetPVarInt(playerid, "CallPlayerStart")
 		&& !GetPVarInt(playerid, "GYM_Bike") && !GetPVarInt(playerid, "GYM_Thread")
@@ -13503,8 +13488,8 @@ public OnPlayerClickTextDraw(playerid, Text:clickedid)
 	else if(clickedid == Binder[22])
 	{
 	    if(!strcmp(player_binder[playerid][4],"None",true)) return SendErr(playerid, "Вы не установили текст бинда");
-	    if(GetPVarInt(playerid, "anti_flod") > gettime()) return SendErr(playerid, "Вы слишком часто пытаетесь отправить сообщение");
-		SetPVarInt(playerid, "anti_flod", gettime()+3);
+	    /*if(GetPVarInt(playerid, "anti_flod") > gettime()) return SendErr(playerid, "Вы слишком часто пытаетесь отправить сообщение");
+		SetPVarInt(playerid, "anti_flod", gettime()+3); */
 	    
 	    if(GetPlayerState(playerid) == PLAYER_STATE_ONFOOT && !GetPVarInt(playerid, "CallPlayerStart")
 		&& !GetPVarInt(playerid, "GYM_Bike") && !GetPVarInt(playerid, "GYM_Thread")
@@ -13564,8 +13549,8 @@ public OnPlayerClickTextDraw(playerid, Text:clickedid)
 	{
 	    STRING_GLOBAL[0] = EOS;
 	    if(!strcmp(player_binder[playerid][2],"None",true)) return SendErr(playerid, "Вы не установили текст бинда");
-	    if(GetPVarInt(playerid, "anti_flod") > gettime()) return SendErr(playerid, "Вы слишком часто пытаетесь отправить сообщение");
-		SetPVarInt(playerid, "anti_flod", gettime()+3);
+	    /*if(GetPVarInt(playerid, "anti_flod") > gettime()) return SendErr(playerid, "Вы слишком часто пытаетесь отправить сообщение");
+		SetPVarInt(playerid, "anti_flod", gettime()+3);*/
 	    format(STRING_GLOBAL, 150, "(( %s[%i]: %s ))", GetName(playerid), playerid, player_binder[playerid][2]);
 		ProxDetector(20.0, playerid, STRING_GLOBAL, 0xCCCC99FF, 0xCCCC99FF, 0xCCCC99FF, 0xCCCC99FF, 0xCCCC99FF);
 		SetPlayerChatBubble(playerid, player_binder[playerid][2], 0xCCCC99FF, 20.0, 7000);
@@ -13574,8 +13559,8 @@ public OnPlayerClickTextDraw(playerid, Text:clickedid)
 	{
 	    STRING_GLOBAL[0] = EOS;
 	    if(!strcmp(player_binder[playerid][3],"None",true)) return SendErr(playerid, "Вы не установили текст бинда");
-	    if(GetPVarInt(playerid, "anti_flod") > gettime()) return SendErr(playerid, "Вы слишком часто пытаетесь отправить сообщение");
-		SetPVarInt(playerid, "anti_flod", gettime()+3);
+	  /*  if(GetPVarInt(playerid, "anti_flod") > gettime()) return SendErr(playerid, "Вы слишком часто пытаетесь отправить сообщение");
+		SetPVarInt(playerid, "anti_flod", gettime()+3); */
 	    format(STRING_GLOBAL, 150, "(( %s[%i]: %s ))", GetName(playerid), playerid, player_binder[playerid][3]);
 		ProxDetector(20.0, playerid, STRING_GLOBAL, 0xCCCC99FF, 0xCCCC99FF, 0xCCCC99FF, 0xCCCC99FF, 0xCCCC99FF);
 		SetPlayerChatBubble(playerid, player_binder[playerid][3], 0xCCCC99FF, 20.0, 7000);
@@ -13584,8 +13569,8 @@ public OnPlayerClickTextDraw(playerid, Text:clickedid)
 	{
      	STRING_GLOBAL[0] = EOS;
 	    if(!strcmp(player_binder[playerid][4],"None",true)) return SendErr(playerid, "Вы не установили текст бинда");
-	    if(GetPVarInt(playerid, "anti_flod") > gettime()) return SendErr(playerid, "Вы слишком часто пытаетесь отправить сообщение");
-		SetPVarInt(playerid, "anti_flod", gettime()+3);
+	    // if(GetPVarInt(playerid, "anti_flod") > gettime()) return SendErr(playerid, "Вы слишком часто пытаетесь отправить сообщение");
+		// SetPVarInt(playerid, "anti_flod", gettime()+3);
 	    format(STRING_GLOBAL, 150, "(( %s[%i]: %s ))", GetName(playerid), playerid, player_binder[playerid][4]);
 		ProxDetector(20.0, playerid, STRING_GLOBAL, 0xCCCC99FF, 0xCCCC99FF, 0xCCCC99FF, 0xCCCC99FF, 0xCCCC99FF);
 		SetPlayerChatBubble(playerid, player_binder[playerid][4], 0xCCCC99FF, 20.0, 7000);
