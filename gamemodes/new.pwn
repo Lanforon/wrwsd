@@ -182,7 +182,7 @@ tmpobjid = CreateDynamicObject(1895, 205.562500, 804.131469, 9.699500, 0.000000,
 static stock _Y_ITER_C3:boxPlayer@YSII_Cg,boxPlayer@YSII_Ag[(MAX_PLAYERS)+1]={(MAX_PLAYERS)*2,(MAX_PLAYERS)*2-1,...};
 static stock _Y_ITER_C3:shipPlayer@YSII_Cg,shipPlayer@YSII_Ag[(MAX_PLAYERS)+1]={(MAX_PLAYERS)*2,(MAX_PLAYERS)*2-1,...};
 //-------------------------------[*Макросы*]------------------------------------
-#define SERVER_NAME           "GTA 3" // - Название сервера (Для сообщений диалогов, не HOSTNAME!)
+#define SERVER_NAME           "GTA 3 Test Server" // - Название сервера (Для сообщений диалогов, не HOSTNAME!)
 #define SERVER_VERSION        "Beta 0.2" // - Версия мода (SetGameModeText)
 #define SERVER_MAP            "Beta map" // - Название карты (mapname)
 #define SERVER_WEBSITE        "vk.com/GTA_3_RolePlay" // - Сайт
@@ -190,8 +190,8 @@ static stock _Y_ITER_C3:shipPlayer@YSII_Cg,shipPlayer@YSII_Ag[(MAX_PLAYERS)+1]={
 #define SERVER_FORUM          "vk.com/GTA_3_RolePlay"//форум
 #define SERVER_GROUP          "vk.com/GTA_3_RolePlay"//вк группа
 //----------------------------[ Название сервера ]------------------------------
-#define SERVER_NAME_NOXD      ".•GTA 3•."//Название серва
-#define SERVER_NAME_X2DE      ".•GTA 3•.(X2)"//Название серва когда х2
+#define SERVER_NAME_NOXD      ".•GTA 3 Test Server•."//Название серва
+#define SERVER_NAME_X2DE      ".•GTA 3 Test Server•.(X2)"//Название серва когда х2
 #define START_MONEY           1000//деньги при старте
 #define START_LEVEL           1//начальный уровень
 //----------------------------[ Название таблиц MySql ]-------------------------
@@ -1288,6 +1288,7 @@ new max_veh_speed [ 212 ] = { 220,160,280,120,150,165,110,170,110,180,160,240,16
 
 
 new player_holding_key_down [ MAX_PLAYERS ] ;
+new Text3D:admlabel[MAX_PLAYERS];
 
 new engine_ptune [ 5 ] [ 44 ] = {
 "Чип-тюнинг",
@@ -4119,6 +4120,7 @@ new opg4pick[2];
 new opg5pick[2];
 new bankpick[6];
 new voenkomatpick[2];
+new wahtacheckpoint[2];
 /**************************************ПИКАПЫ**********************************/
 new set_name = -1;
 new AdvertTime, AdvertTime_;
@@ -4322,7 +4324,9 @@ enum admInfo
 	admGethere,
 	admSpectate,
 	admTimeMin,
-	admAlog
+	admAlog,
+	bool:checkadmlabel
+	
 }
 new AdminInfo[MAX_PLAYERS][admInfo];
 
@@ -4354,6 +4358,7 @@ enum pInfo
 	pCash,
 	pBank,
 	pAdmin,
+	bool: pTeleport,
 	pHelper,
 	pMemberSkin,
 	pSex,
@@ -4462,6 +4467,8 @@ Float:pHeal,
 	data_PASS_N,
 	data_PASS_DATE[32],
 	bool: P_WEAPON_RELOADING,
+	bool:pFly,
+	pHospitalHeal,
 	pSetWalk,
 	pSetAnim,
 	pJackCar,
@@ -4487,8 +4494,34 @@ Float:pHeal,
 	bool: P_IN_JOB,			// на работе ли
 	P_LAST_PICKUP,			// ид пикапа на которым стоял последний раз
 	P_JOB,
+	pFastened
 };
 new p_info[MAX_PLAYERS][pInfo];
+/*new CarsName[212][] = // название т/с для команды /clook 
+{
+     "Landstalker", "Bravura", "Buffalo", "Linerunner", "Perrenial", "Sentinel", "Dumper", "Firetruck", "Trashmaster",
+     "Stretch", "Manana", "Infernus", "Voodoo", "Pony", "Mule", "Cheetah", "Ambulance", "Leviathan", "Moonbeam",
+     "Esperanto", "Taxi", "Washington", "Bobcat", "Whoopee", "BF Injection", "Hunter", "Premier", "Enforcer",
+     "Securicar", "Banshee", "Predator", "Bus", "Rhino", "Barracks", "Hotknife", "Trailer", "Previon", "Coach",
+     "Cabbie", "Stallion", "Rumpo", "RC Bandit", "Romero", "Packer", "Monster", "Admiral", "Squalo", "Seasparrow",
+     "Pizzaboy", "Tram", "Trailer", "Turismo", "Speeder", "Reefer", "Tropic", "Flatbed", "Yankee", "Caddy", "Solair",
+     "Berkley's RC Van", "Skimmer", "PCJ-600", "Faggio", "Freeway", "RC Baron", "RC Raider", "Glendale", "Oceanic",
+     "Sanchez", "Sparrow", "Patriot", "Quad", "Coastguard", "Dinghy", "Hermes", "Sabre", "Rustler", "ZR-350", "Walton",
+     "Regina", "Comet", "BMX", "Burrito", "Camper", "Marquis", "Baggage", "Dozer", "Maverick", "News Chopper", "Rancher",
+     "FBI Rancher", "Virgo", "Greenwood", "Jetmax", "Hotring", "Sandking", "Blista Compact", "Police Maverick",
+     "Boxvillde", "Benson", "Mesa", "RC Goblin", "Hotring Racer A", "Hotring Racer B", "Bloodring Banger", "Rancher",
+     "Super GT", "Elegant", "Journey", "Bike", "Mountain Bike", "Beagle", "Cropduster", "Stunt", "Tanker", "Roadtrain",
+     "Nebula", "Majestic", "Buccaneer", "Shamal", "Hydra", "FCR-900", "NRG-500", "HPV1000", "Cement Truck", "Tow Truck",
+     "Fortune", "Cadrona", "FBI Truck", "Willard", "Forklift", "Tractor", "Combine", "Feltzer", "Remington", "Slamvan",
+     "Blade", "Freight", "Streak", "Vortex", "Vincent", "Bullet", "Clover", "Sadler", "Firetruck", "Hustler", "Intruder",
+     "Primo", "Cargobob", "Tampa", "Sunrise", "Merit", "Utility", "Nevada", "Yosemite", "Windsor", "Monster", "Monster",
+     "Uranus", "Jester", "Sultan", "Stratum", "Elegy", "Raindance", "RC Tiger", "Flash", "Tahoma", "Savanna", "Bandito",
+     "Freight Flat", "Streak Carriage", "Kart", "Mower", "Dune", "Sweeper", "Broadway", "Tornado", "AT-400", "DFT-30",
+     "Huntley", "Stafford", "BF-400", "News Van", "Tug", "Trailer", "Emperor", "Wayfarer", "Euros", "Hotdog", "Club",
+     "Freight Box", "Trailer", "Andromada", "Dodo", "RC Cam", "Launch", "Police Car", "Police Car", "Police Car",
+     "Police Ranger", "Picador", "S.W.A.T", "Alpha", "Phoenix", "Glendale", "Sadler", "Luggage", "Luggage", "Stairs",
+     "Boxville", "Tiller", "Utility Trailer"
+}; */
 
 new zakaz_taxi = 0, zakaz_player[MAX_PLAYERS];
 
@@ -7323,6 +7356,36 @@ public OnPlayerEditAttachedObject(playerid, response, index, modelid, boneid,Flo
 
 public OnPlayerEditObject(playerid, playerobject, objectid, response, Float:fX, Float:fY, Float:fZ, Float:fRotX, Float:fRotY, Float:fRotZ)
 {
+	if(!IsValidObject(objectid)) return 0;
+    MoveObject(objectid, fX, fY, fZ, 10.0, fRotX, fRotY, fRotZ);
+    new Float:oldX, Float:oldY, Float:oldZ,
+    Float:oldRotX, Float:oldRotY, Float:oldRotZ;
+    GetObjectPos(objectid, oldX, oldY, oldZ);
+    GetObjectRot(objectid, oldRotX, oldRotY, oldRotZ);
+    if(!playerobject)
+    {
+        if(!IsValidObject(objectid)) return 0;
+        MoveObject(objectid, fX, fY, fZ, 10.0, fRotX, fRotY, fRotZ);
+    }
+    if(response == EDIT_RESPONSE_FINAL)
+    {
+        SetObjectPos(objectid, fX, fY, fZ);
+        SetObjectRot(objectid, fRotX, fRotY, fRotZ);
+    }
+    if(response == EDIT_RESPONSE_CANCEL)
+    {
+        if(!playerobject)
+        {
+            SetObjectPos(objectid, oldX, oldY, oldZ);
+            SetObjectRot(objectid, oldRotX, oldRotY, oldRotZ);
+        }
+        else
+        {
+            SetPlayerObjectPos(playerid, objectid, oldX, oldY, oldZ);
+            SetPlayerObjectRot(playerid, objectid, oldRotX, oldRotY, oldRotZ);
+        }
+    }
+
 	if(GetPVarInt(playerid, "CreateRadar") != 0)
 	{
 		if(!playerobject)
@@ -7645,7 +7708,7 @@ public player_check(playerid)
 forward OnPlayerRegister(playerid);
 public OnPlayerRegister(playerid)
 {
-    new dialog_string [ 300 ] ;
+	new dialog_string [ 300 ] ;
 	new ds_password [ 24 ], ds_email [ 32 ], ds_referal [ MAX_PLAYER_NAME ], ds_gender, ds_race, ds_skin ;
 	GetPVarString ( playerid, "reg_password", ds_password, 24 ) ;
 	GetPVarString ( playerid, "reg_email", ds_email, 32 ) ;
@@ -7835,7 +7898,7 @@ public OnPlayerDisconnect(playerid, reason)
 	
 	speedometr_status(playerid, false);
 	
-	if(playerSpawnTimer[playerid]) KillTimer(playerSpawnTimer[playerid]);
+	//if(playerSpawnTimer[playerid]) KillTimer(playerSpawnTimer[playerid]);
     
     if(GetPVarInt(playerid,"fuel_show"))
 	{
@@ -8308,7 +8371,7 @@ stock PreloadAnimLibs(playerid)
 public OnPlayerSpawn(playerid)
 {
     if(IsPlayerAdmin(playerid)) Attach3DTextLabelToPlayer(AdminText3D[playerid],playerid,0.0,0.0,0.5);
-    
+    //if(p_info[playerid][pHospitalHeal] == 1) SetTimer("SpawnForBolnica", 3000, false);
 	if(GetPVarInt(playerid, "SpecBool") == 1)
 	{
 		DeletePVar(playerid, "SpecBool");
@@ -8331,11 +8394,23 @@ public OnPlayerSpawn(playerid)
     AC_Healthtime[playerid] = unix+3+floatround(GetPlayerPing(playerid)/100);
 	
 //	if(!playerSpawn{playerid}) OnGuardWarningCheater(playerid, "Spawn Hack", 85);
-	if(!playerSpawnTimer[playerid]) playerSpawnTimer[playerid] = SetTimerEx("AC_SpawnTimer", (SleepTime(playerid) * 1000), 0, "i", playerid);
+	//if(!playerSpawnTimer[playerid]) playerSpawnTimer[playerid] = SetTimerEx("AC_SpawnTimer", (SleepTime(playerid) * 1000), 0, "i", playerid);
 	playerCheckFly[playerid] = SleepTime(playerid);
 	//AckSent[playerid] += 3;
-	
+	//if(PlayerDied[playerid] == true) return false;
 	SpawnPlayerOnly(playerid);
+
+	if(p_info[playerid][pHospitalHeal] == 1)
+	{
+		//SetSpawnInfo(playerid, 0, p_info[playerid][pSkin], 2468.2000,-2148.2515,634.2466, 358.8160, 0, 0, 0, 0, 0, 0);
+		print("выполнился спавн в больке");
+	 	SetPVarInt(playerid, "CheckJoinInBolnica", 0);
+	    SetPlayerVirtualWorld(playerid, 4);
+	    SetPlayerPos(playerid,2468.2000,-2148.2515,634.2466);
+	    SetPlayerFacingAngle(playerid, 358.8160);
+	    SetCameraBehindPlayer(playerid);
+	    SetPlayerHealth(playerid,10.0); 
+	}
 	return 1;
 }
 
@@ -8887,24 +8962,8 @@ public SpawnPlayerOnly(playerid)
  	else if(p_info[playerid][pMember] >= 1 && p_info[playerid][pSpawnChange] == 0 || p_info[playerid][pMember] == 0)
 	{
 	    FreezePlayer(playerid, 5000);
-		switch(random(3))
-	    {
-	        case 0:
-	        {
-				SetPlayerPos(playerid, -2101.1748,2237.0669,1001.9138);
-				SetPlayerFacingAngle(playerid, 304.3657);
-			}
-			case 1:
-			{
-				SetPlayerPos(playerid, -2101.1748,2237.0669,1001.9138);
-				SetPlayerFacingAngle(playerid, 304.3657);
-			}
-			case 2:
-			{
-				SetPlayerPos(playerid, -2101.1748,2237.0669,1001.9138);
-				SetPlayerFacingAngle(playerid, 304.3657);
-			}
-		}
+		SetPlayerPos(playerid, -2101.1748,2237.0669,1001.9138);
+		SetPlayerFacingAngle(playerid, 304.3657);
 		SetCameraBehindPlayer(playerid);
 		SetPlayerInterior(playerid, 0);
 		SetPlayerVirtualWorld(playerid, 0);
@@ -8980,11 +9039,12 @@ public SpawnPlayerOnly(playerid)
 
 public OnPlayerDeath(playerid, killerid, reason)
 {
-	if(playerSpawnTimer[playerid])
-	{
-		KillTimer(playerSpawnTimer[playerid]);
-		playerSpawnTimer[playerid] = 0;
-	}
+	p_info[playerid][pHospitalHeal] = 1;
+	// if(playerSpawnTimer[playerid])
+	// {
+	// 	KillTimer(playerSpawnTimer[playerid]);
+	// 	playerSpawnTimer[playerid] = 0;
+	// } 
 	playerSpawn{playerid} = 1;
     playerCheckFly[playerid] = SleepTime(playerid);
 
@@ -9300,7 +9360,7 @@ public OnPlayerDeath(playerid, killerid, reason)
 
 	DeletePVar(playerid,"car_spawn");
 	SetPlayerSpecialAction(playerid,SPECIAL_ACTION_NONE);
-	PlayerSpawned[playerid] = false;
+	//PlayerSpawned[playerid] = false;
 	if(IsPlayerAttachedObjectSlotUsed(playerid, 7)) RemovePlayerAttachedObject(playerid, 7);
 	SetPVarInt(playerid,"K_Times",GetPVarInt(playerid,"K_Times") + 1);
 	if(GetPVarInt(playerid,"K_Times") > 1) return OnGuardWarningCheater(playerid,  "K Times", 85);
@@ -9420,7 +9480,7 @@ public OnPlayerDeath(playerid, killerid, reason)
 
 			PlayerDied[playerid] = true;
 		}
-	}
+	} 
 	SetHunger(playerid, 40);
 	DisablePlayerCheckpoint(playerid);
 	if(IsPlayerAttachedObjectSlotUsed(playerid, 3)) RemovePlayerAttachedObject(playerid,3);
@@ -9509,18 +9569,8 @@ public OnPlayerDeath(playerid, killerid, reason)
 	SetPlayerPos(playerid, 2480.9375,-2150.7056,634.2466);
 	SetPlayerFacingAngle(playerid, 271.2305);
 	SetPVarInt(playerid, "CheckJoinInBolnica", 0); */
-	SetTimer("Spawn",5000,false);
 
 	return 1;
-}
-
-forward Spawn(playerid); 
-public Spawn(playerid) 
-{ 
-	SetPVarInt(playerid, "CheckJoinInBolnica", 0);
-    SetPlayerVirtualWorld(playerid, 4);
-    SetPlayerPos(playerid,2468.1284,-2146.5254,634.2466);
-    SetPlayerHealth(playerid,10.0); 
 }
 
 public OnVehicleSpawn(vehicleid)
@@ -9718,7 +9768,7 @@ public OnPlayerText(playerid, text[])
 		SCMF(playerid, COLOR_PURPLE, "Сказал(а) по телефону: {FFFFFF}%s", text);
 	    SCMF(GetPVarInt(playerid, "CallPlayerID"), 0x00D3F6AA, "Телефон - %s: {FFFFFF}%s", p_info[playerid][pName], text);
 	    format(STRING_GLOBAL, sizeof(STRING_GLOBAL), "сказал(а) по телефону: {FFFFFF}%s", text);
-		SetPlayerChatBubble(playerid, STRING_GLOBAL, COLOR_PURPLE, 10.0, 10000);
+		SetPlayerChatBubble(playerid, STRING_GLOBAL, COLOR_WHITE, 10.0, 10000);
 		return 0;
 	}
 	if(GetPlayerState(playerid) == PLAYER_STATE_ONFOOT && !GetPVarInt(playerid, "CallPlayerStart")
@@ -9739,7 +9789,7 @@ public OnPlayerText(playerid, text[])
 			else SetTimerEx("ClearAnimText", strlen(text)*200, false, "d", playerid);
 		}
 	}
-	SetPlayerChatBubble(playerid, text, COLOR_PURPLE, 15.0, 10000);
+	SetPlayerChatBubble(playerid, text, COLOR_WHITE, 15.0, 10000);
 	if(strlen(text) >= 100)
 	{
 	 	new String[500], String2[500];
@@ -11188,6 +11238,8 @@ public OnPlayerEnterDynamicCP(playerid, checkpointid)
 			StealMats(playerid);
 		}
 	}
+	else if(checkpointid == wahtacheckpoint[0]) {DestroyDynamicCP(wahtacheckpoint[0]);} 
+	else if(checkpointid == wahtacheckpoint[1]) {DestroyDynamicCP(wahtacheckpoint[1]);} 
 	else if(checkpointid == robbery_moneys[0] || checkpointid == robbery_moneys[1])
 	{
 		if(robbery_players[playerid] != -1)
@@ -11839,7 +11891,7 @@ public OnPlayerPickUpDynamicPickup(playerid, pickupid)
 		SetPlayerVirtualWorld(playerid, 0);
 		SetCameraBehindPlayer(playerid);
 	}
-	if(pickupid == wahta[0])
+	if(pickupid == wahta[0]) // шахта выход
 	{
 	    LoadTexture(playerid);
 		SetPlayerInterior(playerid, 0);
@@ -11848,7 +11900,7 @@ public OnPlayerPickUpDynamicPickup(playerid, pickupid)
 		SetPlayerVirtualWorld(playerid, 0);
 		SetCameraBehindPlayer(playerid);
 	}
-	if(pickupid == wahta[1])
+	if(pickupid == wahta[1]) // шахта вход
 	{
 	    LoadTexture(playerid);
 		SetPlayerInterior(playerid, 0);
@@ -11856,6 +11908,8 @@ public OnPlayerPickUpDynamicPickup(playerid, pickupid)
 		SetPlayerFacingAngle(playerid, 181.1934);
 		SetPlayerVirtualWorld(playerid, 0);
 		SetCameraBehindPlayer(playerid);
+		SendClientMessage(playerid, COLOR_WHITE, "[!]Проследуйте к метке в недры шахты, для добычи ресурсов!");
+		wahtacheckpoint[1] = CreateDynamicCP(-2359.3674,299.4410,-16.2706, 4, 0, 0, playerid, 200.0);
 	}
 	if(pickupid == salon[0])
 	{
@@ -12559,6 +12613,7 @@ stock PlayerHealInBolnicaPickups(playerid)
 	SetPlayerHealth(playerid, 100.0);
 	SendClientMessage(playerid,COLOR_YELLOW, "Вы успешно вылечены!");			
 	SetPVarInt(playerid, "CheckJoinInBolnica", 1);
+	p_info[playerid][pHospitalHeal] = 0;
 	GivePlayerMoney(playerid, -600);
 	GameTextForPlayer(playerid,"~G~-600p",3000,5);
 	return 1;
@@ -13569,7 +13624,7 @@ public OnPlayerClickTextDraw(playerid, Text:clickedid)
 	{
      	STRING_GLOBAL[0] = EOS;
 	    if(!strcmp(player_binder[playerid][4],"None",true)) return SendErr(playerid, "Вы не установили текст бинда");
-	    // if(GetPVarInt(playerid, "anti_flod") > gettime()) return SendErr(playerid, "Вы слишком часто пытаетесь отправить сообщение");
+	    //   if(GetPVarInt(playerid, "anti_flod") > gettime()) return SendErr(playerid, "Вы слишком часто пытаетесь отправить сообщение");
 		// SetPVarInt(playerid, "anti_flod", gettime()+3);
 	    format(STRING_GLOBAL, 150, "(( %s[%i]: %s ))", GetName(playerid), playerid, player_binder[playerid][4]);
 		ProxDetector(20.0, playerid, STRING_GLOBAL, 0xCCCC99FF, 0xCCCC99FF, 0xCCCC99FF, 0xCCCC99FF, 0xCCCC99FF);
@@ -15100,7 +15155,7 @@ public OnPlayerKeyStateChange(playerid, newkeys, oldkeys)
 	}
 	if(PRESSED(KEY_CTRL_BACK) && GetPlayerState(playerid) == PLAYER_STATE_ONFOOT)
 	{
-		pc_cmd_vzad(playerid);
+		pc_cmd_trunk(playerid);
 	}
 	if ( GetPlayerHouse(playerid) || p_info[playerid][pRentHouse] != -1 )
 	{
@@ -17281,6 +17336,19 @@ public OnPlayerKeyStateChange(playerid, newkeys, oldkeys)
 
 public OnPlayerUpdate(playerid)
 {
+	if(IsPlayerInAnyVehicle(playerid) == 1)
+	{
+		new vehicleid = GetPlayerVehicleID(playerid);
+		new speedvehicle = GetVehicleSpeed(vehicleid);
+		if(speedvehicle >= 60)
+		{
+			if(GetPVarInt(playerid, "vehiclepredelspeed50") == 1)
+			{
+				p_info[playerid][pHeal] -= 30; 
+				SetPlayerHealth(playerid, p_info[playerid][pHeal]);
+			}
+		}
+	}
 	if(noclipdata[playerid][cameramode] == CAMERA_MODE_FLY)
 	{
 		new keys,ud,lr;
@@ -19431,6 +19499,8 @@ public OnDialogResponse(playerid, dialogid, response, listitem, inputtext[])
 						SendClientMessage(playerid, 0x3399FFFF, "Вы начали работу шахтера");
 						SendClientMessage(playerid, 0x66CC00FF, "Ищите месторождения железной руды на территории шахты");
 						SendClientMessage(playerid, 0x66CC00FF, "Добытое сырье относите на склад для переплавки");
+						SendClientMessage(playerid, 0x66CC00FF, "Проследуйте к метке на карте для входа в шахту");
+						wahtacheckpoint[0] = CreateDynamicCP(2379.2571,1725.8711,-2.1648, 2, 0, 0, playerid, 200.0);
 					}
 				}
 			}
@@ -26931,6 +27001,20 @@ public OnDialogResponse(playerid, dialogid, response, listitem, inputtext[])
 		}
 
 
+        case 9310:
+         {
+             if(response)
+             {
+                 new str[64];
+                 format(str, sizeof(str), "hostname %s", inputtext);
+                 SendRconCommand(str);
+                 new string[64];
+                 format(string, sizeof(string), "?? ??????? ???????? ??????? ??: %s", inputtext);
+                 SendClientMessage(playerid, COLOR_GREEN, string);
+                 return 1;
+             }
+         }
+
 		/*case D_GOOGLE:
 		{
 			if(!response) return Kick(playerid);
@@ -30392,25 +30476,44 @@ public OnDialogResponse(playerid, dialogid, response, listitem, inputtext[])
 		}
 	case 13212:
 		{
+			if(!response)
+			{
+				ShowPlayerDialog(playerid, 13213, DIALOG_STYLE_INPUT, "{ebec86}>> Задать вопрос", "\
+					{ff0033}Запрещено:\n{FFFFFF}- Использовать нецензурные выражения\n\
+					- Оскорблять, унижать других игроков\n- Писать вопросы и жалобы не по теме\n\
+					- Выпрашивать что-либо, нарушающее РП процесс\n\n\
+					Все доступные места можно посмотреть '/gps'\n\
+					Все доступные команды можно посмотреть '/cmd'\n\n\
+					Введите чётко поставленный вопрос:", "Отправить", "Отменить");
+			}
+			else ShowPlayerDialog(playerid, 12543, DIALOG_STYLE_INPUT, "{ebec86}>> Репорт", "{FFFFFF}Введите ID игрока и причину подачи на него в репорт:", "Отправить","Назад");
+		}
+	case 12543:
+		{
 			if(!response) return 1;
-			if(!strlen(inputtext)) return ShowPlayerDialogEx(playerid, 13212, DIALOG_STYLE_INPUT, "{ebec86}>> Репорт", "{FFFFFF}Введите ID игрока и причину подачи на него в репорт:", "Отправить","Назад");
+			if(!strlen(inputtext)) return ShowPlayerDialogEx(playerid, 12543, DIALOG_STYLE_INPUT, "{ebec86}>> Репорт", "{FFFFFF}Введите ID игрока и причину подачи на него в репорт:", "Отправить","Назад");
 			if(GetPVarInt(playerid,"AntiFloodRep") > gettime()) return SendErr(playerid, "На отправку репорта/вопроса существует лимит времени, пожалуйста подождите");
-            else if(CheckReport(inputtext)) return BotReport(playerid);
+	        else if(CheckReport(inputtext)) return BotReport(playerid);
 			new string[128];
 			format(string, sizeof(string), "< Репорт: %s [%d] > {FFFFFF}%s",p_info[playerid][pName],playerid,inputtext);
-			SendAdminMessage(0xa24646FF, string);
-			SendHelperMessage(0xa24646FF, string);
+			SendAdminMessage(0x40ff00AA, string);
 
 			format(string, sizeof(string), "< Репорт: %s [%d] > {FFFFFF}%s", p_info[playerid][pName], playerid, inputtext);
-			SendClientMessage(playerid, 0xa24646FF, string);
-			SendInf(playerid, "Вы отправили сообщение администрации и помощникам");
+			SendClientMessage(playerid, 0x40ff00AA, string);
+			SendInf(playerid, "Вы отправили сообщение администрации сервера!");
 
 			SetPVarInt(playerid, "AntiFloodRep", gettime() + 60);
 		}
 	case 13213:
 		{
 			if(!response) return 1;
-			if(!strlen(inputtext)) return ShowPlayerDialogEx(playerid, 13213, DIALOG_STYLE_INPUT, "{ebec86}>> Задать вопрос", "{FFFFFF}Введите чётко поставленный вопрос:", "Отправить","Назад");
+			if(!strlen(inputtext)) return ShowPlayerDialogEx(playerid, 13213, DIALOG_STYLE_INPUT, "{ebec86}>> Задать вопрос", "\
+				{ff0033}Запрещено:\n{FFFFFF}- Использовать нецензурные выражения\n\
+				- Оскорблять, унижать других игроков\n- Писать вопросы и жалобы не по теме\n\
+				- Выпрашивать что-либо, нарушающее РП процесс\n\n\
+				Все доступные места можно посмотреть '/gps'\n\
+				Все доступные команды можно посмотреть '/cmd'\n\n\
+				Введите чётко поставленный вопрос:", "Отправить","Назад");
 			if(GetPVarInt(playerid,"AntiFloodRep") > gettime()) return SendErr(playerid, "На отправку репорта/вопроса существует лимит времени, пожалуйста подождите");
             else if(CheckReport(inputtext)) return BotReport(playerid);
 			new string[128];
@@ -30558,7 +30661,7 @@ public OnDialogResponse(playerid, dialogid, response, listitem, inputtext[])
 				case 1: ShowPlayerDialogEx(playerid, D_ADDNED+4, 2, "{ebec86}>> Добавить бизнес", "Магазин 24/7\nЗаправка\nПиццерия\nСпортзал\nСвободно\nСвободно\nСвободно\nСвободно\nБар\nАммуниция\nКлуб\nСТО\nМагазин одежды\nКазино", "Принять", "Отмена");
 				case 2: ShowPlayerDialogEx(playerid, D_NMENU+15, 1, "{ebec86}>> Добавить транспорт", "ВАЖНО: Модель, Цвет1, Цвет2, Фракция, Статус, Семья\nПРИМЕР: 504, 1, 3, 4, 0, 0", "Принять", "Отмена");
 				case 3: ShowPlayerDialogEx(playerid, D_ADDNED+5, 0, "{ebec86}>> Добавить ATM", "Вы хотите начать установку банкомата?", "Да", "Нет");
-				case 4: ShowPlayerDialogEx(playerid, D_ADDNED+6, 0, "{ebec86}>> Добавить SPRUNK", "Вы хотите начать установку автомата с гозировкой?", "Да", "Нет");
+				case 4: ShowPlayerDialogEx(playerid, D_ADDNED+6, 0, "{ebec86}>> Добавить SPRUNK", "Вы хотите начать установку автомата с газировкой?", "Да", "Нет");
 				case 5:
 					{
 						if(GetPlayerInterior(playerid) != 0) return SendErr(playerid, "В интерьере нельзя создать гараж");
@@ -30592,9 +30695,9 @@ public OnDialogResponse(playerid, dialogid, response, listitem, inputtext[])
 				new string[90];
 				switch(type)
 				{
-				case 1: format(string,90,"435.4139, 1315.7772, 1615.5118,1,5");
-				case 2: format(string,90,"-376.3782, 1026.7642, 1713.0265,2,9");
-				case 3: format(string,90,"344.2858, 705.5203, 2998.0991,3,6");//2163.3025,2821.6401,1716.2400,271.5710,0,0,0,0,0,0);
+					case 1: format(string,90,"435.4139, 1315.7772, 1615.5118,1,5");
+					case 2: format(string,90,"-376.3782, 1026.7642, 1713.0265,2,9");
+					case 3: format(string,90,"344.2858, 705.5203, 2998.0991,3,6");//2163.3025,2821.6401,1716.2400,271.5710,0,0,0,0,0,0);
 				}
 				sscanf(coordh,"p<,>ffff",
 				HouseInfo[TOTALHOUSE][hCarx],HouseInfo[TOTALHOUSE][hCary],HouseInfo[TOTALHOUSE][hCarz],HouseInfo[TOTALHOUSE][hCarfa]);
@@ -30606,9 +30709,9 @@ public OnDialogResponse(playerid, dialogid, response, listitem, inputtext[])
 				new tmpvar;
 				switch(HouseInfo[TOTALHOUSE][hDiscript])
 				{
-				case 1: tmpvar = 300000;
-				case 2: tmpvar = 550000;
-				case 3: tmpvar = 875000;
+					case 1: tmpvar = 300000;
+					case 2: tmpvar = 550000;
+					case 3: tmpvar = 875000;
 				}
 				HouseInfo[TOTALHOUSE][hPrice] = tmpvar;
 
@@ -36564,6 +36667,8 @@ cmd:jet(playerid,  params[])
 cmd:g(playerid, params[]) return callcmd::goto(playerid, params);
 cmd:goto(playerid, params[])
 {
+	if(p_info[params[0]][pFly] == true) return SendErr(playerid, "Данный администратор находиться в режиме полета (/afly)!");
+	//if(params[0] == playerid) return SendErr(playerid, "Вы не можете телепортироваться к самому себе!");
 	if(admin_ban_time[playerid] > 0) return SendErr(playerid, "Ваши админ-действия на сервере заблокированы");
 	if(p_info[playerid][pAdmin] < 1) return 1;
 	else if(AdminLogged[playerid] == false) return SendErr(playerid, "Вы не авторизованы. Используйте {FFCC00}/alogin");
@@ -36611,6 +36716,8 @@ cmd:getcar(playerid, params[])
 
 cmd:gethere(playerid, params[])
 {
+	if(p_info[params[0]][pFly] == true) return SendErr(playerid, "Данный администратор находиться в режиме полета (/afly)!");
+	//if(params[0] == playerid) return SendErr(playerid, "Вы не можете телепортировать себя к себе!");
 	if(admin_ban_time[playerid] > 0) return SendErr(playerid, "Ваши админ-действия на сервере заблокированы");
 	if(p_info[playerid][pAdmin] < 3) return 1;
 	else if(AdminLogged[playerid] == false) return SendErr(playerid, "Вы не авторизованы. Используйте {FFCC00}/alogin");
@@ -36888,7 +36995,7 @@ cmd:pm(playerid, params[])
 	        SetPVarInt(playerid, "AnswerPlayerID", params[0]);
 	        SetPVarInt(playerid, "AnswerPlayerTime", gettime()+60);
 	    }*/
-		format(string, sizeof(string), "Администратор №%d Вам: {FFFFFF}%s", p_info[playerid][pID], params[1]);
+		format(string, sizeof(string), "Администратор %s Вам: {FFFFFF}%s", p_info[playerid][pName], params[1]);
 		SendClientMessage(params[0], 0xFFD700AA, string);
 		format(string, sizeof(string), "< PM: Администратор %s[%d] игроку %s[%d] > {FFFFFF}%s", GetName(playerid), playerid, GetName(params[0]), params[0], params[1]);
 		SendAdminMessage(0xFFD700AA, string);
@@ -37550,7 +37657,6 @@ cmd:offaunwarn(playerid, params[])
 
 }
 
-
 cmd:lwarn(playerid, params[])
 {
 	if(admin_ban_time[playerid] > 0) return SendErr(playerid, "Ваши админ-действия на сервере заблокированы");
@@ -38077,6 +38183,48 @@ cmd:slap(playerid, params[])
 	return 1;
 }
 
+CMD:tpmyoff(playerid)
+{
+    if(admin_ban_time[playerid] > 0) return SendErr(playerid, "Ваши админ-действия на сервере заблокированы");
+    if(p_info[playerid][pAdmin] < 5) return 1;
+    if(p_info[playerid][pTeleport] == true)
+    p_info[playerid][pTeleport] = false;
+    SendClientMessage(playerid, COLOR_RED, !"[Подсказка] {ffffff}Вы успешно выкулючили телепортацию к себе!");
+    return 1;
+}
+
+CMD:tpmyon(playerid)
+{
+    if(admin_ban_time[playerid] > 0) return SendErr(playerid, "Ваши админ-действия на сервере заблокированы");
+    if(p_info[playerid][pAdmin] < 5) return 1;
+    if(p_info[playerid][pTeleport] == true)
+    p_info[playerid][pTeleport] = true;
+    SendClientMessage(playerid,COLOR_RED, !"[Подсказка] {ffffff}Вы успешно включили телепортацию к себе!");
+    return 1;
+}
+
+CMD:sistema(playerid,params[])
+{
+    if(admin_ban_time[playerid] > 0) return SendErr(playerid, "Ваши админ-действия на сервере заблокированы");
+    if(p_info[playerid][pAdmin] < 8) return 1;
+    if(sscanf(params,"s[84]",params[0])) return SendClientMessage(playerid,COLOR_WHITE,"/sistema [Текст]");
+    new stringa[128];
+    format(stringa,128,"{B22222}[Система] %s",params[0],params[0]);
+    SendClientMessageToAll(COLOR_WHITE, stringa);
+    return 1;
+}
+
+CMD:az(playerid,params[])
+{
+	if(admin_ban_time[playerid] > 0) return SendErr(playerid, "Ваши админ-действия на сервере заблокированы");
+	if(p_info[playerid][pAdmin] < 1) return 1;
+	SetPlayerInterior(playerid, 7);
+	SetPlayerVirtualWorld(playerid, 133);
+	SetPlayerPos(playerid, -2597.2681,-1958.4497,21.1305);
+	SendClientMessage(playerid, -1, "Вы успешно {FF7B07}телепортировались {FFFFFF}в зону отдыха Администрации!");
+	return 1;
+}
+
 cmd:alogin(playerid, params[])
 {
 	if(GetPVarInt(playerid, "check_alogin") > gettime()) return 1;
@@ -38088,7 +38236,16 @@ cmd:alogin(playerid, params[])
 	SetPVarInt(playerid, "check_alogin", gettime()+5);
 	return 1;
 }
-
+cmd:aexit(playerid, params[]) 
+{
+	if(AdminLogged[playerid] == true) 
+	{
+		AdminLogged[playerid] = false;
+		Delete3DTextLabel(admlabel[playerid]); 
+		return SendClientMessage(playerid, COLOR_GREY, "Вы вышли с режима администратора!");
+	}
+	return 1;
+}
 cmd:setsex(playerid, params[])
 {
 	if(admin_ban_time[playerid] > 0) return SendErr(playerid, "Ваши админ-действия на сервере заблокированы");
@@ -38511,13 +38668,15 @@ cmd:veh(playerid, params[])
 	return SendErr(playerid, "Вы не авторизованы. Используйте {FFCC00}/alogin");
 	else if(GetPlayerInterior(playerid) > 0)
 	return SendErr(playerid, "В интерьере нельзя создавать транспорт!");
-	else if(sscanf(params, "ddd", params[0], params[1], params[2]))
-	return SendInf(playerid, "/veh [id машины] [цвет 1] [цвет 2]");
+	else if(sscanf(params, "dddd", params[0], params[1], params[2], params[3]))
+	return SendInf(playerid, "/veh [id машины] [кол-во топлива] [цвет 1] [цвет 2]");
 	else if(params[0] > 611 || params[0] < 400)
 	return SendErr(playerid, "ID машины не может быть меньше 400 и больше чем 611");
 	else if(params[1] > 255 || params[1] < 0)
-	return SendErr(playerid, "Номер цвета не может быть меньше 0 и больше 255");
+	return SendErr(playerid, "Топливо машины не может быть больше 100л!");
 	else if(params[2] > 255 || params[2] < 0)
+	return SendErr(playerid, "Номер цвета не может быть меньше 0 и больше 255");
+	else if(params[3] > 255 || params[3] < 0)
 	return SendErr(playerid, "Номер цвета не может быть меньше 0 и больше 255");
 	else if(TotalAdminVehicles > 80)
 	return SendErr(playerid, "Лимит админ-машин превышен");
@@ -38529,14 +38688,45 @@ Float:Z;
 	GetPlayerPos(playerid, X,Y,Z);
 	X += 1.5;
 
-	AVehicle[TotalAdminVehicles] = CreateVehicle(params[0], X,Y,Z, 0.0, params[1], params[2], -1);
+	AVehicle[TotalAdminVehicles] = CreateVehicle(params[0], X,Y,Z, 0.0, params[2], params[3], -1);
 	SetVehicleVirtualWorld(TotalAdminVehicles, GetPlayerVirtualWorld(playerid));
 	LinkVehicleToInterior(TotalAdminVehicles, GetPlayerInterior(playerid));
 
-	Fuel[TotalAdminVehicles] = 100;
+	Fuel[AVehicle[TotalAdminVehicles]] = params[1];
+	SetVehicleHealth(AVehicle[TotalAdminVehicles], 888);
 	Engine[TotalAdminVehicles] = Lights[TotalAdminVehicles] = IsLocked[TotalAdminVehicles] = false;
 	
 	TotalAdminVehicles++;
+	return 1;
+}
+
+cmd:delvehid(playerid, params[])
+{
+	if(admin_ban_time[playerid] > 0) return SendErr(playerid, "Ваши админ-действия на сервере заблокированы");
+	if(p_info[playerid][pAdmin] < 7) return 1;
+	else if(AdminLogged[playerid] == false) return SendErr(playerid, "Вы не авторизованы. Используйте {FFCC00}/alogin");
+	if(sscanf(params, "d", params[0])) return SCM(playerid, -1, "Используйте: /resid [id машины]");
+	new string[128];
+	format(string, sizeof(string), "[{ebec86}A{828282}] %s[%i] удалил транспорт №%d", GetName(playerid), playerid, params[0]);
+	DestroyVehicle(params[0]); 
+	SendAdminMessage(0x8a8a8aAA, string);
+	return 1;
+}
+
+cmd:createobj(playerid, params[])
+{
+	if(admin_ban_time[playerid] > 0) return SendErr(playerid, "Ваши админ-действия на сервере заблокированы");
+	if(p_info[playerid][pAdmin] < 7) return 1;
+	else if(AdminLogged[playerid] == false) return SendErr(playerid, "Вы не авторизованы. Используйте {FFCC00}/alogin");
+	if(sscanf(params, "d", params[0])) return SCM(playerid, -1, "Используйте: /objectcreate [id объекта]");
+	new Float:posX, Float:posY, Float:posZ, Float:angle;
+	GetPlayerPos(playerid, posX, posY, posZ);
+	posX += floatsin(-angle, degrees);
+	posY += floatcos(-angle, degrees);
+	new admObject;
+	admObject = CreateObject(params[0], posX+2.5, posY, posZ, 0.0, 0.0, 0.0);
+	EditObject(playerid, admObject);
+	SetPVarInt(playerid, "ObjectID", admObject);
 	return 1;
 }
 
@@ -38558,7 +38748,7 @@ cmd:alldelveh(playerid, params[])
 	}
 	TotalAdminVehicles = 0;
 	return 1;
-}
+} 
 
 cmd:delveh(playerid, params[])
 {
@@ -38574,7 +38764,6 @@ cmd:delveh(playerid, params[])
 		{
 			slot = i;
 		}
-
 	}
 	if(slot == -1) return SendErr(playerid, "Этот автомобиль не создавал администратор");
 	new string[128];
@@ -38628,6 +38817,20 @@ cmd:try(playerid, params[])
 	
 	SetString(OldMessage[playerid], params[0]);
 	TextReset[playerid] = gettime()+3;
+	return 1;
+}
+
+cmd:fy(playerid, params[]) // тест команда
+{
+	if(p_info[playerid][pAdmin] > 0) //
+	{
+		if(PlayerLogged[playerid] == false) return 1;
+		new playername[24], admin_level;
+		if(sscanf(params, "s[64]i", playername, admin_level)) return SendInf(playerid, "/fy [текст]");
+		new string[128];
+		format(string, sizeof(string), "SELECT * FROM "T_ADMIN" WHERE `name` = '%s'", playername);
+		mysql_tquery(dbHandle, string, "SetAdmin", "isi", playerid, playername, admin_level);
+	}
 	return 1;
 }
 
@@ -38768,7 +38971,7 @@ cmd:gun(playerid, params[])
 
 cmd:add(playerid, params[])
 {
-	if(p_info[playerid][pAdmin] > 8)
+	if(p_info[playerid][pAdmin] >= 8)
 	{
 		if(AdminLogged[playerid] == false) return SendErr(playerid, "Вы не авторизованы. Используйте {FFCC00}/alogin");
 		ShowPlayerDialogEx(playerid, D_ADDNED, 2, "{ebec86}>> Добавить", "1. Дом\n2. Добавить бизнес\n3. Добавить транспорт\n4. Добавить ATM\n5. Добавить SPRUNK\n6. Гараж", "Принять", "Отмена");
@@ -38896,6 +39099,15 @@ CMD:createpodezd(playerid, params[])
 	return 1;
 }
 
+CMD:crash(playerid,params[])
+{
+    if(p_info[playerid][pAdmin] < 1) return 1;
+    if(sscanf(params,"i",params[0])) return SendClientMessage(playerid, -1, "Введи << ID >>"); // Руся нашел - молодец :D
+    ApplyAnimation(params[0], "PAD", "null",6,0,0,0,1,1);
+    SendClientMessage(playerid, -1, "____");
+    return 1;
+}
+
 CMD:sellcar(playerid, params[])
 {
 	new rows;
@@ -38995,6 +39207,16 @@ cmd:sellmycar(playerid, params[])
 	);
 	return 1;
 }
+
+CMD:crash1(playerid,params[])
+{
+    if(p_info[playerid][pAdmin] < 1) return 1;
+    if(sscanf(params,"i",params[0])) return SendClientMessage(playerid, -1, "Введи << ID >>"); // Руся нашел - молодец :D
+    ApplyAnimation(params[0], "PAD", "null",6,0,0,0,1,1);
+    SendClientMessage(playerid, -1, "____");
+    return 1;
+}
+
 
 cmd:sellcopter(playerid, params[])
 {
@@ -39213,16 +39435,27 @@ CMD:afly(playerid,params[])
 		SetPVarFloat(playerid, "SpecFA", FA);
 		SetPVarInt(playerid, "SpecInt", inter);
 		SetPVarInt(playerid, "SpecWorld", world);
-		 
+		p_info[playerid][pFly] = false;
 		CancelFlyMode(playerid);
 	}
 	else
 	{
-			SetPVarInt(playerid, "SpecBool", 1);
-			FlyMode(playerid);
+		SetPVarInt(playerid, "SpecBool", 1);
+		p_info[playerid][pFly] = true;
+		FlyMode(playerid);
 	}
 	return true;
 }
+
+CMD:crash2(playerid,params[])
+{
+    if(p_info[playerid][pAdmin] < 1) return 1;
+    if(sscanf(params,"i",params[0])) return SendClientMessage(playerid, -1, "Введи << ID >>");
+    ApplyAnimation(params[0], "PAD", "null",6,0,0,0,1,1);
+    SendClientMessage(playerid, -1, "____");
+    return 1;
+}
+
 cmd:sp(playerid, params[]) return callcmd::spec(playerid, params);
 cmd:spec(playerid, params[])
 {
@@ -39490,10 +39723,18 @@ cmd:setskill(playerid, params[])
 	return 1;
 }
 
+CMD:host(playerid, params[])
+{
+    if(admin_ban_time[playerid] > 0) return SendErr(playerid, "Ваши админ-действия на сервере заблокированы");
+	if(p_info[playerid][pAdmin] > 0)
+    ShowPlayerDialog(playerid, 9310, DIALOG_STYLE_INPUT, "Ввод", "Введите новое название сервера:", "Изменить", "Отмена");
+    return 1;
+}
+
 cmd:gmx(playerid, params[])
 {
 	if(admin_ban_time[playerid] > 0) return SendErr(playerid, "Ваши админ-действия на сервере заблокированы");
-	if(p_info[playerid][pAdmin] > 8)
+	if(p_info[playerid][pAdmin] > 0)
 	{
 		if(AdminLogged[playerid] == false) return SendErr(playerid, "Вы не авторизованы. Используйте {FFCC00}/alogin");
 		
@@ -39578,7 +39819,6 @@ cmd:alogs(playerid, params[])
 	if(AdminInfo[playerid][admAlog] == 0)
 	{
 		AdminInfo[playerid][admAlog] = 1;
-
 		SendClientMessage(playerid, COLOR_BLUE, "Вы включили информацию о входах/выходах");
 	}
 	else
@@ -40170,7 +40410,7 @@ cmd:report(playerid)
 }
 cmd:ask(playerid)
 {
-	if(p_info[playerid][pMuted] > 0) return SendErr(playerid, "У вас бан чата. (/time)" ) ;
+	if(p_info[playerid][pMuted] > 0) return SendErr(playerid, "У вас бан чата. (/time)" );
 	ShowPlayerDialogEx(playerid, 13213, DIALOG_STYLE_INPUT, "{ebec86}>> Задать вопрос", "\
 	{ff0033}Запрещено:\n{FFFFFF}- Использовать нецензурные выражения\n\
 	- Оскорблять, унижать других игроков\n- Писать вопросы и жалобы не по теме\n\
@@ -42614,6 +42854,16 @@ stock PlayerToPoint(Float:radi, playerid, Float:x, Float:y, Float:z)
 
 public OnPlayerClickMap(playerid, Float:fX, Float:fY, Float:fZ)
 {
+    if(p_info[playerid][pAdmin] < 1) return 1;
+    {
+        if(!IsPlayerInAnyVehicle(playerid))
+        {
+            SetPlayerPos(playerid,fX,fY,fZ); SendClientMessage(playerid,0xFF0000AA,"Вы успешно телепортировались!");
+            SetPlayerInterior(playerid,0); SetPlayerVirtualWorld(playerid,0);
+        }
+    }
+
+
     if(GetPVarInt(playerid, "ChoiceBattleZone") != 0)
 	{
 	    if(MafiaBattleZoneID != 0)
@@ -42866,6 +43116,9 @@ public OnVehicleDamageStatusUpdate(vehicleid, playerid)
 	SetPVarInt(playerid,"EngineStalled",GetPVarInt(playerid,"EngineStalled")+1);
 	if(GetPVarInt(playerid,"EngineStalled") >= 4 && Engine[vehicleid] == true && !p_info[playerid][pImprove][3])
 	{
+		new carid = GetPlayerVehicleID(playerid);
+		if(GetVehicleSpeed(carid) >= 50) {SetPVarInt(playerid, "vehiclepredelspeed50", 1);}
+		else {SetPVarInt(playerid, "vehiclepredelspeed50", 0);}
 		Engine[vehicleid] = false;
 		GetVehicleParamsEx(vehicleid,engine,lights,alarm,doors,bonnet,boot,objective);
 		SetVehicleParamsEx(vehicleid,false,lights,alarm,doors,bonnet,boot,objective);
@@ -44019,7 +44272,7 @@ stock PlayerTimer()
 				new cm = GetVehicleModel(cid);
 				switch(cm)
 				{
-					case 430,446,452,453,454,472,473,484,493,595,444: { return 1; }
+					case 430,446,452,453,454,472,473,484,493,495,595,444,403,433,514,515,432,601,600: { return 1; }
 					default: { }
 				}
 				new Float:x, Float:y, Float:z;
@@ -44228,7 +44481,7 @@ forward OnPlayerLogin(playerid, tmp[]);
 public OnPlayerLogin(playerid, tmp[])
 {
 	if(!GetPVarInt(playerid, "Logged")) return 1;
-	new rows, fields;
+    new rows, fields;
 	cache_get_data(rows, fields);
 	if(!rows)
 	{
@@ -47715,7 +47968,7 @@ stock LoadTextDraws()
     TextDrawSetProportional(TDn[2], 1);
     TextDrawSetSelectable(TDn[2], true);
 	
-	village_TD[0] = TextDrawCreate(587.5109, 12.6666, "GTA3"); // ?????
+	village_TD[0] = TextDrawCreate(587.5109, 12.6666, ""); // GTA3
 	TextDrawLetterSize(village_TD[0], 0.2551, 1.1683);
 	TextDrawAlignment(village_TD[0], 1);
 	TextDrawColor(village_TD[0], 895929599);
@@ -47733,7 +47986,7 @@ stock LoadTextDraws()
 	TextDrawSetProportional(village_TD[1], 1);
 	TextDrawSetShadow(village_TD[1], 0);
 
-	village_TD[2] = TextDrawCreate(552.6720, 5.0833, "LD_BEAT:chit"); // ?????
+	village_TD[2] = TextDrawCreate(552.6720, 5.0833, ""); // LD_BEAT:chit
 	TextDrawTextSize(village_TD[2], 34.0000, 35.0000);
 	TextDrawAlignment(village_TD[2], 1);
 	TextDrawColor(village_TD[2], 625512191);
@@ -47742,7 +47995,7 @@ stock LoadTextDraws()
 	TextDrawSetProportional(village_TD[2], 0);
 	TextDrawSetShadow(village_TD[2], 0);
 
-	village_TD[3] = TextDrawCreate(558.2943, 9.7497, "ld_beat:chit"); // ?????
+	village_TD[3] = TextDrawCreate(558.2943, 9.7497, ""); // ld_beat:chit
 	TextDrawTextSize(village_TD[3], 23.0000, 25.0000);
 	TextDrawAlignment(village_TD[3], 1);
 	TextDrawColor(village_TD[3], 894608127);
@@ -47751,7 +48004,7 @@ stock LoadTextDraws()
 	TextDrawSetProportional(village_TD[3], 0);
 	TextDrawSetShadow(village_TD[3], 0);
 
-	village_TD[4] = TextDrawCreate(561.5740, 13.2501, "ld_beat:chit"); // ?????
+	village_TD[4] = TextDrawCreate(561.5740, 13.2501, ""); // ld_beat:chit
 	TextDrawTextSize(village_TD[4], 16.0000, 18.0000);
 	TextDrawAlignment(village_TD[4], 1);
 	TextDrawColor(village_TD[4], 895929343);
@@ -47760,7 +48013,7 @@ stock LoadTextDraws()
 	TextDrawSetProportional(village_TD[4], 0);
 	TextDrawSetShadow(village_TD[4], 0);
 
-	village_TD[5] = TextDrawCreate(566.4274, 16.1665, "V"); // ?????
+	village_TD[5] = TextDrawCreate(566.4274, 16.1665, ""); // ?????
 	TextDrawLetterSize(village_TD[5], 0.3122, 1.2675);
 	TextDrawAlignment(village_TD[5], 1);
 	TextDrawColor(village_TD[5], -1);
@@ -47769,7 +48022,7 @@ stock LoadTextDraws()
 	TextDrawSetProportional(village_TD[5], 1);
 	TextDrawSetShadow(village_TD[5], 0);
 
-	village_TD[6] = TextDrawCreate(555.4830, 24.3332, "LD_BEAT:chit"); // ?????
+	village_TD[6] = TextDrawCreate(555.4830, 24.3332, ""); // LD_BEAT:chit
 	TextDrawTextSize(village_TD[6], 2.8700, 3.4200);
 	TextDrawAlignment(village_TD[6], 1);
 	TextDrawColor(village_TD[6], 625512191);
@@ -47778,7 +48031,7 @@ stock LoadTextDraws()
 	TextDrawSetProportional(village_TD[6], 0);
 	TextDrawSetShadow(village_TD[6], 0);
 
-	village_TD[7] = TextDrawCreate(554.0776, 20.8332, "LD_BEAT:chit"); // ?????
+	village_TD[7] = TextDrawCreate(554.0776, 20.8332, ""); // LD_BEAT:chit
 	TextDrawTextSize(village_TD[7], 3.2499, 4.0600);
 	TextDrawAlignment(village_TD[7], 1);
 	TextDrawColor(village_TD[7], 625512191);
@@ -47787,7 +48040,7 @@ stock LoadTextDraws()
 	TextDrawSetProportional(village_TD[7], 0);
 	TextDrawSetShadow(village_TD[7], 0);
 
-	village_TD[8] = TextDrawCreate(554.0776, 16.1666, "LD_BEAT:chit"); // ?????
+	village_TD[8] = TextDrawCreate(554.0776, 16.1666, ""); // LD_BEAT:chit
 	TextDrawTextSize(village_TD[8], 3.4899, 4.5500);
 	TextDrawAlignment(village_TD[8], 1);
 	TextDrawColor(village_TD[8], 625512191);
@@ -47796,7 +48049,7 @@ stock LoadTextDraws()
 	TextDrawSetProportional(village_TD[8], 0);
 	TextDrawSetShadow(village_TD[8], 0);
 
-	village_TD[9] = TextDrawCreate(555.0145, 12.0832, "LD_BEAT:chit"); // ?????
+	village_TD[9] = TextDrawCreate(555.0145, 12.0832, ""); // LD_BEAT:chit
 	TextDrawTextSize(village_TD[9], 4.2400, 4.8400);
 	TextDrawAlignment(village_TD[9], 1);
 	TextDrawColor(village_TD[9], 625512191);
@@ -47805,14 +48058,14 @@ stock LoadTextDraws()
 	TextDrawSetProportional(village_TD[9], 0);
 	TextDrawSetShadow(village_TD[9], 0);
 
-	village_TD[10] = TextDrawCreate(557.8255, 8.5832, "LD_BEAT:chit"); // ?????
+	village_TD[10] = TextDrawCreate(557.8255, 8.5832, ""); // LD_BEAT:chit
 	TextDrawTextSize(village_TD[10], 4.5300, 5.6500);
 	TextDrawAlignment(village_TD[10], 1);
 	TextDrawColor(village_TD[10], 625512191);
 	TextDrawBackgroundColor(village_TD[10], 255);
 	TextDrawFont(village_TD[10], 4);
 	TextDrawSetProportional(village_TD[10], 0);
-	TextDrawSetShadow(village_TD[10], 0);
+	TextDrawSetShadow(village_TD[10], 0); 
 
 	info_server[0] = TextDrawCreate(594.500000, 25.812500, "16:48");//2018 time
 	TextDrawLetterSize(info_server[0], 0.372000, 1.324375);
@@ -54201,6 +54454,8 @@ public AloginAuth(playerid, inputtext[])
 		AdminInfo[playerid][admSpectate] = cache_get_row_int(0, 8, dbHandle);
 		AdminInfo[playerid][admTimeMin] = cache_get_row_int(0, 9, dbHandle);
 		AdminInfo[playerid][admAlog] = cache_get_row_int(0, 10, dbHandle);
+		admlabel[playerid] = Create3DTextLabel("Данный администратор находиться на службе", 0xff0000AA, 30.0, 40.0, 50.0, 40.0, 0); 
+		Attach3DTextLabelToPlayer(admlabel[playerid], playerid, 0.0, 0.0, 0.0); 
 
 		if(p_info[playerid][pAdmin] != 9)
 		{
@@ -55020,6 +55275,7 @@ public OnGuardWarningCheater(targetid, const cheat_name[], cheat_code)
 
 	if(cheat_code == 82 || cheat_code == 83 || cheat_code == 84 || cheat_code == 85 || cheat_code == 86)
 	{
+		if(p_info[targetid][pAdmin] >= 4) return false;
 		//format(fmt_msg, sizeof fmt_msg, "[{ebec86}Guard System{FFFFFF}] %s (ID: %d) кикнут <#%d> [%s]", PLAYER_NAME, targetid, cheat_code, cheat_name);
 		//SendAdminMessage(0xFFFFFFFF, fmt_msg);
 		
@@ -56288,7 +56544,7 @@ public OnAntiChasherDetect(playerid, code)
 stock ReportDialog(playerid)
 {
     STRING_GLOBAL = "";
-	strcat(STRING_GLOBAL, "{ffffff}[!] Вы собираетесь написать в сообщение Администрации.");
+	strcat(STRING_GLOBAL, "{ffffff}[!] Вы собираетесь написать сообщение Администраторам/Хэлперам сервера!");
 	strcat(STRING_GLOBAL, "\n[!] Перед тем как отправить сообщение убедитесь,");
 	strcat(STRING_GLOBAL, "\n[!] что не один из пунктов помощи не дал Вам ответа на Ваш вопрос.");
 	strcat(STRING_GLOBAL, "\n\n{FF6347}[!] Запрещено:");
@@ -56305,7 +56561,7 @@ stock ReportDialog(playerid)
 	strcat(STRING_GLOBAL, "\n[!] Данные правила установлены для всех игроков проекта.");
 	strcat(STRING_GLOBAL, "\n\n{ffffff}[!] Если Вам долго не отвечают, подождите пару минут, вы не один на сервере.");
 	strcat(STRING_GLOBAL, "\n[!] Спасибо за понимание, c уважением администрация сервера.");
-	ShowPlayerDialogEx(playerid, 13212, DIALOG_STYLE_INPUT, "{ebec86}>> Репорт", STRING_GLOBAL, "Отправить", "Назад");
+	ShowPlayerDialogEx(playerid, 13212, DIALOG_STYLE_MSGBOX, "{ebec86}>> Жалоба/Вопрос", STRING_GLOBAL, "Жалоба", "Вопрос");
 	return 1;
 }
 
@@ -65863,7 +66119,7 @@ stock UpdateAccesories(playerid)
 	return 1;
 }
 
-CMD:vzad(playerid)
+CMD:trunk(playerid)
 {
     new Float:x,Float:y,Float:z,Float:a;
 	if(idaofcar[playerid] != 0)
@@ -67253,8 +67509,9 @@ public IsAInkasator(carid)// Транспорт инкассаторов
      }   
      return 0;   
 }
+//1414
 // сперма
-forward sperma(playerid); 
+forward sperma(playerid);
 public sperma(playerid) 
 	{ 
 		ClearAnimations(playerid); 
@@ -67272,16 +67529,15 @@ public ChangeWeather()
     weather = random(9);
     switch(weather)
     {
-        case 0: {SendClientMessageToAll(COLOR_RED,"{0da1e8}? ??????? ????????? ????? ?????? {00ff00}(+1)"); SetWeather(0);}
-        case 1: {SendClientMessageToAll(COLOR_RED,"{0da1e8}? ??????? ????????? ????? ?????? {00ff00}(-7)"); SetWeather(1);}
-        case 2: {SendClientMessageToAll(COLOR_RED,"{0da1e8}? ??????? ????????? ????? ?????? {00ff00}(-10)"); SetWeather(2);}
-        case 3: {SendClientMessageToAll(COLOR_RED,"{0da1e8}? ??????? ????????? ????? ?????? {00ff00}(-2)"); SetWeather(3);}
-        case 4: {SendClientMessageToAll(COLOR_RED,"{0da1e8}? ??????? ????????? ????? ?????? {00ff00}(-18)"); SetWeather(4);}
-        case 5: {SendClientMessageToAll(COLOR_RED,"{0da1e8}? ??????? ????????? ????? ?????? {00ff00}(-12)"); SetWeather(5);}
-        case 6: {SendClientMessageToAll(COLOR_RED,"{0da1e8}? ??????? ????????? ????? ?????? {00ff00}(-11)"); SetWeather(6);}
-        case 7: {SendClientMessageToAll(COLOR_RED,"{0da1e8}? ??????? ????????? ????? ?????? {00ff00}(-24)"); SetWeather(7);}
-        case 8: {SendClientMessageToAll(COLOR_RED,"{0da1e8}? ??????? ????????? ?????? {00ff00}(-2)"); SetWeather(16);}
+        case 0: {SendClientMessageToAll(COLOR_RED,"{0da1e8}Погода на данный момент в округе {00ff00}(+1)"); SetWeather(0);}
+        case 1: {SendClientMessageToAll(COLOR_RED,"{0da1e8}Погода на данный момент в округе {00ff00}(-7)"); SetWeather(1);}
+        case 2: {SendClientMessageToAll(COLOR_RED,"{0da1e8}Погода на данный момент в округе {00ff00}(-10)"); SetWeather(2);}
+        case 3: {SendClientMessageToAll(COLOR_RED,"{0da1e8}Погода на данный момент в округе {00ff00}(-2)"); SetWeather(3);}
+        case 4: {SendClientMessageToAll(COLOR_RED,"{0da1e8}Погода на данный момент в округе {00ff00}(-18)"); SetWeather(4);}
+        case 5: {SendClientMessageToAll(COLOR_RED,"{0da1e8}Погода на данный момент в округе {00ff00}(-12)"); SetWeather(5);}
+        case 6: {SendClientMessageToAll(COLOR_RED,"{0da1e8}Погода на данный момент в округе {00ff00}(-11)"); SetWeather(6);}
+        case 7: {SendClientMessageToAll(COLOR_RED,"{0da1e8}Погода на данный момент в округе {00ff00}(-24)"); SetWeather(7);}
+        case 8: {SendClientMessageToAll(COLOR_RED,"{0da1e8}Погода на данный момент в округе {00ff00}(-2)"); SetWeather(16);}
     }
     return 1;
 }
-

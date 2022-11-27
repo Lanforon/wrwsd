@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="ISO-8859-1"?>
-<?xml-stylesheet href="file:///D|/GTA 3-2/pawno/xml/pawndoc.xsl" type="text/xsl"?>
-<doc source="D:\GTA 3-2\gamemodes\new.pwn">
+<?xml-stylesheet href="file:///C|/Users/haliaf/Desktop/GTA 3-2/pawno/xml/pawndoc.xsl" type="text/xsl"?>
+<doc source="C:\Users\haliaf\Desktop\GTA 3-2\gamemodes\new.pwn">
 	<assembly>
 		<name>new.pwn</name>
 	</assembly>
@@ -1137,7 +1137,7 @@
 				<tagname value="Float"/>
 			</member>
 		</member>
-		<member name="T:pInfo" value="860">
+		<member name="T:pInfo" value="861">
 			<tagname value="pInfo"/>
 			<member name="C:pID" value="0">
 			</member>
@@ -1409,56 +1409,59 @@
 			<member name="C:P_WEAPON_RELOADING" value="817">
 				<tagname value="bool"/>
 			</member>
-			<member name="C:pSetWalk" value="818">
-			</member>
-			<member name="C:pSetAnim" value="819">
-			</member>
-			<member name="C:pJackCar" value="820">
-			</member>
-			<member name="C:pRAZ" value="821">
-			</member>
-			<member name="C:pRobbery" value="822">
-			</member>
-			<member name="C:Disease" value="823">
-				<size value="3"/>
-			</member>
-			<member name="C:pRentHouse" value="826">
-			</member>
-			<member name="C:P_TEMP_JOB" value="827">
-			</member>
-			<member name="C:P_TEMP_JOB_STATE" value="828">
-			</member>
-			<member name="C:P_TEMP_JOB_CHECK" value="829">
-			</member>
-			<member name="C:P_JOB_SERVICE_NAME" value="830">
-				<size value="17"/>
-			</member>
-			<member name="C:P_JOB_TARIFF" value="847">
-			</member>
-			<member name="C:P_JOB_WAGE" value="848">
-			</member>
-			<member name="C:P_JOB_LOAD_ITEMS" value="849">
-			</member>
-			<member name="C:P_JOB_CAR" value="850">
-			</member>
-			<member name="C:P_END_JOB_TIMER" value="851">
-			</member>
-			<member name="C:P_FACTORY_USE_DESK" value="852">
-			</member>
-			<member name="C:P_BUS_ROUTE" value="853">
-			</member>
-			<member name="C:P_BUS_ROUTE_STEP" value="854">
-			</member>
-			<member name="C:P_MECHANIC_FILL_PAY" value="855">
-			</member>
-			<member name="C:P_MECHANIC_REPAIR_PAY" value="856">
-			</member>
-			<member name="C:P_IN_JOB" value="857">
+			<member name="C:pFly" value="818">
 				<tagname value="bool"/>
 			</member>
-			<member name="C:P_LAST_PICKUP" value="858">
+			<member name="C:pSetWalk" value="819">
 			</member>
-			<member name="C:P_JOB" value="859">
+			<member name="C:pSetAnim" value="820">
+			</member>
+			<member name="C:pJackCar" value="821">
+			</member>
+			<member name="C:pRAZ" value="822">
+			</member>
+			<member name="C:pRobbery" value="823">
+			</member>
+			<member name="C:Disease" value="824">
+				<size value="3"/>
+			</member>
+			<member name="C:pRentHouse" value="827">
+			</member>
+			<member name="C:P_TEMP_JOB" value="828">
+			</member>
+			<member name="C:P_TEMP_JOB_STATE" value="829">
+			</member>
+			<member name="C:P_TEMP_JOB_CHECK" value="830">
+			</member>
+			<member name="C:P_JOB_SERVICE_NAME" value="831">
+				<size value="17"/>
+			</member>
+			<member name="C:P_JOB_TARIFF" value="848">
+			</member>
+			<member name="C:P_JOB_WAGE" value="849">
+			</member>
+			<member name="C:P_JOB_LOAD_ITEMS" value="850">
+			</member>
+			<member name="C:P_JOB_CAR" value="851">
+			</member>
+			<member name="C:P_END_JOB_TIMER" value="852">
+			</member>
+			<member name="C:P_FACTORY_USE_DESK" value="853">
+			</member>
+			<member name="C:P_BUS_ROUTE" value="854">
+			</member>
+			<member name="C:P_BUS_ROUTE_STEP" value="855">
+			</member>
+			<member name="C:P_MECHANIC_FILL_PAY" value="856">
+			</member>
+			<member name="C:P_MECHANIC_REPAIR_PAY" value="857">
+			</member>
+			<member name="C:P_IN_JOB" value="858">
+				<tagname value="bool"/>
+			</member>
+			<member name="C:P_LAST_PICKUP" value="859">
+			</member>
+			<member name="C:P_JOB" value="860">
 			</member>
 		</member>
 		<member name="T:podezd" value="14">
@@ -3163,6 +3166,7 @@
 			<referrer name="OnPlayerRequestClass"/>
 			<referrer name="player_check"/>
 			<referrer name="Itter_OnPlayerDisconnect"/>
+			<referrer name="OnPlayerSpawn"/>
 			<referrer name="SpawnPlayerOnly"/>
 			<referrer name="OnPlayerDeath"/>
 			<referrer name="OnVehicleSpawn"/>
@@ -3248,6 +3252,7 @@
 			<referrer name="pc_cmd_givecredits"/>
 			<referrer name="pc_cmd_unavig"/>
 			<referrer name="pc_cmd_slap"/>
+			<referrer name="pc_cmd_aexit"/>
 			<referrer name="pc_cmd_setsex"/>
 			<referrer name="pc_cmd_tempskin"/>
 			<referrer name="pc_cmd_setskin"/>
@@ -3267,6 +3272,7 @@
 			<referrer name="pc_cmd_sellmyhouse"/>
 			<referrer name="pc_cmd_vpc"/>
 			<referrer name="pc_cmd_tpc"/>
+			<referrer name="pc_cmd_afly"/>
 			<referrer name="pc_cmd_spec"/>
 			<referrer name="pc_cmd_specoff"/>
 			<referrer name="pc_cmd_res"/>
@@ -3337,6 +3343,7 @@
 			<referrer name="GetString"/>
 			<referrer name="GmTest"/>
 			<referrer name="RemoveAdmin"/>
+			<referrer name="OnGuardWarningCheater"/>
 			<referrer name="OnDynamicObjectMoved"/>
 			<referrer name="pc_cmd_sms"/>
 			<referrer name="Bl_Init"/>
@@ -3415,6 +3422,7 @@
 			<referrer name="OnPlayerEnterDynamicCP"/>
 			<referrer name="CreateFactoryProd"/>
 			<referrer name="OnPlayerPickUpDynamicPickup"/>
+			<referrer name="PlayerHealInBolnicaPickups"/>
 			<referrer name="OnPlayerClickPlayerTextDraw"/>
 			<referrer name="OnPlayerClickTextDraw"/>
 			<referrer name="OnPlayerKeyStateChange"/>
@@ -3429,9 +3437,12 @@
 			<referrer name="pc_cmd_lock"/>
 			<referrer name="pc_cmd_setname"/>
 			<referrer name="pc_cmd_tie"/>
+			<referrer name="pc_cmd_goto"/>
+			<referrer name="pc_cmd_gethere"/>
 			<referrer name="pc_cmd_freeze"/>
 			<referrer name="pc_cmd_hgps"/>
 			<referrer name="pc_cmd_id"/>
+			<referrer name="pc_cmd_aexit"/>
 			<referrer name="pc_cmd_mask"/>
 			<referrer name="pc_cmd_engine"/>
 			<referrer name="pc_cmd_tpc"/>
@@ -3639,6 +3650,7 @@
 			<referrer name="pc_cmd_givemoney"/>
 			<referrer name="pc_cmd_slap"/>
 			<referrer name="pc_cmd_alogin"/>
+			<referrer name="pc_cmd_aexit"/>
 			<referrer name="pc_cmd_setsex"/>
 			<referrer name="pc_cmd_tempskin"/>
 			<referrer name="pc_cmd_setskin"/>
@@ -3681,6 +3693,12 @@
 			<referrer name="AloginReg"/>
 			<referrer name="AloginAuth"/>
 			<referrer name="HelperAuth"/>
+		</member>
+		<member name="F:AdminText3D">
+			<tagname value="Text3D"/>
+			<referrer name="Itter_OnPlayerConnect"/>
+			<referrer name="Itter_OnPlayerDisconnect"/>
+			<referrer name="OnPlayerSpawn"/>
 		</member>
 		<member name="F:Admins@YSII_Ag">
 			<referrer name="Itter_OnPlayerDisconnect"/>
@@ -3953,10 +3971,6 @@
 			<referrer name="onFind"/>
 			<referrer name="box_td_status"/>
 		</member>
-		<member name="F:BridgeTimer">
-			<referrer name="MinuteTimer"/>
-			<referrer name="SecTimer"/>
-		</member>
 		<member name="F:BusLS">
 			<tagname value="Float"/>
 		</member>
@@ -4120,11 +4134,9 @@
 			<referrer name="DrumMove"/>
 		</member>
 		<member name="F:Dvers">
-			<referrer name="MinuteTimer"/>
 			<referrer name="Itter_OnGameModeInit"/>
 			<referrer name="OnPlayerKeyStateChange"/>
 			<referrer name="pc_cmd_controlmost"/>
-			<referrer name="BridgeOff"/>
 			<referrer name="DoorsRobbery"/>
 			<referrer name="DoorsRobbery1"/>
 			<referrer name="DoorsRobbery2"/>
@@ -4877,9 +4889,11 @@
 		<member name="F:PlayerDied">
 			<tagname value="bool"/>
 			<referrer name="Itter_OnPlayerDisconnect"/>
+			<referrer name="OnPlayerSpawn"/>
 			<referrer name="SpawnPlayerOnly"/>
 			<referrer name="OnPlayerDeath"/>
 			<referrer name="OnPlayerPickUpDynamicPickup"/>
+			<referrer name="PlayerHealInBolnicaPickups"/>
 			<referrer name="pc_cmd_heal"/>
 			<referrer name="PlayerTimer"/>
 			<referrer name="SetPlayerDataToDefault"/>
@@ -4893,6 +4907,7 @@
 			<referrer name="SetHealth"/>
 			<referrer name="OnPlayerTakeDamage"/>
 			<referrer name="OnPlayerPickUpDynamicPickup"/>
+			<referrer name="PlayerHealInBolnicaPickups"/>
 			<referrer name="OnPlayerKeyStateChange"/>
 			<referrer name="OnDialogResponse"/>
 			<referrer name="pc_cmd_spec"/>
@@ -5105,7 +5120,6 @@
 			<referrer name="AntiCheat"/>
 			<referrer name="OnPlayerRequestClass"/>
 			<referrer name="SpawnPlayerOnly"/>
-			<referrer name="OnPlayerDeath"/>
 			<referrer name="CheatersUpdate"/>
 		</member>
 		<member name="F:PlayerStats">
@@ -5204,10 +5218,8 @@
 			<referrer name="PayDay"/>
 		</member>
 		<member name="F:SDvers">
-			<referrer name="MinuteTimer"/>
 			<referrer name="OnPlayerKeyStateChange"/>
 			<referrer name="pc_cmd_controlmost"/>
-			<referrer name="BridgeOff"/>
 			<referrer name="most1Close"/>
 			<referrer name="most2Close"/>
 			<referrer name="pps2Close"/>
@@ -5408,7 +5420,6 @@
 			<referrer name="pc_cmd_action"/>
 			<referrer name="pc_cmd_adellaction"/>
 			<referrer name="pc_cmd_setbizname"/>
-			<referrer name="ChangeWeather"/>
 			<referrer name="LoadAllMembers"/>
 			<referrer name="pc_cmd_bl"/>
 			<referrer name="pc_cmd_spikes"/>
@@ -5944,10 +5955,6 @@
 		</member>
 		<member name="F:WeaponNames">
 		</member>
-		<member name="F:WeatherTimer">
-			<referrer name="SecTimer"/>
-			<referrer name="ChangeWeather"/>
-		</member>
 		<member name="F:WorkSalary">
 			<referrer name="OnPlayerDeath"/>
 			<referrer name="OnPlayerEnterDynamicArea"/>
@@ -6004,6 +6011,8 @@
 			<referrer name="SetPlayerDataToDefault"/>
 		</member>
 		<member name="F:__date">
+		</member>
+		<member name="F:__file">
 		</member>
 		<member name="F:__file">
 		</member>
@@ -6327,6 +6336,8 @@
 			<referrer name="pc_cmd_spec"/>
 			<referrer name="pc_cmd_specoff"/>
 			<referrer name="pc_cmd_res"/>
+			<referrer name="pc_cmd_agm"/>
+			<referrer name="pc_cmd_agmoff"/>
 			<referrer name="pc_cmd_gm"/>
 			<referrer name="pc_cmd_setskill"/>
 			<referrer name="pc_cmd_gmx"/>
@@ -8012,6 +8023,8 @@
 			<referrer name="pc_cmd_spec"/>
 			<referrer name="pc_cmd_specoff"/>
 			<referrer name="pc_cmd_res"/>
+			<referrer name="pc_cmd_agm"/>
+			<referrer name="pc_cmd_agmoff"/>
 			<referrer name="pc_cmd_gm"/>
 			<referrer name="pc_cmd_setskill"/>
 			<referrer name="pc_cmd_gmx"/>
@@ -8188,6 +8201,7 @@
 			<referrer name="OffWarnAdmin"/>
 			<referrer name="OffUNWarnLeader"/>
 			<referrer name="OffUNWarnAdmin"/>
+			<referrer name="OnGuardWarningCheater"/>
 			<referrer name="SaveVehicleTuning"/>
 			<referrer name="SendPlayerProposition"/>
 			<referrer name="pc_cmd_yes"/>
@@ -8441,9 +8455,7 @@
 			<referrer name="AC_SpawnPlayer"/>
 		</member>
 		<member name="F:playerSpawnTimer">
-			<referrer name="Itter_OnPlayerDisconnect"/>
 			<referrer name="OnPlayerSpawn"/>
-			<referrer name="OnPlayerDeath"/>
 			<referrer name="OnPlayerRequestSpawn"/>
 			<referrer name="SetPlayerDataToDefault"/>
 			<referrer name="AC_SpawnTimer"/>
@@ -8952,6 +8964,11 @@
 			<referrer name="OnPlayerPickUpDynamicPickup"/>
 			<referrer name="LoadPickups"/>
 		</member>
+		<member name="F:wahtacheckpoint">
+			<referrer name="OnPlayerEnterDynamicCP"/>
+			<referrer name="OnPlayerPickUpDynamicPickup"/>
+			<referrer name="OnDialogResponse"/>
+		</member>
 		<member name="F:walk_goto_me">
 			<referrer name="Itter_OnPlayerDisconnect"/>
 			<referrer name="OnPlayerUpdate"/>
@@ -8978,21 +8995,6 @@
 		<member name="F:washer">
 			<referrer name="Itter_OnGameModeInit"/>
 			<referrer name="OnPlayerPickUpPickup"/>
-		</member>
-		<member name="F:weather">
-			<referrer name="ThreeSecTimer"/>
-			<referrer name="Itter_OnGameModeInit"/>
-			<referrer name="ChangeWeather"/>
-			<referrer name="WeatherCheck"/>
-		</member>
-		<member name="F:weatherLS">
-			<referrer name="ChangeWeather"/>
-		</member>
-		<member name="F:weatherLV">
-			<referrer name="ChangeWeather"/>
-		</member>
-		<member name="F:weatherSF">
-			<referrer name="ChangeWeather"/>
 		</member>
 		<member name="F:welcome_td">
 			<tagname value="PlayerText"/>
@@ -9418,6 +9420,7 @@
 			<referrer name="pc_cmd_tie"/>
 			<referrer name="pc_cmd_untie"/>
 			<referrer name="pc_cmd_healme"/>
+			<referrer name="pc_cmd_agm"/>
 			<referrer name="pc_cmd_healing"/>
 			<referrer name="OnPlayerUseItem"/>
 			<referrer name="PlayerTimer"/>
@@ -9493,7 +9496,7 @@
 			<tagname value="bool"/>
 			<stacksize value="4"/>
 			<referrer name="UpdateSpeedometr"/>
-			<referrer name="OnPlayerPickUpDynamicPickup"/>
+			<referrer name="PlayerHealInBolnicaPickups"/>
 			<referrer name="OnPlayerUpdate"/>
 			<referrer name="pc_cmd_changeskin"/>
 			<referrer name="pc_cmd_finvite"/>
@@ -9700,6 +9703,15 @@
 			<param name="playerid">
 			</param>
 		</member>
+		<member name="M:@__TDW_VEHICLE_CALL_EMIT_FIX__@" syntax="@__TDW_VEHICLE_CALL_EMIT_FIX__@()">
+			<attribute name="public"/>
+			<stacksize value="10"/>
+			<dependency name="Attach3DTextLabelToVehicle"/>
+			<dependency name="Create3DTextLabel"/>
+			<dependency name="DestroyVehicle"/>
+			<dependency name="SetVehicleNumberPlate"/>
+			<dependency name="Update3DTextLabelText"/>
+		</member>
 		<member name="M:@___If_u_can_read_this_u_r_nerd" syntax="@___If_u_can_read_this_u_r_nerd()">
 			<attribute name="public"/>
 			<stacksize value="1"/>
@@ -9837,6 +9849,7 @@
 			<referrer name="OnPlayerSpawn"/>
 			<referrer name="SpawnPlayerOnly"/>
 			<referrer name="OnPlayerDeath"/>
+			<referrer name="Spawn"/>
 			<referrer name="OnPlayerEnterDynamicArea"/>
 			<referrer name="OnPlayerStateChange"/>
 			<referrer name="OnPlayerEnterRaceCheckpoint"/>
@@ -10401,14 +10414,16 @@
 		</member>
 		<member name="M:AloginAuth" syntax="AloginAuth(playerid, inputtext[])">
 			<attribute name="public"/>
-			<stacksize value="159"/>
+			<stacksize value="160"/>
 			<dependency name="AdminInfo"/>
 			<dependency name="AdminInfo"/>
 			<dependency name="AdminLogged"/>
 			<dependency name="Admins@YSII_Ag"/>
 			<dependency name="Admins@YSII_Cg"/>
+			<dependency name="Attach3DTextLabelToPlayer"/>
 			<dependency name="CheatShow"/>
 			<dependency name="CheatShow"/>
+			<dependency name="Create3DTextLabel"/>
 			<dependency name="DeletePVar"/>
 			<dependency name="GetPVarInt"/>
 			<dependency name="Itter_AddInternal"/>
@@ -10658,6 +10673,9 @@
 		</member>
 		<member name="M:Attach3DTextLabelToPlayer" syntax="Attach3DTextLabelToPlayer(id, playerid, OffsetX, OffsetY, OffsetZ)">
 			<attribute name="native"/>
+			<referrer name="OnPlayerSpawn"/>
+			<referrer name="pc_cmd_aexit"/>
+			<referrer name="AloginAuth"/>
 			<referrer name="pc_cmd_ado"/>
 			<param name="id">
 				<paraminfo>Text3D </paraminfo>
@@ -10676,6 +10694,7 @@
 		</member>
 		<member name="M:Attach3DTextLabelToVehicle" syntax="Attach3DTextLabelToVehicle(id, vehicleid, OffsetX, OffsetY, OffsetZ)">
 			<attribute name="native"/>
+			<referrer name="@__TDW_VEHICLE_CALL_EMIT_FIX__@"/>
 			<referrer name="OnPlayerStateChange"/>
 			<referrer name="pc_cmd_caraction"/>
 			<param name="id">
@@ -11045,14 +11064,6 @@
 			<param name="playerid">
 			</param>
 		</member>
-		<member name="M:BridgeOff" syntax="BridgeOff()">
-			<stacksize value="10"/>
-			<referrer name="SecTimer"/>
-			<dependency name="Dvers"/>
-			<dependency name="LSNews"/>
-			<dependency name="MoveObject"/>
-			<dependency name="SDvers"/>
-		</member>
 		<member name="M:BusRoutesInit" syntax="BusRoutesInit()">
 			<stacksize value="73"/>
 			<referrer name="Itter_OnGameModeInit"/>
@@ -11221,17 +11232,13 @@
 			</param>
 		</member>
 		<member name="M:ChangeWeather" syntax="ChangeWeather()">
-			<stacksize value="103"/>
+			<attribute name="public"/>
+			<stacksize value="5"/>
 			<referrer name="MinuteTimer"/>
-			<dependency name="LSNews"/>
-			<dependency name="STRING_GLOBAL"/>
-			<dependency name="WeatherTimer"/>
-			<dependency name="format"/>
+			<referrer name="Itter_OnGameModeInit"/>
+			<dependency name="SendClientMessageToAll"/>
+			<dependency name="SetWeather"/>
 			<dependency name="random"/>
-			<dependency name="weather"/>
-			<dependency name="weatherLS"/>
-			<dependency name="weatherLV"/>
-			<dependency name="weatherSF"/>
 		</member>
 		<member name="M:CheatersUpdate" syntax="CheatersUpdate(playerid)">
 			<stacksize value="19"/>
@@ -11634,7 +11641,11 @@
 		<member name="M:Create3DTextLabel" syntax="Create3DTextLabel(text[], color, X, Y, Z, DrawDistance, virtualworld, testLOS)">
 			<tagname value="Text3D"/>
 			<attribute name="native"/>
+			<referrer name="@__TDW_VEHICLE_CALL_EMIT_FIX__@"/>
 			<referrer name="Itter_OnGameModeInit"/>
+			<referrer name="Itter_OnPlayerConnect"/>
+			<referrer name="pc_cmd_aexit"/>
+			<referrer name="AloginAuth"/>
 			<param name="text">
 				<paraminfo> [] </paraminfo>
 			</param>
@@ -11827,6 +11838,7 @@
 			<attribute name="native"/>
 			<referrer name="Itter_OnGameModeInit"/>
 			<referrer name="OnPlayerStateChange"/>
+			<referrer name="OnPlayerPickUpDynamicPickup"/>
 			<referrer name="OnPlayerStreamIn"/>
 			<referrer name="OnDialogResponse"/>
 			<referrer name="LoadPickups"/>
@@ -12673,6 +12685,13 @@
 			<transition target="on"/>
 
 		</member>
+		<member name="M:Delete3DTextLabel" syntax="Delete3DTextLabel(id)">
+			<attribute name="native"/>
+			<referrer name="Itter_OnPlayerDisconnect"/>
+			<param name="id">
+				<paraminfo>Text3D </paraminfo>
+			</param>
+		</member>
 		<member name="M:DeleteCamel" syntax="DeleteCamel()">
 			<stacksize value="5"/>
 			<referrer name="MinuteTimer"/>
@@ -12851,6 +12870,7 @@
 			<attribute name="native"/>
 			<referrer name="Itter_OnPlayerDisconnect"/>
 			<referrer name="OnPlayerStateChange"/>
+			<referrer name="OnPlayerEnterDynamicCP"/>
 			<referrer name="OnDialogResponse"/>
 			<referrer name="PlayerTimer"/>
 			<param name="checkpointid">
@@ -12935,6 +12955,7 @@
 		</member>
 		<member name="M:DestroyVehicle" syntax="DestroyVehicle(vehicleid)">
 			<attribute name="native"/>
+			<referrer name="@__TDW_VEHICLE_CALL_EMIT_FIX__@"/>
 			<referrer name="DestroyVehicleEx"/>
 			<param name="vehicleid">
 			</param>
@@ -13527,7 +13548,7 @@
 			<referrer name="CreateFactoryProd"/>
 			<referrer name="OnPlayerEnterCheckpoint"/>
 			<referrer name="OnPlayerEnterRaceCheckpoint"/>
-			<referrer name="OnPlayerPickUpDynamicPickup"/>
+			<referrer name="PlayerHealInBolnicaPickups"/>
 			<referrer name="OnPlayerKeyStateChange"/>
 			<referrer name="OnDialogResponse"/>
 			<referrer name="pc_cmd_lock"/>
@@ -14695,7 +14716,6 @@
 		</member>
 		<member name="M:GetPlayerInterior" syntax="GetPlayerInterior(playerid)">
 			<attribute name="native"/>
-			<referrer name="ThreeSecTimer"/>
 			<referrer name="Itter_OnPlayerDisconnect"/>
 			<referrer name="OnVehicleMod"/>
 			<referrer name="OnPlayerUpdate"/>
@@ -15107,7 +15127,6 @@
 		</member>
 		<member name="M:GetPlayerVirtualWorld" syntax="GetPlayerVirtualWorld(playerid)">
 			<attribute name="native"/>
-			<referrer name="ThreeSecTimer"/>
 			<referrer name="Itter_OnPlayerDisconnect"/>
 			<referrer name="OnPlayerStateChange"/>
 			<referrer name="OnPlayerEnterDynamicCP"/>
@@ -15792,7 +15811,7 @@
 			<attribute name="native"/>
 			<referrer name="SpawnPlayerOnly"/>
 			<referrer name="OnPlayerEnterCheckpoint"/>
-			<referrer name="OnPlayerPickUpDynamicPickup"/>
+			<referrer name="PlayerHealInBolnicaPickups"/>
 			<referrer name="OnPlayerKeyStateChange"/>
 			<referrer name="OnDialogResponse"/>
 			<referrer name="GiveMoney"/>
@@ -16490,6 +16509,12 @@
 				<paraminfo> [] </paraminfo>
 			</param>
 			<param name="pos">
+			</param>
+		</member>
+		<member name="M:IsPlayerAdmin" syntax="IsPlayerAdmin(playerid)">
+			<attribute name="native"/>
+			<referrer name="OnPlayerSpawn"/>
+			<param name="playerid">
 			</param>
 		</member>
 		<member name="M:IsPlayerApplyAnimation" syntax="IsPlayerApplyAnimation(playerid, animation[])">
@@ -17235,6 +17260,7 @@
 			<dependency name="CasinoGamesInfo"/>
 			<dependency name="CasinoGamesInfo"/>
 			<dependency name="CasinoKrupe"/>
+			<dependency name="ChangeWeather"/>
 			<dependency name="CountDynamicObjects"/>
 			<dependency name="Create3DTextLabel"/>
 			<dependency name="CreateDynamic3DTextLabel"/>
@@ -17334,14 +17360,15 @@
 			<dependency name="vHouse"/>
 			<dependency name="vehiclePassengers@YSII_Ag"/>
 			<dependency name="washer"/>
-			<dependency name="weather"/>
 			<dependency name="zakaz_taxi"/>
 		</member>
 		<member name="M:Itter_OnPlayerConnect" syntax="Itter_OnPlayerConnect(playerid)">
 			<attribute name="public"/>
 			<stacksize value="170"/>
+			<dependency name="AdminText3D"/>
 			<dependency name="Bl_Init"/>
 			<dependency name="Conday"/>
+			<dependency name="Create3DTextLabel"/>
 			<dependency name="CreateTextDrawSkill"/>
 			<dependency name="CreateTextDraws"/>
 			<dependency name="EOS"/>
@@ -17357,7 +17384,6 @@
 			<dependency name="KickFreezeAFK"/>
 			<dependency name="MD"/>
 			<dependency name="MysqlUpdatePlayerStr"/>
-			<dependency name="PlayAudioStreamForPlayer"/>
 			<dependency name="PlayerIsInkasator"/>
 			<dependency name="PlayerRubbish"/>
 			<dependency name="PlayerUseList"/>
@@ -17385,7 +17411,6 @@
 			<dependency name="pName"/>
 			<dependency name="p_info"/>
 			<dependency name="p_info"/>
-			<dependency name="random"/>
 			<dependency name="rodEnable"/>
 			<dependency name="rodRaised"/>
 			<dependency name="strcmp"/>
@@ -17401,6 +17426,7 @@
 			<stacksize value="888"/>
 			<dependency name="operator!=(Float:,Float:)"/>
 			<dependency name="AC_SetVehicleToRespawn"/>
+			<dependency name="AdminText3D"/>
 			<dependency name="Admins@YSII_Ag"/>
 			<dependency name="Admins@YSII_Cg"/>
 			<dependency name="ArendInfo"/>
@@ -17414,6 +17440,7 @@
 			<dependency name="CancelSelectTextDraw"/>
 			<dependency name="CarDoorsEx"/>
 			<dependency name="CreateVehicleLabel"/>
+			<dependency name="Delete3DTextLabel"/>
 			<dependency name="DeletePVar"/>
 			<dependency name="DestroyDynamic3DTextLabel"/>
 			<dependency name="DestroyDynamicArea"/>
@@ -17544,7 +17571,6 @@
 			<dependency name="passport_s_n"/>
 			<dependency name="passport_sex"/>
 			<dependency name="pc_cmd_specoff"/>
-			<dependency name="playerSpawnTimer"/>
 			<dependency name="playerText_ame_Action"/>
 			<dependency name="playerText_ame_Action"/>
 			<dependency name="radar_speed"/>
@@ -17735,11 +17761,8 @@
 		</member>
 		<member name="M:LSNews" syntax="LSNews(color, string[])">
 			<stacksize value="6"/>
-			<referrer name="MinuteTimer"/>
 			<referrer name="OnPlayerText"/>
 			<referrer name="OnDialogResponse"/>
-			<referrer name="ChangeWeather"/>
-			<referrer name="BridgeOff"/>
 			<dependency name="GetPVarInt"/>
 			<dependency name="IsPlayerConnected"/>
 			<dependency name="Player@YSII_Ag"/>
@@ -18749,24 +18772,19 @@
 			<attribute name="public"/>
 			<stacksize value="461"/>
 			<referrer name="Timer_Unix"/>
-			<dependency name="BridgeTimer"/>
 			<dependency name="ChangeWeather"/>
 			<dependency name="CreateCamel"/>
 			<dependency name="CreateDynamicObject"/>
 			<dependency name="CreatePirs"/>
 			<dependency name="DeleteCamel"/>
 			<dependency name="DeletePirs"/>
-			<dependency name="Dvers"/>
 			<dependency name="GOCS"/>
 			<dependency name="GOZaezd"/>
 			<dependency name="GameTextForAllRus"/>
 			<dependency name="Helpers@YSII_Ag"/>
 			<dependency name="KickEx"/>
-			<dependency name="LSNews"/>
-			<dependency name="MoveObject"/>
 			<dependency name="Player@YSII_Ag"/>
 			<dependency name="PlayerLogged"/>
-			<dependency name="SDvers"/>
 			<dependency name="SaveWarehouse"/>
 			<dependency name="SendClientMessageToAll"/>
 			<dependency name="SendFMes"/>
@@ -18846,11 +18864,9 @@
 		</member>
 		<member name="M:MoveObject" syntax="MoveObject(objectid, X, Y, Z, Speed, RotX, RotY, RotZ)">
 			<attribute name="native"/>
-			<referrer name="MinuteTimer"/>
 			<referrer name="OnPlayerEditObject"/>
 			<referrer name="OnPlayerKeyStateChange"/>
 			<referrer name="pc_cmd_controlmost"/>
-			<referrer name="BridgeOff"/>
 			<referrer name="most1Close"/>
 			<referrer name="most2Close"/>
 			<referrer name="pps2Close"/>
@@ -20688,6 +20704,7 @@
 			<dependency name="v_veh_coms"/>
 			<dependency name="v_virtual"/>
 			<dependency name="vehicle_id_edit"/>
+			<dependency name="wahtacheckpoint"/>
 			<dependency name="zakaz_taxi"/>
 			<param name="playerid">
 			</param>
@@ -20849,8 +20866,11 @@
 			<dependency name="SendClientMessage"/>
 			<dependency name="SetPVarInt"/>
 			<dependency name="SetTimerEx"/>
+			<dependency name="false"/>
 			<dependency name="format"/>
 			<dependency name="gettime"/>
+			<dependency name="pAdmin"/>
+			<dependency name="p_info"/>
 			<param name="targetid">
 			</param>
 			<param name="cheat_name">
@@ -21372,7 +21392,6 @@
 			<dependency name="format"/>
 			<dependency name="gRegSkins"/>
 			<dependency name="gRegSkins"/>
-			<dependency name="gettime"/>
 			<dependency name="hOwner"/>
 			<dependency name="helpstr"/>
 			<dependency name="idaofcar"/>
@@ -21557,7 +21576,6 @@
 			<dependency name="P_TEMP_JOB"/>
 			<dependency name="Player@YSII_Ag"/>
 			<dependency name="PlayerDied"/>
-			<dependency name="PlayerSpawned"/>
 			<dependency name="PlayerTextDrawSetStringRus"/>
 			<dependency name="PlayerToKvadrat"/>
 			<dependency name="PlayerUseMask"/>
@@ -21581,6 +21599,7 @@
 			<dependency name="SetPlayerInterior"/>
 			<dependency name="SetPlayerSpecialAction"/>
 			<dependency name="SetPlayerWantedLevel"/>
+			<dependency name="SetTimer"/>
 			<dependency name="SimulatorUse"/>
 			<dependency name="SleepTime"/>
 			<dependency name="SmsNews"/>
@@ -21634,7 +21653,6 @@
 			<dependency name="p_info"/>
 			<dependency name="playerCheckFly"/>
 			<dependency name="playerSpawn"/>
-			<dependency name="playerSpawnTimer"/>
 			<dependency name="random"/>
 			<dependency name="robbery_bank"/>
 			<dependency name="robbery_players"/>
@@ -22147,6 +22165,7 @@
 			<attribute name="public"/>
 			<stacksize value="12"/>
 			<dependency name="ApplyAnimation"/>
+			<dependency name="DestroyDynamicCP"/>
 			<dependency name="FD_CHEK_ID"/>
 			<dependency name="GetPVarInt"/>
 			<dependency name="GetPlayerHouse"/>
@@ -22174,6 +22193,7 @@
 			<dependency name="robbery_moneys"/>
 			<dependency name="robbery_players"/>
 			<dependency name="true"/>
+			<dependency name="wahtacheckpoint"/>
 			<param name="playerid">
 			</param>
 			<param name="checkpointid">
@@ -23277,7 +23297,6 @@
 			<attribute name="public"/>
 			<stacksize value="1928"/>
 			<dependency name="Float:operator=(_:)"/>
-			<dependency name="operator&gt;(Float:,Float:)"/>
 			<dependency name="operator&lt;(Float:,Float:)"/>
 			<dependency name="AC_SetPlayerPos"/>
 			<dependency name="ApplyAnimation"/>
@@ -23285,17 +23304,16 @@
 			<dependency name="ClearAnimations"/>
 			<dependency name="ClosetSkins"/>
 			<dependency name="ClosetSkins"/>
+			<dependency name="CreateDynamicCP"/>
 			<dependency name="D_ARMOURY"/>
 			<dependency name="D_HEAL"/>
 			<dependency name="D_JOINCARS"/>
 			<dependency name="D_NULL"/>
 			<dependency name="D_TICKETPAY"/>
 			<dependency name="DeletePVar"/>
-			<dependency name="GameTextForPlayerRus"/>
 			<dependency name="GetMedicines"/>
 			<dependency name="GetPVarInt"/>
 			<dependency name="GiveHunger"/>
-			<dependency name="GivePlayerMoney"/>
 			<dependency name="IsAArmy"/>
 			<dependency name="IsACop"/>
 			<dependency name="IsAMafia"/>
@@ -23307,6 +23325,7 @@
 			<dependency name="Pickupfly"/>
 			<dependency name="PlayerDied"/>
 			<dependency name="PlayerHP"/>
+			<dependency name="PlayerHealInBolnicaPickups"/>
 			<dependency name="PlayerPlaySound"/>
 			<dependency name="STRING_GLOBAL"/>
 			<dependency name="SendClientMessage"/>
@@ -23314,7 +23333,6 @@
 			<dependency name="SendInf"/>
 			<dependency name="SetArmour"/>
 			<dependency name="SetCameraBehindPlayer"/>
-			<dependency name="SetHealth"/>
 			<dependency name="SetHunger"/>
 			<dependency name="SetPVarInt"/>
 			<dependency name="SetPlayerAttachedObject"/>
@@ -23387,6 +23405,7 @@
 			<dependency name="v_ticket"/>
 			<dependency name="voenkomatpick"/>
 			<dependency name="wahta"/>
+			<dependency name="wahtacheckpoint"/>
 			<dependency name="zavod"/>
 			<param name="playerid">
 			</param>
@@ -23775,12 +23794,16 @@
 			<dependency name="Float:operator=(_:)"/>
 			<dependency name="AC_Healthtime"/>
 			<dependency name="AC_SetPlayerPos"/>
+			<dependency name="AdminText3D"/>
+			<dependency name="Attach3DTextLabelToPlayer"/>
 			<dependency name="ClosetSkins"/>
 			<dependency name="ClosetSkins"/>
 			<dependency name="DeletePVar"/>
 			<dependency name="GetPVarFloat"/>
 			<dependency name="GetPVarInt"/>
 			<dependency name="GetPlayerPing"/>
+			<dependency name="IsPlayerAdmin"/>
+			<dependency name="PlayerDied"/>
 			<dependency name="SetPlayerFacingAngle"/>
 			<dependency name="SetPlayerInterior"/>
 			<dependency name="SetPlayerSkinEx"/>
@@ -23788,6 +23811,7 @@
 			<dependency name="SetTimerEx"/>
 			<dependency name="SleepTime"/>
 			<dependency name="SpawnPlayerOnly"/>
+			<dependency name="false"/>
 			<dependency name="floatround"/>
 			<dependency name="playerCheckFly"/>
 			<dependency name="playerSpawnTimer"/>
@@ -24082,7 +24106,6 @@
 			<dependency name="STRING_GLOBAL"/>
 			<dependency name="SendClientMessage"/>
 			<dependency name="SendErr"/>
-			<dependency name="SetPVarInt"/>
 			<dependency name="SetPlayerChatBubble"/>
 			<dependency name="SetString"/>
 			<dependency name="SetTimerEx"/>
@@ -24718,7 +24741,6 @@
 		</member>
 		<member name="M:PlayAudioStreamForPlayer" syntax="PlayAudioStreamForPlayer(playerid, url[], posX, posY, posZ, distance, usepos)">
 			<attribute name="native"/>
-			<referrer name="Itter_OnPlayerConnect"/>
 			<referrer name="OnPlayerEnterVehicle"/>
 			<referrer name="OnDialogResponse"/>
 			<referrer name="PlayStream"/>
@@ -24804,6 +24826,22 @@
 			</param>
 			<param name="text">
 				<paraminfo> [] </paraminfo>
+			</param>
+		</member>
+		<member name="M:PlayerHealInBolnicaPickups" syntax="PlayerHealInBolnicaPickups(playerid)">
+			<stacksize value="7"/>
+			<referrer name="OnPlayerPickUpDynamicPickup"/>
+			<dependency name="operator&gt;(Float:,Float:)"/>
+			<dependency name="GameTextForPlayerRus"/>
+			<dependency name="GivePlayerMoney"/>
+			<dependency name="PlayerDied"/>
+			<dependency name="PlayerHP"/>
+			<dependency name="SendClientMessage"/>
+			<dependency name="SendErr"/>
+			<dependency name="SetHealth"/>
+			<dependency name="SetPVarInt"/>
+			<dependency name="true"/>
+			<param name="playerid">
 			</param>
 		</member>
 		<member name="M:PlayerPlaySound" syntax="PlayerPlaySound(playerid, soundid, x, y, z)">
@@ -24951,7 +24989,6 @@
 			<referrer name="CreatePlayerFuelDraw"/>
 			<referrer name="CreateCasinoTD"/>
 			<referrer name="cm_status"/>
-			<referrer name="speedometr_status"/>
 			<referrer name="acc_td_status"/>
 			<referrer name="taxi_td_status"/>
 			<referrer name="lic_td_status"/>
@@ -25124,7 +25161,6 @@
 			<referrer name="CreatePlayerFuelDraw"/>
 			<referrer name="CreateCasinoTD"/>
 			<referrer name="cm_status"/>
-			<referrer name="speedometr_status"/>
 			<referrer name="acc_td_status"/>
 			<referrer name="taxi_td_status"/>
 			<referrer name="lic_td_status"/>
@@ -25345,7 +25381,6 @@
 			<referrer name="CreatePlayerFuelDraw"/>
 			<referrer name="CreateCasinoTD"/>
 			<referrer name="cm_status"/>
-			<referrer name="speedometr_status"/>
 			<referrer name="acc_td_status"/>
 			<referrer name="taxi_td_status"/>
 			<referrer name="lic_td_status"/>
@@ -25539,7 +25574,6 @@
 		</member>
 		<member name="M:PlayerToKvadrat" syntax="PlayerToKvadrat(playerid, min_x, min_y, max_x, max_y)">
 			<stacksize value="9"/>
-			<referrer name="ThreeSecTimer"/>
 			<referrer name="OnPlayerDeath"/>
 			<referrer name="MafiaBattleCheck"/>
 			<dependency name="operator&gt;=(Float:,Float:)"/>
@@ -26360,8 +26394,6 @@
 			<dependency name="Float:operator=(_:)"/>
 			<dependency name="AC_ResetPlayerWeapons"/>
 			<dependency name="AC_SetPlayerPos"/>
-			<dependency name="BridgeOff"/>
-			<dependency name="BridgeTimer"/>
 			<dependency name="ClosetSkins"/>
 			<dependency name="ClosetSkins"/>
 			<dependency name="DoorsRobbery"/>
@@ -26391,8 +26423,6 @@
 			<dependency name="TeamColors"/>
 			<dependency name="TextDrawSetStringRus"/>
 			<dependency name="UpdateBone"/>
-			<dependency name="WeatherCheck"/>
-			<dependency name="WeatherTimer"/>
 			<dependency name="b_crupie"/>
 			<dependency name="b_started"/>
 			<dependency name="cs_open"/>
@@ -26478,6 +26508,7 @@
 			<referrer name="pc_cmd_goto"/>
 			<referrer name="pc_cmd_gethere"/>
 			<referrer name="pc_cmd_settime"/>
+			<referrer name="pc_cmd_setweather"/>
 			<referrer name="pc_cmd_a"/>
 			<referrer name="pc_cmd_gnews"/>
 			<referrer name="pc_cmd_pm"/>
@@ -26557,6 +26588,7 @@
 			<referrer name="OnPlayerEnterCheckpoint"/>
 			<referrer name="OnPlayerEnterRaceCheckpoint"/>
 			<referrer name="OnPlayerPickUpDynamicPickup"/>
+			<referrer name="PlayerHealInBolnicaPickups"/>
 			<referrer name="OnPlayerPickUpPickup"/>
 			<referrer name="OnPlayerClickPlayerTextDraw"/>
 			<referrer name="OnPlayerClickTextDraw"/>
@@ -26611,6 +26643,7 @@
 			<referrer name="pc_cmd_givemoney"/>
 			<referrer name="pc_cmd_givecredits"/>
 			<referrer name="pc_cmd_unavig"/>
+			<referrer name="pc_cmd_aexit"/>
 			<referrer name="pc_cmd_setsex"/>
 			<referrer name="pc_cmd_tempskin"/>
 			<referrer name="pc_cmd_setskin"/>
@@ -26629,6 +26662,8 @@
 			<referrer name="pc_cmd_tpc"/>
 			<referrer name="pc_cmd_crent"/>
 			<referrer name="pc_cmd_gps"/>
+			<referrer name="pc_cmd_agm"/>
+			<referrer name="pc_cmd_agmoff"/>
 			<referrer name="pc_cmd_setskill"/>
 			<referrer name="pc_cmd_setvip"/>
 			<referrer name="pc_cmd_alogs"/>
@@ -26778,6 +26813,7 @@
 			<referrer name="GOCS"/>
 			<referrer name="StartZaezd"/>
 			<referrer name="GOZaezd"/>
+			<referrer name="ChangeWeather"/>
 			<param name="color">
 			</param>
 			<param name="message">
@@ -26819,6 +26855,7 @@
 			<referrer name="OnPlayerEnterDynamicCP"/>
 			<referrer name="OnPlayerEnterRaceCheckpoint"/>
 			<referrer name="OnPlayerPickUpDynamicPickup"/>
+			<referrer name="PlayerHealInBolnicaPickups"/>
 			<referrer name="OnPlayerClickPlayerTextDraw"/>
 			<referrer name="OnPlayerClickTextDraw"/>
 			<referrer name="OnPlayerKeyStateChange"/>
@@ -26939,6 +26976,8 @@
 			<referrer name="pc_cmd_specoff"/>
 			<referrer name="pc_cmd_res"/>
 			<referrer name="pc_cmd_gps"/>
+			<referrer name="pc_cmd_agm"/>
+			<referrer name="pc_cmd_agmoff"/>
 			<referrer name="pc_cmd_gm"/>
 			<referrer name="pc_cmd_setskill"/>
 			<referrer name="pc_cmd_gmx"/>
@@ -27328,6 +27367,8 @@
 			<referrer name="pc_cmd_sellmyhouse"/>
 			<referrer name="pc_cmd_spec"/>
 			<referrer name="pc_cmd_res"/>
+			<referrer name="pc_cmd_agm"/>
+			<referrer name="pc_cmd_agmoff"/>
 			<referrer name="pc_cmd_gm"/>
 			<referrer name="pc_cmd_setskill"/>
 			<referrer name="pc_cmd_setvip"/>
@@ -27765,13 +27806,16 @@
 			<referrer name="SecTimer"/>
 			<referrer name="SpawnPlayerOnly"/>
 			<referrer name="OnPlayerDeath"/>
+			<referrer name="Spawn"/>
 			<referrer name="OnPlayerEnterDynamicArea"/>
-			<referrer name="OnPlayerPickUpDynamicPickup"/>
+			<referrer name="PlayerHealInBolnicaPickups"/>
 			<referrer name="OnPlayerKeyStateChange"/>
 			<referrer name="OnDialogResponse"/>
 			<referrer name="pc_cmd_sethp"/>
 			<referrer name="pc_cmd_slap"/>
 			<referrer name="pc_cmd_healme"/>
+			<referrer name="pc_cmd_agm"/>
+			<referrer name="pc_cmd_agmoff"/>
 			<referrer name="pc_cmd_healing"/>
 			<referrer name="pc_cmd_usedrugs"/>
 			<referrer name="PlayerTimer"/>
@@ -27950,9 +27994,9 @@
 			<referrer name="Itter_OnPlayerDisconnect"/>
 			<referrer name="SpawnPlayerOnly"/>
 			<referrer name="OnPlayerDeath"/>
+			<referrer name="Spawn"/>
 			<referrer name="OnVehicleSpawn"/>
 			<referrer name="OnVehicleDeath"/>
-			<referrer name="OnPlayerText"/>
 			<referrer name="OnPlayerExitVehicle"/>
 			<referrer name="OnPlayerEnterDynamicArea"/>
 			<referrer name="OnPlayerStateChange"/>
@@ -27961,6 +28005,7 @@
 			<referrer name="OnPlayerEnterRaceCheckpoint"/>
 			<referrer name="ResetAntiFloodPick"/>
 			<referrer name="OnPlayerPickUpDynamicPickup"/>
+			<referrer name="PlayerHealInBolnicaPickups"/>
 			<referrer name="OnPlayerClickPlayerTextDraw"/>
 			<referrer name="OnPlayerClickTextDraw"/>
 			<referrer name="OnPlayerKeyStateChange"/>
@@ -27987,6 +28032,8 @@
 			<referrer name="pc_cmd_crent"/>
 			<referrer name="pc_cmd_afly"/>
 			<referrer name="pc_cmd_spec"/>
+			<referrer name="pc_cmd_agm"/>
+			<referrer name="pc_cmd_agmoff"/>
 			<referrer name="pc_cmd_setleader"/>
 			<referrer name="pc_cmd_d"/>
 			<referrer name="pc_cmd_dn"/>
@@ -29163,6 +29210,7 @@
 			<referrer name="player_join"/>
 			<referrer name="OnPlayerSpawn"/>
 			<referrer name="SpawnPlayerOnly"/>
+			<referrer name="Spawn"/>
 			<referrer name="OnPlayerEnterDynamicArea"/>
 			<referrer name="OnPlayerPickUpDynamicPickup"/>
 			<referrer name="OnPlayerClickTextDraw"/>
@@ -29203,7 +29251,6 @@
 		</member>
 		<member name="M:SetPlayerWeather" syntax="SetPlayerWeather(playerid, weather)">
 			<attribute name="native"/>
-			<referrer name="ThreeSecTimer"/>
 			<referrer name="pc_cmd_usedrugs"/>
 			<param name="playerid">
 			</param>
@@ -29353,6 +29400,7 @@
 			<attribute name="native"/>
 			<referrer name="MinuteTimer"/>
 			<referrer name="Itter_OnGameModeInit"/>
+			<referrer name="OnPlayerDeath"/>
 			<referrer name="pc_cmd_gmx"/>
 			<referrer name="StartZaezdGO"/>
 			<referrer name="StartCS"/>
@@ -29424,6 +29472,7 @@
 		</member>
 		<member name="M:SetVehicleNumberPlate" syntax="SetVehicleNumberPlate(vehicleid, numberplate[])">
 			<attribute name="native"/>
+			<referrer name="@__TDW_VEHICLE_CALL_EMIT_FIX__@"/>
 			<referrer name="OnVehicleSpawn"/>
 			<referrer name="OnPlayerClickTextDraw"/>
 			<referrer name="OnDialogResponse"/>
@@ -29579,6 +29628,7 @@
 		<member name="M:SetWeather" syntax="SetWeather(weatherid)">
 			<attribute name="native"/>
 			<referrer name="OnDialogResponse"/>
+			<referrer name="ChangeWeather"/>
 			<param name="weatherid">
 			</param>
 		</member>
@@ -30433,6 +30483,16 @@
 			<dependency name="Float:operator=(_:)"/>
 			<dependency name="GetPlayerPing"/>
 			<dependency name="floatround"/>
+			<param name="playerid">
+			</param>
+		</member>
+		<member name="M:Spawn" syntax="Spawn(playerid)">
+			<attribute name="public"/>
+			<stacksize value="8"/>
+			<dependency name="AC_SetPlayerPos"/>
+			<dependency name="SetHealth"/>
+			<dependency name="SetPVarInt"/>
+			<dependency name="SetPlayerVirtualWorld"/>
 			<param name="playerid">
 			</param>
 		</member>
@@ -31329,9 +31389,7 @@
 			<dependency name="Disease"/>
 			<dependency name="GetPVarInt"/>
 			<dependency name="GetPlayerHealth"/>
-			<dependency name="GetPlayerInterior"/>
 			<dependency name="GetPlayerState"/>
-			<dependency name="GetPlayerVirtualWorld"/>
 			<dependency name="MafiaBattle"/>
 			<dependency name="MafiaBattle"/>
 			<dependency name="MafiaBattleCheck"/>
@@ -31339,13 +31397,11 @@
 			<dependency name="MysqlUpdatePlayerInt"/>
 			<dependency name="Player@YSII_Ag"/>
 			<dependency name="PlayerLogged"/>
-			<dependency name="PlayerToKvadrat"/>
 			<dependency name="STRING_GLOBAL"/>
 			<dependency name="SendClientMessage"/>
 			<dependency name="SendInf"/>
 			<dependency name="SetHealth"/>
 			<dependency name="SetPlayerWantedLevel"/>
-			<dependency name="SetPlayerWeather"/>
 			<dependency name="admin_attempt"/>
 			<dependency name="admin_ban_time"/>
 			<dependency name="admin_check_time"/>
@@ -31359,7 +31415,6 @@
 			<dependency name="send"/>
 			<dependency name="startnarko"/>
 			<dependency name="true"/>
-			<dependency name="weather"/>
 		</member>
 		<member name="M:Timer_Unix" syntax="Timer_Unix()">
 			<attribute name="public"/>
@@ -31545,6 +31600,18 @@
 			<dependency name="TextDrawShowForAll"/>
 			<param name="TextId">
 				<paraminfo>Text </paraminfo>
+			</param>
+		</member>
+		<member name="M:Update3DTextLabelText" syntax="Update3DTextLabelText(id, color, text[])">
+			<attribute name="native"/>
+			<referrer name="@__TDW_VEHICLE_CALL_EMIT_FIX__@"/>
+			<param name="id">
+				<paraminfo>Text3D </paraminfo>
+			</param>
+			<param name="color">
+			</param>
+			<param name="text">
+				<paraminfo> [] </paraminfo>
 			</param>
 		</member>
 		<member name="M:UpdateAccesories" syntax="UpdateAccesories(playerid)">
@@ -31884,7 +31951,7 @@
 		</member>
 		<member name="M:UpdateSpeedometr" syntax="UpdateSpeedometr(playerid)">
 			<attribute name="public"/>
-			<stacksize value="290"/>
+			<stacksize value="371"/>
 			<dependency name="operator+(Float:,_:)"/>
 			<dependency name="operator/(_:,Float:)"/>
 			<dependency name="operator*(Float:,_:)"/>
@@ -32058,11 +32125,6 @@
 			<dependency name="VehNumber"/>
 			<dependency name="format"/>
 			<dependency name="random"/>
-		</member>
-		<member name="M:WeatherCheck" syntax="WeatherCheck()">
-			<stacksize value="1"/>
-			<referrer name="SecTimer"/>
-			<dependency name="weather"/>
 		</member>
 		<member name="M:WriteLog" syntax="WriteLog(type, text[])">
 			<stacksize value="13"/>
@@ -33316,6 +33378,7 @@
 			<referrer name="pc_cmd_goto"/>
 			<referrer name="pc_cmd_gethere"/>
 			<referrer name="pc_cmd_settime"/>
+			<referrer name="pc_cmd_setweather"/>
 			<referrer name="pc_cmd_o"/>
 			<referrer name="pc_cmd_a"/>
 			<referrer name="pc_cmd_h"/>
@@ -33615,7 +33678,6 @@
 			<referrer name="pc_cmd_adellaction"/>
 			<referrer name="pc_cmd_setbizname"/>
 			<referrer name="GetPatron"/>
-			<referrer name="ChangeWeather"/>
 			<referrer name="LoadAllMembers"/>
 			<referrer name="pc_cmd_bl"/>
 			<referrer name="MafiaBattleCheck"/>
@@ -33884,7 +33946,6 @@
 			<referrer name="OnPlayerEnterDynamicArea"/>
 			<referrer name="OnPlayerPickUpDynamicPickup"/>
 			<referrer name="OnPlayerClickPlayerTextDraw"/>
-			<referrer name="OnPlayerClickTextDraw"/>
 			<referrer name="OnPlayerKeyStateChange"/>
 			<referrer name="OnDialogResponse"/>
 			<referrer name="pc_cmd_spawn"/>
@@ -35321,6 +35382,21 @@
 				<paraminfo> [] </paraminfo>
 			</param>
 		</member>
+		<member name="M:pc_cmd_aexit" syntax="pc_cmd_aexit(playerid, params[])">
+			<attribute name="public"/>
+			<stacksize value="11"/>
+			<dependency name="AdminLogged"/>
+			<dependency name="Attach3DTextLabelToPlayer"/>
+			<dependency name="Create3DTextLabel"/>
+			<dependency name="SendClientMessage"/>
+			<dependency name="false"/>
+			<dependency name="true"/>
+			<param name="playerid">
+			</param>
+			<param name="params">
+				<paraminfo> [] </paraminfo>
+			</param>
+		</member>
 		<member name="M:pc_cmd_afk" syntax="pc_cmd_afk(playerid, params[])">
 			<attribute name="public"/>
 			<stacksize value="112"/>
@@ -35359,7 +35435,10 @@
 			<dependency name="GetPlayerVirtualWorld"/>
 			<dependency name="SetPVarFloat"/>
 			<dependency name="SetPVarInt"/>
+			<dependency name="false"/>
 			<dependency name="pAdmin"/>
+			<dependency name="pFly"/>
+			<dependency name="p_info"/>
 			<dependency name="p_info"/>
 			<dependency name="true"/>
 			<param name="playerid">
@@ -35425,6 +35504,43 @@
 			<dependency name="ShowPlayerDialogEx"/>
 			<dependency name="admin_ban_time"/>
 			<dependency name="false"/>
+			<dependency name="pAdmin"/>
+			<dependency name="p_info"/>
+			<dependency name="sscanf"/>
+			<param name="playerid">
+			</param>
+			<param name="params">
+				<paraminfo> [] </paraminfo>
+			</param>
+		</member>
+		<member name="M:pc_cmd_agm" syntax="pc_cmd_agm(playerid, params[])">
+			<attribute name="public"/>
+			<stacksize value="5"/>
+			<dependency name="Float:operator=(_:)"/>
+			<dependency name="SendClientMessage"/>
+			<dependency name="SendErr"/>
+			<dependency name="SendInf"/>
+			<dependency name="SetHealth"/>
+			<dependency name="SetPVarInt"/>
+			<dependency name="admin_ban_time"/>
+			<dependency name="pAdmin"/>
+			<dependency name="p_info"/>
+			<dependency name="sscanf"/>
+			<param name="playerid">
+			</param>
+			<param name="params">
+				<paraminfo> [] </paraminfo>
+			</param>
+		</member>
+		<member name="M:pc_cmd_agmoff" syntax="pc_cmd_agmoff(playerid, params[])">
+			<attribute name="public"/>
+			<stacksize value="5"/>
+			<dependency name="SendClientMessage"/>
+			<dependency name="SendErr"/>
+			<dependency name="SendInf"/>
+			<dependency name="SetHealth"/>
+			<dependency name="SetPVarInt"/>
+			<dependency name="admin_ban_time"/>
 			<dependency name="pAdmin"/>
 			<dependency name="p_info"/>
 			<dependency name="sscanf"/>
@@ -37663,10 +37779,12 @@
 			<dependency name="false"/>
 			<dependency name="format"/>
 			<dependency name="pAdmin"/>
+			<dependency name="pFly"/>
 			<dependency name="pName"/>
 			<dependency name="p_info"/>
 			<dependency name="p_info"/>
 			<dependency name="sscanf"/>
+			<dependency name="true"/>
 			<param name="playerid">
 			</param>
 			<param name="params">
@@ -38066,10 +38184,12 @@
 			<dependency name="false"/>
 			<dependency name="format"/>
 			<dependency name="pAdmin"/>
+			<dependency name="pFly"/>
 			<dependency name="pName"/>
 			<dependency name="p_info"/>
 			<dependency name="p_info"/>
 			<dependency name="sscanf"/>
+			<dependency name="true"/>
 			<param name="playerid">
 			</param>
 			<param name="params">
@@ -41689,14 +41809,18 @@
 		</member>
 		<member name="M:pc_cmd_setweather" syntax="pc_cmd_setweather(playerid, params[])">
 			<attribute name="public"/>
-			<stacksize value="10"/>
+			<stacksize value="136"/>
 			<dependency name="AdminLogged"/>
 			<dependency name="D_WEATHER"/>
+			<dependency name="SendAdminMessage"/>
 			<dependency name="SendErr"/>
 			<dependency name="ShowPlayerDialogEx"/>
 			<dependency name="admin_ban_time"/>
 			<dependency name="false"/>
+			<dependency name="format"/>
 			<dependency name="pAdmin"/>
+			<dependency name="pName"/>
+			<dependency name="p_info"/>
 			<dependency name="p_info"/>
 			<param name="playerid">
 			</param>
@@ -43762,7 +43886,6 @@
 			<referrer name="MinuteTimer"/>
 			<referrer name="ThreeSecTimer"/>
 			<referrer name="SecTimer"/>
-			<referrer name="Itter_OnPlayerConnect"/>
 			<referrer name="SpawnPlayerOnly"/>
 			<referrer name="OnPlayerDeath"/>
 			<referrer name="OnPlayerEnterDynamicArea"/>
@@ -43790,7 +43913,6 @@
 			<referrer name="StartCSGO"/>
 			<referrer name="DP_SetPlayerFightingStyle"/>
 			<referrer name="GetPatron"/>
-			<referrer name="ChangeWeather"/>
 			<referrer name="action_td_status"/>
 			<referrer name="EndPlayerTempJob"/>
 			<referrer name="SetPlayerLoaderJobUnLoadCP"/>
@@ -43802,6 +43924,7 @@
 			<referrer name="UpdateMinerRemelting"/>
 			<referrer name="pc_cmd_objectall"/>
 			<referrer name="ShowPlayerRubbishDialog"/>
+			<referrer name="ChangeWeather"/>
 			<param name="max">
 			</param>
 		</member>
@@ -43813,18 +43936,15 @@
 			<dependency name="CreatePlayerTextDrawRus"/>
 			<dependency name="PlayerTextDrawAlignment"/>
 			<dependency name="PlayerTextDrawBackgroundColor"/>
-			<dependency name="PlayerTextDrawBoxColor"/>
 			<dependency name="PlayerTextDrawColor"/>
 			<dependency name="PlayerTextDrawDestroy"/>
 			<dependency name="PlayerTextDrawFont"/>
 			<dependency name="PlayerTextDrawHide"/>
 			<dependency name="PlayerTextDrawLetterSize"/>
-			<dependency name="PlayerTextDrawSetOutline"/>
 			<dependency name="PlayerTextDrawSetProportional"/>
 			<dependency name="PlayerTextDrawSetShadow"/>
 			<dependency name="PlayerTextDrawShow"/>
 			<dependency name="PlayerTextDrawTextSize"/>
-			<dependency name="PlayerTextDrawUseBox"/>
 			<dependency name="ptd_sp"/>
 			<dependency name="ptd_sp"/>
 			<dependency name="true"/>
@@ -43935,6 +44055,8 @@
 			<referrer name="pc_cmd_vpc"/>
 			<referrer name="pc_cmd_spec"/>
 			<referrer name="pc_cmd_res"/>
+			<referrer name="pc_cmd_agm"/>
+			<referrer name="pc_cmd_agmoff"/>
 			<referrer name="pc_cmd_gm"/>
 			<referrer name="pc_cmd_setskill"/>
 			<referrer name="pc_cmd_setvip"/>

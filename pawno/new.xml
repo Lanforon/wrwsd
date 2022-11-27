@@ -760,7 +760,7 @@
 				<size value="5"/>
 			</member>
 		</member>
-		<member name="T:admInfo" value="5">
+		<member name="T:admInfo" value="6">
 			<tagname value="admInfo"/>
 			<member name="C:admGoto" value="0">
 			</member>
@@ -771,6 +771,9 @@
 			<member name="C:admTimeMin" value="3">
 			</member>
 			<member name="C:admAlog" value="4">
+			</member>
+			<member name="C:checkadmlabel" value="5">
+				<tagname value="bool"/>
 			</member>
 		</member>
 		<member name="T:arendInfo" value="10">
@@ -1137,7 +1140,7 @@
 				<tagname value="Float"/>
 			</member>
 		</member>
-		<member name="T:pInfo" value="860">
+		<member name="T:pInfo" value="864">
 			<tagname value="pInfo"/>
 			<member name="C:pID" value="0">
 			</member>
@@ -1178,287 +1181,297 @@
 			</member>
 			<member name="C:pAdmin" value="182">
 			</member>
-			<member name="C:pHelper" value="183">
+			<member name="C:pTeleport" value="183">
+				<tagname value="bool"/>
 			</member>
-			<member name="C:pMemberSkin" value="184">
+			<member name="C:pHelper" value="184">
 			</member>
-			<member name="C:pSex" value="185">
+			<member name="C:pMemberSkin" value="185">
 			</member>
-			<member name="C:pAge" value="186">
+			<member name="C:pSex" value="186">
 			</member>
-			<member name="C:pExp" value="187">
+			<member name="C:pAge" value="187">
 			</member>
-			<member name="C:pMuted" value="188">
+			<member name="C:pExp" value="188">
 			</member>
-			<member name="C:pWarn" value="189">
+			<member name="C:pMuted" value="189">
 			</member>
-			<member name="C:pWarnTime" value="190">
+			<member name="C:pWarn" value="190">
 			</member>
-			<member name="C:pLWarn" value="191">
+			<member name="C:pWarnTime" value="191">
 			</member>
-			<member name="C:pAWarn" value="192">
+			<member name="C:pLWarn" value="192">
 			</member>
-			<member name="C:pDeActivate" value="193">
+			<member name="C:pAWarn" value="193">
 			</member>
-			<member name="C:pLics" value="194">
+			<member name="C:pDeActivate" value="194">
+			</member>
+			<member name="C:pLics" value="195">
 				<size value="16"/>
 			</member>
-			<member name="C:pLic" value="210">
+			<member name="C:pLic" value="211">
 				<size value="4"/>
 			</member>
-			<member name="C:pGunSkill" value="214">
+			<member name="C:pGunSkill" value="215">
 				<size value="8"/>
 			</member>
-			<member name="C:pLeader" value="222">
+			<member name="C:pLeader" value="223">
 			</member>
-			<member name="C:pTimeHour" value="223">
+			<member name="C:pTimeHour" value="224">
 			</member>
-			<member name="C:pLeaderPosition" value="224">
+			<member name="C:pLeaderPosition" value="225">
 			</member>
-			<member name="C:pTempLeader" value="225">
+			<member name="C:pTempLeader" value="226">
 			</member>
-			<member name="C:pRank" value="226">
+			<member name="C:pRank" value="227">
 			</member>
-			<member name="C:pVoennik" value="227">
+			<member name="C:pVoennik" value="228">
 			</member>
-			<member name="C:pMember" value="228">
+			<member name="C:pMember" value="229">
 			</member>
-			<member name="C:pPhoneBalance" value="229">
+			<member name="C:pPhoneBalance" value="230">
 			</member>
-			<member name="C:pPhoneNumber" value="230">
+			<member name="C:pPhoneNumber" value="231">
 			</member>
-			<member name="C:pText" value="231">
+			<member name="C:pText" value="232">
 				<size value="6"/>
 			</member>
-			<member name="C:pTexts" value="237">
+			<member name="C:pTexts" value="238">
 				<size value="40"/>
 			</member>
-			<member name="C:pJail" value="277">
+			<member name="C:pJail" value="278">
 			</member>
-			<member name="C:pJailTime" value="278">
+			<member name="C:pJailTime" value="279">
 			</member>
-			<member name="C:pArrestSpawn" value="279">
+			<member name="C:pArrestSpawn" value="280">
 			</member>
-			<member name="C:pWanted" value="280">
+			<member name="C:pWanted" value="281">
 			</member>
-			<member name="C:pWantedTime" value="281">
+			<member name="C:pWantedTime" value="282">
 			</member>
-			<member name="C:pWantedWho" value="282">
+			<member name="C:pWantedWho" value="283">
 				<size value="24"/>
 			</member>
-			<member name="C:pWantedReason" value="306">
+			<member name="C:pWantedReason" value="307">
 				<size value="32"/>
 			</member>
-			<member name="C:pHeal" value="338">
+			<member name="C:pHeal" value="339">
 				<tagname value="Float"/>
 			</member>
-			<member name="C:pDrugs" value="339">
+			<member name="C:pDrugs" value="340">
 			</member>
-			<member name="C:pPatron" value="340">
+			<member name="C:pPatron" value="341">
 			</member>
-			<member name="C:pGunAmount" value="341">
+			<member name="C:pGunAmount" value="342">
 			</member>
-			<member name="C:pCrimes" value="342">
+			<member name="C:pCrimes" value="343">
 			</member>
-			<member name="C:pJob" value="343">
+			<member name="C:pJob" value="344">
 			</member>
-			<member name="C:pColor" value="344">
+			<member name="C:pColor" value="345">
 			</member>
-			<member name="C:pMarried" value="345">
+			<member name="C:pMarried" value="346">
 			</member>
-			<member name="C:pWhoMarried" value="346">
+			<member name="C:pWhoMarried" value="347">
 				<size value="24"/>
 			</member>
-			<member name="C:pReferal" value="370">
+			<member name="C:pReferal" value="371">
 				<size value="24"/>
 			</member>
-			<member name="C:pRefMoney" value="394">
+			<member name="C:pRefMoney" value="395">
 			</member>
-			<member name="C:pPayCheck" value="395">
+			<member name="C:pPayCheck" value="396">
 			</member>
-			<member name="C:pTaxiCash" value="396">
+			<member name="C:pTaxiCash" value="397">
 			</member>
-			<member name="C:pTaxiTime" value="397">
+			<member name="C:pTaxiTime" value="398">
 			</member>
-			<member name="C:pCharity" value="398">
+			<member name="C:pCharity" value="399">
 			</member>
-			<member name="C:pVip" value="399">
+			<member name="C:pVip" value="400">
 			</member>
-			<member name="C:pVipTime" value="400">
+			<member name="C:pVipTime" value="401">
 			</member>
-			<member name="C:pTime" value="401">
+			<member name="C:pTime" value="402">
 			</member>
-			<member name="C:pCredits" value="402">
+			<member name="C:pCredits" value="403">
 			</member>
-			<member name="C:pTotalCredits" value="403">
+			<member name="C:pTotalCredits" value="404">
 			</member>
-			<member name="C:pSkin" value="404">
+			<member name="C:pSkin" value="405">
 				<size value="3"/>
 			</member>
-			<member name="C:pSpawnChange" value="407">
+			<member name="C:pSpawnChange" value="408">
 			</member>
-			<member name="C:pHunger" value="408">
+			<member name="C:pHunger" value="409">
 			</member>
-			<member name="C:pOnline" value="409">
+			<member name="C:pOnline" value="410">
 			</member>
-			<member name="C:pZakon" value="410">
+			<member name="C:pZakon" value="411">
 			</member>
-			<member name="C:pCity" value="411">
+			<member name="C:pCity" value="412">
 			</member>
-			<member name="C:pPhones" value="412">
+			<member name="C:pPhones" value="413">
 				<size value="16"/>
 			</member>
-			<member name="C:pPhone" value="428">
+			<member name="C:pPhone" value="429">
 				<size value="2"/>
 			</member>
-			<member name="C:pImproves" value="430">
+			<member name="C:pImproves" value="431">
 				<size value="32"/>
 			</member>
-			<member name="C:pImprove" value="462">
+			<member name="C:pImprove" value="463">
 				<size value="4"/>
 			</member>
-			<member name="C:pSprunk" value="466">
+			<member name="C:pSprunk" value="467">
 			</member>
-			<member name="C:pAptechka" value="467">
+			<member name="C:pAptechka" value="468">
 			</member>
-			<member name="C:pTruckSkill" value="468">
+			<member name="C:pTruckSkill" value="469">
 			</member>
-			<member name="C:pTaxiSkill" value="469">
+			<member name="C:pTaxiSkill" value="470">
 			</member>
-			<member name="C:pWorkSalary" value="470">
+			<member name="C:pWorkSalary" value="471">
 			</member>
-			<member name="C:pFamily" value="471">
+			<member name="C:pFamily" value="472">
 			</member>
-			<member name="C:pFamilySozd" value="472">
+			<member name="C:pFamilySozd" value="473">
 			</member>
-			<member name="C:pFamilyZam" value="473">
+			<member name="C:pFamilyZam" value="474">
 			</member>
-			<member name="C:SalonCarID" value="474">
+			<member name="C:SalonCarID" value="475">
 			</member>
-			<member name="C:pName" value="475">
+			<member name="C:pName" value="476">
 				<size value="24"/>
 			</member>
-			<member name="C:Spectating" value="499">
+			<member name="C:Spectating" value="500">
 				<size value="2"/>
 			</member>
-			<member name="C:pAFK" value="501">
+			<member name="C:pAFK" value="502">
 			</member>
-			<member name="C:pDonateCar" value="502">
+			<member name="C:pDonateCar" value="503">
 			</member>
-			<member name="C:pCredit" value="503">
+			<member name="C:pCredit" value="504">
 			</member>
-			<member name="C:pCreditMoney" value="504">
+			<member name="C:pCreditMoney" value="505">
 			</member>
-			<member name="C:pCopter" value="505">
+			<member name="C:pCopter" value="506">
 			</member>
-			<member name="C:pCopterColor" value="506">
+			<member name="C:pCopterColor" value="507">
 				<size value="2"/>
 			</member>
-			<member name="C:PlayerCopterID" value="508">
+			<member name="C:PlayerCopterID" value="509">
 			</member>
-			<member name="C:pOwnableCar" value="509">
+			<member name="C:pOwnableCar" value="510">
 			</member>
-			<member name="C:pInteractionPlayer" value="510">
+			<member name="C:pInteractionPlayer" value="511">
 			</member>
-			<member name="C:pShowTD" value="511">
+			<member name="C:pShowTD" value="512">
 			</member>
-			<member name="C:pGpsTimer" value="512">
+			<member name="C:pGpsTimer" value="513">
 			</member>
-			<member name="C:pEnterRoom" value="513">
+			<member name="C:pEnterRoom" value="514">
 			</member>
-			<member name="C:SoundSMS" value="514">
+			<member name="C:SoundSMS" value="515">
 			</member>
-			<member name="C:SoundCall" value="515">
+			<member name="C:SoundCall" value="516">
 			</member>
-			<member name="C:data_NONLINE" value="516">
+			<member name="C:data_NONLINE" value="517">
 				<size value="8"/>
 			</member>
-			<member name="C:pModelPhone" value="524">
+			<member name="C:pModelPhone" value="525">
 			</member>
-			<member name="C:pDonateH" value="525">
+			<member name="C:pDonateH" value="526">
 				<size value="3"/>
 			</member>
-			<member name="C:pListPlayers" value="528">
+			<member name="C:pListPlayers" value="529">
 				<size value="236"/>
 			</member>
-			<member name="C:data_CT_NUMBER" value="764">
+			<member name="C:data_CT_NUMBER" value="765">
 			</member>
-			<member name="C:data_CS_TEAM" value="765">
+			<member name="C:data_CS_TEAM" value="766">
 			</member>
-			<member name="C:data_CT_VEH" value="766">
+			<member name="C:data_CT_VEH" value="767">
 			</member>
-			<member name="C:data_CHEK" value="767">
+			<member name="C:data_CHEK" value="768">
 			</member>
-			<member name="C:pStats" value="768">
+			<member name="C:pStats" value="769">
 				<size value="10"/>
 			</member>
-			<member name="C:P_Style" value="778">
+			<member name="C:P_Style" value="779">
 				<size value="3"/>
 			</member>
-			<member name="C:data_GARAGE" value="781">
+			<member name="C:data_GARAGE" value="782">
 			</member>
-			<member name="C:data_PASS" value="782">
+			<member name="C:data_PASS" value="783">
 			</member>
-			<member name="C:data_PASS_S" value="783">
+			<member name="C:data_PASS_S" value="784">
 			</member>
-			<member name="C:data_PASS_N" value="784">
+			<member name="C:data_PASS_N" value="785">
 			</member>
-			<member name="C:data_PASS_DATE" value="785">
+			<member name="C:data_PASS_DATE" value="786">
 				<size value="32"/>
 			</member>
-			<member name="C:P_WEAPON_RELOADING" value="817">
+			<member name="C:P_WEAPON_RELOADING" value="818">
 				<tagname value="bool"/>
 			</member>
-			<member name="C:pSetWalk" value="818">
+			<member name="C:pFly" value="819">
+				<tagname value="bool"/>
 			</member>
-			<member name="C:pSetAnim" value="819">
+			<member name="C:pHospitalHeal" value="820">
 			</member>
-			<member name="C:pJackCar" value="820">
+			<member name="C:pSetWalk" value="821">
 			</member>
-			<member name="C:pRAZ" value="821">
+			<member name="C:pSetAnim" value="822">
 			</member>
-			<member name="C:pRobbery" value="822">
+			<member name="C:pJackCar" value="823">
 			</member>
-			<member name="C:Disease" value="823">
+			<member name="C:pRAZ" value="824">
+			</member>
+			<member name="C:pRobbery" value="825">
+			</member>
+			<member name="C:Disease" value="826">
 				<size value="3"/>
 			</member>
-			<member name="C:pRentHouse" value="826">
+			<member name="C:pRentHouse" value="829">
 			</member>
-			<member name="C:P_TEMP_JOB" value="827">
+			<member name="C:P_TEMP_JOB" value="830">
 			</member>
-			<member name="C:P_TEMP_JOB_STATE" value="828">
+			<member name="C:P_TEMP_JOB_STATE" value="831">
 			</member>
-			<member name="C:P_TEMP_JOB_CHECK" value="829">
+			<member name="C:P_TEMP_JOB_CHECK" value="832">
 			</member>
-			<member name="C:P_JOB_SERVICE_NAME" value="830">
+			<member name="C:P_JOB_SERVICE_NAME" value="833">
 				<size value="17"/>
 			</member>
-			<member name="C:P_JOB_TARIFF" value="847">
+			<member name="C:P_JOB_TARIFF" value="850">
 			</member>
-			<member name="C:P_JOB_WAGE" value="848">
+			<member name="C:P_JOB_WAGE" value="851">
 			</member>
-			<member name="C:P_JOB_LOAD_ITEMS" value="849">
+			<member name="C:P_JOB_LOAD_ITEMS" value="852">
 			</member>
-			<member name="C:P_JOB_CAR" value="850">
+			<member name="C:P_JOB_CAR" value="853">
 			</member>
-			<member name="C:P_END_JOB_TIMER" value="851">
+			<member name="C:P_END_JOB_TIMER" value="854">
 			</member>
-			<member name="C:P_FACTORY_USE_DESK" value="852">
+			<member name="C:P_FACTORY_USE_DESK" value="855">
 			</member>
-			<member name="C:P_BUS_ROUTE" value="853">
+			<member name="C:P_BUS_ROUTE" value="856">
 			</member>
-			<member name="C:P_BUS_ROUTE_STEP" value="854">
+			<member name="C:P_BUS_ROUTE_STEP" value="857">
 			</member>
-			<member name="C:P_MECHANIC_FILL_PAY" value="855">
+			<member name="C:P_MECHANIC_FILL_PAY" value="858">
 			</member>
-			<member name="C:P_MECHANIC_REPAIR_PAY" value="856">
+			<member name="C:P_MECHANIC_REPAIR_PAY" value="859">
 			</member>
-			<member name="C:P_IN_JOB" value="857">
+			<member name="C:P_IN_JOB" value="860">
 				<tagname value="bool"/>
 			</member>
-			<member name="C:P_LAST_PICKUP" value="858">
+			<member name="C:P_LAST_PICKUP" value="861">
 			</member>
-			<member name="C:P_JOB" value="859">
+			<member name="C:P_JOB" value="862">
+			</member>
+			<member name="C:pFastened" value="863">
 			</member>
 		</member>
 		<member name="T:podezd" value="14">
@@ -3248,15 +3261,20 @@
 			<referrer name="pc_cmd_givecredits"/>
 			<referrer name="pc_cmd_unavig"/>
 			<referrer name="pc_cmd_slap"/>
+			<referrer name="pc_cmd_tpmyoff"/>
+			<referrer name="pc_cmd_aexit"/>
 			<referrer name="pc_cmd_setsex"/>
 			<referrer name="pc_cmd_tempskin"/>
 			<referrer name="pc_cmd_setskin"/>
 			<referrer name="pc_cmd_skill"/>
 			<referrer name="pc_cmd_mask"/>
 			<referrer name="pc_cmd_veh"/>
+			<referrer name="pc_cmd_delvehid"/>
+			<referrer name="pc_cmd_createobj"/>
 			<referrer name="pc_cmd_alldelveh"/>
 			<referrer name="pc_cmd_delveh"/>
 			<referrer name="pc_cmd_fixveh"/>
+			<referrer name="pc_cmd_fy"/>
 			<referrer name="pc_cmd_setfuel"/>
 			<referrer name="pc_cmd_msg"/>
 			<referrer name="pc_cmd_fuelcars"/>
@@ -3267,6 +3285,7 @@
 			<referrer name="pc_cmd_sellmyhouse"/>
 			<referrer name="pc_cmd_vpc"/>
 			<referrer name="pc_cmd_tpc"/>
+			<referrer name="pc_cmd_afly"/>
 			<referrer name="pc_cmd_spec"/>
 			<referrer name="pc_cmd_specoff"/>
 			<referrer name="pc_cmd_res"/>
@@ -3337,6 +3356,7 @@
 			<referrer name="GetString"/>
 			<referrer name="GmTest"/>
 			<referrer name="RemoveAdmin"/>
+			<referrer name="OnGuardWarningCheater"/>
 			<referrer name="OnDynamicObjectMoved"/>
 			<referrer name="pc_cmd_sms"/>
 			<referrer name="Bl_Init"/>
@@ -3430,9 +3450,14 @@
 			<referrer name="pc_cmd_lock"/>
 			<referrer name="pc_cmd_setname"/>
 			<referrer name="pc_cmd_tie"/>
+			<referrer name="pc_cmd_goto"/>
+			<referrer name="pc_cmd_gethere"/>
 			<referrer name="pc_cmd_freeze"/>
 			<referrer name="pc_cmd_hgps"/>
 			<referrer name="pc_cmd_id"/>
+			<referrer name="pc_cmd_tpmyoff"/>
+			<referrer name="pc_cmd_tpmyon"/>
+			<referrer name="pc_cmd_aexit"/>
 			<referrer name="pc_cmd_mask"/>
 			<referrer name="pc_cmd_engine"/>
 			<referrer name="pc_cmd_tpc"/>
@@ -3640,10 +3665,13 @@
 			<referrer name="pc_cmd_givemoney"/>
 			<referrer name="pc_cmd_slap"/>
 			<referrer name="pc_cmd_alogin"/>
+			<referrer name="pc_cmd_aexit"/>
 			<referrer name="pc_cmd_setsex"/>
 			<referrer name="pc_cmd_tempskin"/>
 			<referrer name="pc_cmd_setskin"/>
 			<referrer name="pc_cmd_veh"/>
+			<referrer name="pc_cmd_delvehid"/>
+			<referrer name="pc_cmd_createobj"/>
 			<referrer name="pc_cmd_alldelveh"/>
 			<referrer name="pc_cmd_delveh"/>
 			<referrer name="pc_cmd_fixveh"/>
@@ -4404,7 +4432,7 @@
 			<referrer name="OnDialogResponse"/>
 			<referrer name="LoadTextDrawsMainMenu"/>
 			<referrer name="Hunger"/>
-			<referrer name="pc_cmd_vzad"/>
+			<referrer name="pc_cmd_trunk"/>
 		</member>
 		<member name="F:HungerProgress">
 			<tagname value="PlayerText"/>
@@ -4412,7 +4440,7 @@
 			<referrer name="Itter_OnPlayerDisconnect"/>
 			<referrer name="OnDialogResponse"/>
 			<referrer name="Hunger"/>
-			<referrer name="pc_cmd_vzad"/>
+			<referrer name="pc_cmd_trunk"/>
 		</member>
 		<member name="F:INFO">
 			<tagname value="Text"/>
@@ -4849,7 +4877,7 @@
 			<referrer name="IsGangConnected"/>
 			<referrer name="SendZahvatMessage"/>
 			<referrer name="pc_cmd_tow"/>
-			<referrer name="pc_cmd_vzad"/>
+			<referrer name="pc_cmd_trunk"/>
 			<referrer name="SaveTrunk"/>
 			<referrer name="SendSpyMessage"/>
 			<referrer name="pc_cmd_recorder"/>
@@ -5030,6 +5058,7 @@
 			<referrer name="pc_cmd_tempskin"/>
 			<referrer name="pc_cmd_setskin"/>
 			<referrer name="pc_cmd_skill"/>
+			<referrer name="pc_cmd_fy"/>
 			<referrer name="pc_cmd_gun"/>
 			<referrer name="pc_cmd_sellmycar"/>
 			<referrer name="pc_cmd_sellmyhouse"/>
@@ -5108,7 +5137,6 @@
 			<referrer name="AntiCheat"/>
 			<referrer name="OnPlayerRequestClass"/>
 			<referrer name="SpawnPlayerOnly"/>
-			<referrer name="OnPlayerDeath"/>
 			<referrer name="CheatersUpdate"/>
 		</member>
 		<member name="F:PlayerStats">
@@ -5844,7 +5872,7 @@
 			<referrer name="OnPlayerClickTextDraw"/>
 			<referrer name="OnDialogResponse"/>
 			<referrer name="LoadVeh"/>
-			<referrer name="pc_cmd_vzad"/>
+			<referrer name="pc_cmd_trunk"/>
 			<referrer name="SaveTrunk"/>
 		</member>
 		<member name="F:Ujahhs">
@@ -5875,7 +5903,7 @@
 			<referrer name="pc_cmd_towcar"/>
 			<referrer name="hvehicles_loading"/>
 			<referrer name="pc_cmd_addhcar"/>
-			<referrer name="pc_cmd_vzad"/>
+			<referrer name="pc_cmd_trunk"/>
 			<referrer name="SaveTrunk"/>
 		</member>
 		<member name="F:VehInfos">
@@ -6306,10 +6334,16 @@
 			<referrer name="pc_cmd_atakegun"/>
 			<referrer name="pc_cmd_givemoney"/>
 			<referrer name="pc_cmd_slap"/>
+			<referrer name="pc_cmd_tpmyoff"/>
+			<referrer name="pc_cmd_tpmyon"/>
+			<referrer name="pc_cmd_sistema"/>
+			<referrer name="pc_cmd_az"/>
 			<referrer name="pc_cmd_setsex"/>
 			<referrer name="pc_cmd_tempskin"/>
 			<referrer name="pc_cmd_setskin"/>
 			<referrer name="pc_cmd_veh"/>
+			<referrer name="pc_cmd_delvehid"/>
+			<referrer name="pc_cmd_createobj"/>
 			<referrer name="pc_cmd_alldelveh"/>
 			<referrer name="pc_cmd_delveh"/>
 			<referrer name="pc_cmd_fixveh"/>
@@ -6327,6 +6361,7 @@
 			<referrer name="pc_cmd_agmoff"/>
 			<referrer name="pc_cmd_gm"/>
 			<referrer name="pc_cmd_setskill"/>
+			<referrer name="pc_cmd_host"/>
 			<referrer name="pc_cmd_gmx"/>
 			<referrer name="pc_cmd_setvip"/>
 			<referrer name="pc_cmd_pmenu"/>
@@ -6372,6 +6407,11 @@
 			<referrer name="OnPlayerOffban"/>
 			<referrer name="OnPlayerOffwarn"/>
 		</member>
+		<member name="F:admlabel">
+			<tagname value="Text3D"/>
+			<referrer name="pc_cmd_aexit"/>
+			<referrer name="AloginAuth"/>
+		</member>
 		<member name="F:alarm">
 			<referrer name="UpdateSpeedometr"/>
 			<referrer name="OnPlayerStateChange"/>
@@ -6384,7 +6424,7 @@
 			<referrer name="PlayerTimer"/>
 			<referrer name="StartZaezdGO"/>
 			<referrer name="FuelCar"/>
-			<referrer name="pc_cmd_vzad"/>
+			<referrer name="pc_cmd_trunk"/>
 		</member>
 		<member name="F:anim_list">
 			<referrer name="SetPlayerAnimation"/>
@@ -6476,7 +6516,7 @@
 			<referrer name="PlayerTimer"/>
 			<referrer name="StartZaezdGO"/>
 			<referrer name="FuelCar"/>
-			<referrer name="pc_cmd_vzad"/>
+			<referrer name="pc_cmd_trunk"/>
 		</member>
 		<member name="F:boordh">
 			<referrer name="OnDialogResponse"/>
@@ -6493,7 +6533,7 @@
 			<referrer name="PlayerTimer"/>
 			<referrer name="StartZaezdGO"/>
 			<referrer name="FuelCar"/>
-			<referrer name="pc_cmd_vzad"/>
+			<referrer name="pc_cmd_trunk"/>
 		</member>
 		<member name="F:boxPlayer@YSII_Ag">
 			<referrer name="Itter_OnGameModeInit"/>
@@ -6771,6 +6811,7 @@
 			<referrer name="pc_cmd_givecredits"/>
 			<referrer name="pc_cmd_slap"/>
 			<referrer name="pc_cmd_alogin"/>
+			<referrer name="pc_cmd_fy"/>
 			<referrer name="pc_cmd_createpodezd"/>
 			<referrer name="pc_cmd_sellcar"/>
 			<referrer name="pc_cmd_sellmycar"/>
@@ -6978,7 +7019,7 @@
 			<referrer name="PlayerTimer"/>
 			<referrer name="StartZaezdGO"/>
 			<referrer name="FuelCar"/>
-			<referrer name="pc_cmd_vzad"/>
+			<referrer name="pc_cmd_trunk"/>
 		</member>
 		<member name="F:doubling_donate">
 			<referrer name="MinuteTimer"/>
@@ -7040,7 +7081,7 @@
 			<referrer name="PlayerTimer"/>
 			<referrer name="StartZaezdGO"/>
 			<referrer name="FuelCar"/>
-			<referrer name="pc_cmd_vzad"/>
+			<referrer name="pc_cmd_trunk"/>
 		</member>
 		<member name="F:engine_ptune">
 			<referrer name="OnPlayerClickTextDraw"/>
@@ -7539,7 +7580,7 @@
 			<referrer name="SetIntBoot"/>
 			<referrer name="OnPlayerClickTextDraw"/>
 			<referrer name="OnDialogResponse"/>
-			<referrer name="pc_cmd_vzad"/>
+			<referrer name="pc_cmd_trunk"/>
 		</member>
 		<member name="F:inStreamPlayers@YSII_Ag">
 			<referrer name="Itter_OnGameModeInit"/>
@@ -7612,7 +7653,7 @@
 			<referrer name="PlayerTimer"/>
 			<referrer name="StartZaezdGO"/>
 			<referrer name="FuelCar"/>
-			<referrer name="pc_cmd_vzad"/>
+			<referrer name="pc_cmd_trunk"/>
 		</member>
 		<member name="F:loader_job_attach_obj">
 			<referrer name="SetPlayerLoaderJobLoad"/>
@@ -7775,7 +7816,7 @@
 			<referrer name="PlayerTimer"/>
 			<referrer name="StartZaezdGO"/>
 			<referrer name="FuelCar"/>
-			<referrer name="pc_cmd_vzad"/>
+			<referrer name="pc_cmd_trunk"/>
 		</member>
 		<member name="F:objectplayerid">
 			<referrer name="OnDialogResponse"/>
@@ -7867,6 +7908,7 @@
 			<referrer name="player_check"/>
 			<referrer name="Itter_OnPlayerConnect"/>
 			<referrer name="Itter_OnPlayerDisconnect"/>
+			<referrer name="OnPlayerSpawn"/>
 			<referrer name="SpawnPlayerOnly"/>
 			<referrer name="OnPlayerDeath"/>
 			<referrer name="OnVehicleSpawn"/>
@@ -7880,6 +7922,7 @@
 			<referrer name="OnPlayerEnterCheckpoint"/>
 			<referrer name="OnPlayerEnterRaceCheckpoint"/>
 			<referrer name="OnPlayerPickUpDynamicPickup"/>
+			<referrer name="PlayerHealInBolnicaPickups"/>
 			<referrer name="OnVehicleMod"/>
 			<referrer name="OnPlayerClickPlayerTextDraw"/>
 			<referrer name="OnPlayerClickTextDraw"/>
@@ -7974,6 +8017,10 @@
 			<referrer name="pc_cmd_givecredits"/>
 			<referrer name="pc_cmd_unavig"/>
 			<referrer name="pc_cmd_slap"/>
+			<referrer name="pc_cmd_tpmyoff"/>
+			<referrer name="pc_cmd_tpmyon"/>
+			<referrer name="pc_cmd_sistema"/>
+			<referrer name="pc_cmd_az"/>
 			<referrer name="pc_cmd_alogin"/>
 			<referrer name="pc_cmd_setsex"/>
 			<referrer name="pc_cmd_tempskin"/>
@@ -7985,11 +8032,14 @@
 			<referrer name="pc_cmd_healme"/>
 			<referrer name="pc_cmd_time"/>
 			<referrer name="pc_cmd_veh"/>
+			<referrer name="pc_cmd_delvehid"/>
+			<referrer name="pc_cmd_createobj"/>
 			<referrer name="pc_cmd_alldelveh"/>
 			<referrer name="pc_cmd_delveh"/>
 			<referrer name="pc_cmd_fixveh"/>
 			<referrer name="pc_cmd_do"/>
 			<referrer name="pc_cmd_try"/>
+			<referrer name="pc_cmd_fy"/>
 			<referrer name="pc_cmd_me"/>
 			<referrer name="pc_cmd_setfuel"/>
 			<referrer name="pc_cmd_msg"/>
@@ -7999,14 +8049,17 @@
 			<referrer name="pc_cmd_gun"/>
 			<referrer name="pc_cmd_add"/>
 			<referrer name="pc_cmd_createpodezd"/>
+			<referrer name="pc_cmd_crash"/>
 			<referrer name="pc_cmd_sellcar"/>
 			<referrer name="pc_cmd_sellmycar"/>
+			<referrer name="pc_cmd_crash1"/>
 			<referrer name="pc_cmd_sellcopter"/>
 			<referrer name="pc_cmd_sellmyhouse"/>
 			<referrer name="pc_cmd_vostacc"/>
 			<referrer name="pc_cmd_vpc"/>
 			<referrer name="pc_cmd_tpc"/>
 			<referrer name="pc_cmd_afly"/>
+			<referrer name="pc_cmd_crash2"/>
 			<referrer name="pc_cmd_spec"/>
 			<referrer name="pc_cmd_specoff"/>
 			<referrer name="pc_cmd_res"/>
@@ -8014,6 +8067,7 @@
 			<referrer name="pc_cmd_agmoff"/>
 			<referrer name="pc_cmd_gm"/>
 			<referrer name="pc_cmd_setskill"/>
+			<referrer name="pc_cmd_host"/>
 			<referrer name="pc_cmd_gmx"/>
 			<referrer name="pc_cmd_setvip"/>
 			<referrer name="pc_cmd_pmenu"/>
@@ -8188,6 +8242,7 @@
 			<referrer name="OffWarnAdmin"/>
 			<referrer name="OffUNWarnLeader"/>
 			<referrer name="OffUNWarnAdmin"/>
+			<referrer name="OnGuardWarningCheater"/>
 			<referrer name="SaveVehicleTuning"/>
 			<referrer name="SendPlayerProposition"/>
 			<referrer name="pc_cmd_yes"/>
@@ -8302,7 +8357,7 @@
 			<referrer name="pc_cmd_un"/>
 			<referrer name="pc_cmd_tow"/>
 			<referrer name="UpdateAccesories"/>
-			<referrer name="pc_cmd_vzad"/>
+			<referrer name="pc_cmd_trunk"/>
 			<referrer name="SaveTrunk"/>
 			<referrer name="AnimationWalk"/>
 			<referrer name="pc_cmd_tipster"/>
@@ -8441,9 +8496,6 @@
 			<referrer name="AC_SpawnPlayer"/>
 		</member>
 		<member name="F:playerSpawnTimer">
-			<referrer name="Itter_OnPlayerDisconnect"/>
-			<referrer name="OnPlayerSpawn"/>
-			<referrer name="OnPlayerDeath"/>
 			<referrer name="OnPlayerRequestSpawn"/>
 			<referrer name="SetPlayerDataToDefault"/>
 			<referrer name="AC_SpawnTimer"/>
@@ -8864,7 +8916,7 @@
 			<referrer name="UpdateTDOpenCloseTrunk"/>
 			<referrer name="OnPlayerClickTextDraw"/>
 			<referrer name="LoadTextDrawsMainMenu"/>
-			<referrer name="pc_cmd_vzad"/>
+			<referrer name="pc_cmd_trunk"/>
 		</member>
 		<member name="F:txdw2">
 			<tagname value="Text"/>
@@ -8951,6 +9003,11 @@
 		<member name="F:wahta">
 			<referrer name="OnPlayerPickUpDynamicPickup"/>
 			<referrer name="LoadPickups"/>
+		</member>
+		<member name="F:wahtacheckpoint">
+			<referrer name="OnPlayerEnterDynamicCP"/>
+			<referrer name="OnPlayerPickUpDynamicPickup"/>
+			<referrer name="OnDialogResponse"/>
 		</member>
 		<member name="F:walk_goto_me">
 			<referrer name="Itter_OnPlayerDisconnect"/>
@@ -9095,6 +9152,7 @@
 		<member name="M:operator-(Float:,_:)" syntax="operator-(Float:,_:)(oper1, oper2)">
 			<tagname value="Float"/>
 			<stacksize value="4"/>
+			<referrer name="OnPlayerUpdate"/>
 			<referrer name="OnDialogResponse"/>
 			<referrer name="pc_cmd_slap"/>
 			<referrer name="OnPlayerClickMap"/>
@@ -9198,6 +9256,7 @@
 			<referrer name="AnimationTrunk"/>
 			<referrer name="OnPlayerKeyStateChange"/>
 			<referrer name="OnDialogResponse"/>
+			<referrer name="pc_cmd_createobj"/>
 			<referrer name="PlayerToPoint"/>
 			<referrer name="ProxDetector"/>
 			<referrer name="IsVehicleInRangeOfPoint"/>
@@ -9292,6 +9351,7 @@
 			<referrer name="OnDialogResponse"/>
 			<referrer name="pc_cmd_mangal"/>
 			<referrer name="pc_cmd_veh"/>
+			<referrer name="pc_cmd_createobj"/>
 			<referrer name="pc_cmd_load"/>
 			<referrer name="pc_cmd_unload"/>
 			<referrer name="PlayerSpeed"/>
@@ -9395,6 +9455,7 @@
 			<referrer name="OnPlayerEnterRaceCheckpoint"/>
 			<referrer name="OnPlayerPickUpDynamicPickup"/>
 			<referrer name="OnPlayerKeyStateChange"/>
+			<referrer name="OnPlayerUpdate"/>
 			<referrer name="OnDialogResponse"/>
 			<referrer name="pc_cmd_mangal"/>
 			<referrer name="pc_cmd_park"/>
@@ -9403,6 +9464,10 @@
 			<referrer name="pc_cmd_tie"/>
 			<referrer name="pc_cmd_untie"/>
 			<referrer name="pc_cmd_healme"/>
+			<referrer name="pc_cmd_veh"/>
+			<referrer name="pc_cmd_crash"/>
+			<referrer name="pc_cmd_crash1"/>
+			<referrer name="pc_cmd_crash2"/>
 			<referrer name="pc_cmd_agm"/>
 			<referrer name="pc_cmd_healing"/>
 			<referrer name="OnPlayerUseItem"/>
@@ -9430,7 +9495,7 @@
 			<referrer name="action_td_status"/>
 			<referrer name="ConvertTime"/>
 			<referrer name="hvehicles_loading"/>
-			<referrer name="pc_cmd_vzad"/>
+			<referrer name="pc_cmd_trunk"/>
 			<referrer name="pc_cmd_prodlist"/>
 			<referrer name="pc_cmd_fuellist"/>
 			<referrer name="pc_cmd_recorder"/>
@@ -9823,7 +9888,6 @@
 			<referrer name="OnPlayerSpawn"/>
 			<referrer name="SpawnPlayerOnly"/>
 			<referrer name="OnPlayerDeath"/>
-			<referrer name="Spawn"/>
 			<referrer name="OnPlayerEnterDynamicArea"/>
 			<referrer name="OnPlayerStateChange"/>
 			<referrer name="OnPlayerEnterRaceCheckpoint"/>
@@ -9837,10 +9901,12 @@
 			<referrer name="pc_cmd_gotocar"/>
 			<referrer name="pc_cmd_gethere"/>
 			<referrer name="pc_cmd_slap"/>
+			<referrer name="pc_cmd_az"/>
 			<referrer name="pc_cmd_exit"/>
 			<referrer name="pc_cmd_arrest"/>
 			<referrer name="pc_cmd_ram"/>
 			<referrer name="pc_cmd_rt"/>
+			<referrer name="OnPlayerClickMap"/>
 			<referrer name="PlayerTimer"/>
 			<referrer name="OnPlayerLogin"/>
 			<referrer name="BuyCloseCar"/>
@@ -10394,8 +10460,10 @@
 			<dependency name="AdminLogged"/>
 			<dependency name="Admins@YSII_Ag"/>
 			<dependency name="Admins@YSII_Cg"/>
+			<dependency name="Attach3DTextLabelToPlayer"/>
 			<dependency name="CheatShow"/>
 			<dependency name="CheatShow"/>
+			<dependency name="Create3DTextLabel"/>
 			<dependency name="DeletePVar"/>
 			<dependency name="GetPVarInt"/>
 			<dependency name="Itter_AddInternal"/>
@@ -10410,6 +10478,7 @@
 			<dependency name="admGoto"/>
 			<dependency name="admSpectate"/>
 			<dependency name="admTimeMin"/>
+			<dependency name="admlabel"/>
 			<dependency name="cache_get_data"/>
 			<dependency name="cache_get_row_int"/>
 			<dependency name="dbHandle"/>
@@ -10475,7 +10544,7 @@
 		</member>
 		<member name="M:AnimationTrunk" syntax="AnimationTrunk(playerid, x, y, z, a, pos_y, pos_z)">
 			<stacksize value="37"/>
-			<referrer name="pc_cmd_vzad"/>
+			<referrer name="pc_cmd_trunk"/>
 			<dependency name="operator-(Float:)"/>
 			<dependency name="operator-(Float:,Float:)"/>
 			<dependency name="operator+(Float:,Float:)"/>
@@ -10590,6 +10659,9 @@
 			<referrer name="pc_cmd_mask"/>
 			<referrer name="pc_cmd_healme"/>
 			<referrer name="pc_cmd_time"/>
+			<referrer name="pc_cmd_crash"/>
+			<referrer name="pc_cmd_crash1"/>
+			<referrer name="pc_cmd_crash2"/>
 			<referrer name="pc_cmd_sperm"/>
 			<referrer name="pc_cmd_pay"/>
 			<referrer name="pc_cmd_kiss"/>
@@ -10646,6 +10718,7 @@
 		<member name="M:Attach3DTextLabelToPlayer" syntax="Attach3DTextLabelToPlayer(id, playerid, OffsetX, OffsetY, OffsetZ)">
 			<attribute name="native"/>
 			<referrer name="OnPlayerSpawn"/>
+			<referrer name="AloginAuth"/>
 			<referrer name="pc_cmd_ado"/>
 			<param name="id">
 				<paraminfo>Text3D </paraminfo>
@@ -11612,6 +11685,7 @@
 			<attribute name="native"/>
 			<referrer name="Itter_OnGameModeInit"/>
 			<referrer name="Itter_OnPlayerConnect"/>
+			<referrer name="AloginAuth"/>
 			<param name="text">
 				<paraminfo> [] </paraminfo>
 			</param>
@@ -11804,6 +11878,7 @@
 			<attribute name="native"/>
 			<referrer name="Itter_OnGameModeInit"/>
 			<referrer name="OnPlayerStateChange"/>
+			<referrer name="OnPlayerPickUpDynamicPickup"/>
 			<referrer name="OnPlayerStreamIn"/>
 			<referrer name="OnDialogResponse"/>
 			<referrer name="LoadPickups"/>
@@ -12244,6 +12319,7 @@
 			<referrer name="OnPlayerKeyStateChange"/>
 			<referrer name="OnDialogResponse"/>
 			<referrer name="pc_cmd_mangal"/>
+			<referrer name="pc_cmd_createobj"/>
 			<param name="modelid">
 			</param>
 			<param name="X">
@@ -12653,6 +12729,7 @@
 		<member name="M:Delete3DTextLabel" syntax="Delete3DTextLabel(id)">
 			<attribute name="native"/>
 			<referrer name="Itter_OnPlayerDisconnect"/>
+			<referrer name="pc_cmd_aexit"/>
 			<param name="id">
 				<paraminfo>Text3D </paraminfo>
 			</param>
@@ -12835,6 +12912,7 @@
 			<attribute name="native"/>
 			<referrer name="Itter_OnPlayerDisconnect"/>
 			<referrer name="OnPlayerStateChange"/>
+			<referrer name="OnPlayerEnterDynamicCP"/>
 			<referrer name="OnDialogResponse"/>
 			<referrer name="PlayerTimer"/>
 			<param name="checkpointid">
@@ -12936,6 +13014,7 @@
 			<referrer name="OnDialogResponse"/>
 			<referrer name="pc_cmd_fixcopter"/>
 			<referrer name="pc_cmd_setcar"/>
+			<referrer name="pc_cmd_delvehid"/>
 			<referrer name="pc_cmd_alldelveh"/>
 			<referrer name="pc_cmd_delveh"/>
 			<referrer name="pc_cmd_vpc"/>
@@ -13161,6 +13240,7 @@
 		<member name="M:EditObject" syntax="EditObject(playerid, objectid)">
 			<attribute name="native"/>
 			<referrer name="OnDialogResponse"/>
+			<referrer name="pc_cmd_createobj"/>
 			<param name="playerid">
 			</param>
 			<param name="objectid">
@@ -14104,6 +14184,36 @@
 				<paraminfo> [] </paraminfo>
 			</param>
 		</member>
+		<member name="M:GetObjectPos" syntax="GetObjectPos(objectid, &amp;X, &amp;Y, &amp;Z)">
+			<attribute name="native"/>
+			<referrer name="OnPlayerEditObject"/>
+			<param name="objectid">
+			</param>
+			<param name="X">
+				<paraminfo>Float &amp; </paraminfo>
+			</param>
+			<param name="Y">
+				<paraminfo>Float &amp; </paraminfo>
+			</param>
+			<param name="Z">
+				<paraminfo>Float &amp; </paraminfo>
+			</param>
+		</member>
+		<member name="M:GetObjectRot" syntax="GetObjectRot(objectid, &amp;RotX, &amp;RotY, &amp;RotZ)">
+			<attribute name="native"/>
+			<referrer name="OnPlayerEditObject"/>
+			<param name="objectid">
+			</param>
+			<param name="RotX">
+				<paraminfo>Float &amp; </paraminfo>
+			</param>
+			<param name="RotY">
+				<paraminfo>Float &amp; </paraminfo>
+			</param>
+			<param name="RotZ">
+				<paraminfo>Float &amp; </paraminfo>
+			</param>
+		</member>
 		<member name="M:GetOffsetAttachedAccesories" syntax="GetOffsetAttachedAccesories(modelid, &amp;fx, &amp;fy, &amp;fz, &amp;frx, &amp;fry, &amp;frz)">
 			<stacksize value="1"/>
 			<referrer name="SpawnPlayerOnly"/>
@@ -14806,6 +14916,7 @@
 			<referrer name="pc_cmd_gethere"/>
 			<referrer name="pc_cmd_slap"/>
 			<referrer name="pc_cmd_veh"/>
+			<referrer name="pc_cmd_createobj"/>
 			<referrer name="pc_cmd_createpodezd"/>
 			<referrer name="pc_cmd_afly"/>
 			<referrer name="pc_cmd_spec"/>
@@ -14848,7 +14959,7 @@
 			<referrer name="pc_cmd_hgatecreate"/>
 			<referrer name="pc_cmd_createarea"/>
 			<referrer name="pc_cmd_endarea"/>
-			<referrer name="pc_cmd_vzad"/>
+			<referrer name="pc_cmd_trunk"/>
 			<referrer name="pc_cmd_tipster"/>
 			<referrer name="pc_cmd_recorder"/>
 			<referrer name="pc_cmd_objectall"/>
@@ -15017,6 +15128,7 @@
 			<referrer name="pc_cmd_load"/>
 			<referrer name="pc_cmd_unload"/>
 			<referrer name="OnPlayerClickMap"/>
+			<referrer name="OnVehicleDamageStatusUpdate"/>
 			<referrer name="illegal_nos_vehicle"/>
 			<referrer name="SpeedVehicle"/>
 			<referrer name="OnUnoccupiedVehicleUpdate"/>
@@ -15409,7 +15521,7 @@
 			<referrer name="CarDoorsEx"/>
 			<referrer name="StartZaezdGO"/>
 			<referrer name="FuelCar"/>
-			<referrer name="pc_cmd_vzad"/>
+			<referrer name="pc_cmd_trunk"/>
 			<param name="vehicleid">
 			</param>
 			<param name="engine">
@@ -15516,7 +15628,7 @@
 		</member>
 		<member name="M:GetVehicleShiftPos" syntax="GetVehicleShiftPos(vehicleid, style, &amp;x, &amp;y, &amp;z, distance)">
 			<stacksize value="7"/>
-			<referrer name="pc_cmd_vzad"/>
+			<referrer name="pc_cmd_trunk"/>
 			<dependency name="operator-(Float:)"/>
 			<dependency name="operator-(Float:,Float:)"/>
 			<dependency name="operator+(Float:,Float:)"/>
@@ -15546,6 +15658,8 @@
 		<member name="M:GetVehicleSpeed" syntax="GetVehicleSpeed(vehicleid)">
 			<stacksize value="10"/>
 			<referrer name="UpdateSpeedometr"/>
+			<referrer name="OnPlayerUpdate"/>
+			<referrer name="OnVehicleDamageStatusUpdate"/>
 			<dependency name="operator*(Float:,_:)"/>
 			<dependency name="operator+(Float:,Float:)"/>
 			<dependency name="operator/(Float:,Float:)"/>
@@ -15616,7 +15730,7 @@
 			<referrer name="SetVehicleSpeed"/>
 			<referrer name="IsVehicleDrivingBackwards"/>
 			<referrer name="pc_cmd_addhcar"/>
-			<referrer name="pc_cmd_vzad"/>
+			<referrer name="pc_cmd_trunk"/>
 			<referrer name="GetVehicleShiftPos"/>
 			<param name="vehicleid">
 			</param>
@@ -16186,7 +16300,7 @@
 		</member>
 		<member name="M:IsACar" syntax="IsACar(carid)">
 			<stacksize value="4"/>
-			<referrer name="pc_cmd_vzad"/>
+			<referrer name="pc_cmd_trunk"/>
 			<dependency name="GetVehicleState"/>
 			<param name="carid">
 			</param>
@@ -16651,6 +16765,7 @@
 			<referrer name="OnPlayerTakeDamage"/>
 			<referrer name="OnPlayerEnterCheckpoint"/>
 			<referrer name="OnPlayerKeyStateChange"/>
+			<referrer name="OnPlayerUpdate"/>
 			<referrer name="OnDialogResponse"/>
 			<referrer name="pc_cmd_givevoen"/>
 			<referrer name="pc_cmd_park"/>
@@ -16807,7 +16922,7 @@
 			<referrer name="pc_cmd_buyf"/>
 			<referrer name="pc_cmd_sellf"/>
 			<referrer name="pc_cmd_buyprod"/>
-			<referrer name="pc_cmd_vzad"/>
+			<referrer name="pc_cmd_trunk"/>
 			<referrer name="pc_cmd_recorder"/>
 			<referrer name="pc_cmd_setrecorder"/>
 			<referrer name="pc_cmd_objectall"/>
@@ -17028,7 +17143,7 @@
 			<referrer name="pc_cmd_alldelveh"/>
 			<referrer name="pc_cmd_delveh"/>
 			<referrer name="hvehicles_loading"/>
-			<referrer name="pc_cmd_vzad"/>
+			<referrer name="pc_cmd_trunk"/>
 			<param name="vehicleid">
 			</param>
 		</member>
@@ -17534,7 +17649,6 @@
 			<dependency name="passport_s_n"/>
 			<dependency name="passport_sex"/>
 			<dependency name="pc_cmd_specoff"/>
-			<dependency name="playerSpawnTimer"/>
 			<dependency name="playerText_ame_Action"/>
 			<dependency name="playerText_ame_Action"/>
 			<dependency name="radar_speed"/>
@@ -19936,6 +20050,7 @@
 			<dependency name="SendHelperMessage"/>
 			<dependency name="SendInf"/>
 			<dependency name="SendPlayerProposition"/>
+			<dependency name="SendRconCommand"/>
 			<dependency name="SetArmour"/>
 			<dependency name="SetCameraBehindPlayer"/>
 			<dependency name="SetHealth"/>
@@ -20668,6 +20783,7 @@
 			<dependency name="v_veh_coms"/>
 			<dependency name="v_virtual"/>
 			<dependency name="vehicle_id_edit"/>
+			<dependency name="wahtacheckpoint"/>
 			<dependency name="zakaz_taxi"/>
 			<param name="playerid">
 			</param>
@@ -20829,8 +20945,11 @@
 			<dependency name="SendClientMessage"/>
 			<dependency name="SetPVarInt"/>
 			<dependency name="SetTimerEx"/>
+			<dependency name="false"/>
 			<dependency name="format"/>
 			<dependency name="gettime"/>
+			<dependency name="pAdmin"/>
+			<dependency name="p_info"/>
 			<param name="targetid">
 			</param>
 			<param name="cheat_name">
@@ -21012,6 +21131,7 @@
 			<stacksize value="10"/>
 			<dependency name="operator-(Float:,_:)"/>
 			<dependency name="operator+(Float:,_:)"/>
+			<dependency name="AC_SetPlayerPos"/>
 			<dependency name="DeletePVar"/>
 			<dependency name="GPSPlayer_"/>
 			<dependency name="GangZoneCreate"/>
@@ -21025,9 +21145,13 @@
 			<dependency name="MafiaBattleZoneID"/>
 			<dependency name="Player@YSII_Ag"/>
 			<dependency name="STRING_GLOBAL"/>
+			<dependency name="SendClientMessage"/>
 			<dependency name="SendInf"/>
 			<dependency name="SetPVarInt"/>
+			<dependency name="SetPlayerInterior"/>
+			<dependency name="SetPlayerVirtualWorld"/>
 			<dependency name="format"/>
+			<dependency name="pAdmin"/>
 			<dependency name="pJob"/>
 			<dependency name="pName"/>
 			<dependency name="p_info"/>
@@ -21536,7 +21660,6 @@
 			<dependency name="P_TEMP_JOB"/>
 			<dependency name="Player@YSII_Ag"/>
 			<dependency name="PlayerDied"/>
-			<dependency name="PlayerSpawned"/>
 			<dependency name="PlayerTextDrawSetStringRus"/>
 			<dependency name="PlayerToKvadrat"/>
 			<dependency name="PlayerUseMask"/>
@@ -21560,7 +21683,6 @@
 			<dependency name="SetPlayerInterior"/>
 			<dependency name="SetPlayerSpecialAction"/>
 			<dependency name="SetPlayerWantedLevel"/>
-			<dependency name="SetTimer"/>
 			<dependency name="SimulatorUse"/>
 			<dependency name="SleepTime"/>
 			<dependency name="SmsNews"/>
@@ -21600,6 +21722,7 @@
 			<dependency name="pCuff"/>
 			<dependency name="pCuffee"/>
 			<dependency name="pCuffer"/>
+			<dependency name="pHospitalHeal"/>
 			<dependency name="pJail"/>
 			<dependency name="pJailTime"/>
 			<dependency name="pLeader"/>
@@ -21614,7 +21737,6 @@
 			<dependency name="p_info"/>
 			<dependency name="playerCheckFly"/>
 			<dependency name="playerSpawn"/>
-			<dependency name="playerSpawnTimer"/>
 			<dependency name="random"/>
 			<dependency name="robbery_bank"/>
 			<dependency name="robbery_players"/>
@@ -21799,7 +21921,7 @@
 		</member>
 		<member name="M:OnPlayerEditObject" syntax="OnPlayerEditObject(playerid, playerobject, objectid, response, fX, fY, fZ, fRotX, fRotY, fRotZ)">
 			<attribute name="public"/>
-			<stacksize value="273"/>
+			<stacksize value="279"/>
 			<dependency name="operator+(Float:,Float:)"/>
 			<dependency name="CancelEdit"/>
 			<dependency name="CreateDynamic3DTextLabel"/>
@@ -21807,6 +21929,8 @@
 			<dependency name="DeletePVar"/>
 			<dependency name="DestroyObject"/>
 			<dependency name="EOS"/>
+			<dependency name="GetObjectPos"/>
+			<dependency name="GetObjectRot"/>
 			<dependency name="GetPVarInt"/>
 			<dependency name="IsValidObject"/>
 			<dependency name="MoveObject"/>
@@ -21814,6 +21938,10 @@
 			<dependency name="RI"/>
 			<dependency name="STRING_GLOBAL"/>
 			<dependency name="SendClientMessage"/>
+			<dependency name="SetObjectPos"/>
+			<dependency name="SetObjectRot"/>
+			<dependency name="SetPlayerObjectPos"/>
+			<dependency name="SetPlayerObjectRot"/>
 			<dependency name="TOTALRADAR"/>
 			<dependency name="dbHandle"/>
 			<dependency name="format"/>
@@ -22127,6 +22255,7 @@
 			<attribute name="public"/>
 			<stacksize value="12"/>
 			<dependency name="ApplyAnimation"/>
+			<dependency name="DestroyDynamicCP"/>
 			<dependency name="FD_CHEK_ID"/>
 			<dependency name="GetPVarInt"/>
 			<dependency name="GetPlayerHouse"/>
@@ -22154,6 +22283,7 @@
 			<dependency name="robbery_moneys"/>
 			<dependency name="robbery_players"/>
 			<dependency name="true"/>
+			<dependency name="wahtacheckpoint"/>
 			<param name="playerid">
 			</param>
 			<param name="checkpointid">
@@ -22774,7 +22904,7 @@
 			<dependency name="park3Timer"/>
 			<dependency name="pc_cmd_inv"/>
 			<dependency name="pc_cmd_no"/>
-			<dependency name="pc_cmd_vzad"/>
+			<dependency name="pc_cmd_trunk"/>
 			<dependency name="pc_cmd_yes"/>
 			<dependency name="player_holding_key_down"/>
 			<dependency name="playerid_wbook"/>
@@ -23264,6 +23394,7 @@
 			<dependency name="ClearAnimations"/>
 			<dependency name="ClosetSkins"/>
 			<dependency name="ClosetSkins"/>
+			<dependency name="CreateDynamicCP"/>
 			<dependency name="D_ARMOURY"/>
 			<dependency name="D_HEAL"/>
 			<dependency name="D_JOINCARS"/>
@@ -23364,6 +23495,7 @@
 			<dependency name="v_ticket"/>
 			<dependency name="voenkomatpick"/>
 			<dependency name="wahta"/>
+			<dependency name="wahtacheckpoint"/>
 			<dependency name="zavod"/>
 			<param name="playerid">
 			</param>
@@ -23761,16 +23893,20 @@
 			<dependency name="GetPVarInt"/>
 			<dependency name="GetPlayerPing"/>
 			<dependency name="IsPlayerAdmin"/>
+			<dependency name="SetCameraBehindPlayer"/>
+			<dependency name="SetHealth"/>
+			<dependency name="SetPVarInt"/>
 			<dependency name="SetPlayerFacingAngle"/>
 			<dependency name="SetPlayerInterior"/>
 			<dependency name="SetPlayerSkinEx"/>
 			<dependency name="SetPlayerVirtualWorld"/>
-			<dependency name="SetTimerEx"/>
 			<dependency name="SleepTime"/>
 			<dependency name="SpawnPlayerOnly"/>
 			<dependency name="floatround"/>
+			<dependency name="pHospitalHeal"/>
+			<dependency name="p_info"/>
 			<dependency name="playerCheckFly"/>
-			<dependency name="playerSpawnTimer"/>
+			<dependency name="print"/>
 			<dependency name="true"/>
 			<dependency name="unix"/>
 			<param name="playerid">
@@ -24113,7 +24249,9 @@
 		<member name="M:OnPlayerUpdate" syntax="OnPlayerUpdate(playerid)">
 			<attribute name="public"/>
 			<stacksize value="253"/>
+			<dependency name="operator-(Float:,_:)"/>
 			<dependency name="operator-(Float:,Float:)"/>
+			<dependency name="Float:operator=(_:)"/>
 			<dependency name="operator==(Float:,_:)"/>
 			<dependency name="operator&gt;(Float:,Float:)"/>
 			<dependency name="operator&gt;(Float:,_:)"/>
@@ -24143,8 +24281,10 @@
 			<dependency name="GetPlayerWeaponState"/>
 			<dependency name="GetTickCount"/>
 			<dependency name="GetVehicleHealth"/>
+			<dependency name="GetVehicleSpeed"/>
 			<dependency name="GetVehicleTrailer"/>
 			<dependency name="GoPlayerAnimation"/>
+			<dependency name="IsPlayerInAnyVehicle"/>
 			<dependency name="IsPlayerInRangeOfPoint"/>
 			<dependency name="IsTrailerAttachedToVehicle"/>
 			<dependency name="KickFreezeAFK"/>
@@ -24164,6 +24304,7 @@
 			<dependency name="SendClientMessage"/>
 			<dependency name="SendErr"/>
 			<dependency name="SendInf"/>
+			<dependency name="SetHealth"/>
 			<dependency name="SetPVarFloat"/>
 			<dependency name="SetPVarInt"/>
 			<dependency name="SetPlayerAttachedObject"/>
@@ -24197,6 +24338,7 @@
 			<dependency name="noclipdata"/>
 			<dependency name="noclipdata"/>
 			<dependency name="pAFK"/>
+			<dependency name="pHeal"/>
 			<dependency name="pJob"/>
 			<dependency name="pMember"/>
 			<dependency name="p_info"/>
@@ -24361,15 +24503,17 @@
 		</member>
 		<member name="M:OnVehicleDamageStatusUpdate" syntax="OnVehicleDamageStatusUpdate(vehicleid, playerid)">
 			<attribute name="public"/>
-			<stacksize value="10"/>
+			<stacksize value="11"/>
 			<dependency name="operator-(Float:,Float:)"/>
 			<dependency name="DeletePVar"/>
 			<dependency name="Engine"/>
 			<dependency name="GameTextForPlayerRus"/>
 			<dependency name="GetPVarFloat"/>
 			<dependency name="GetPVarInt"/>
+			<dependency name="GetPlayerVehicleID"/>
 			<dependency name="GetVehicleHealth"/>
 			<dependency name="GetVehicleParamsEx"/>
+			<dependency name="GetVehicleSpeed"/>
 			<dependency name="RepairVehicle"/>
 			<dependency name="SetPVarFloat"/>
 			<dependency name="SetPVarInt"/>
@@ -24796,6 +24940,9 @@
 			<dependency name="SendErr"/>
 			<dependency name="SetHealth"/>
 			<dependency name="SetPVarInt"/>
+			<dependency name="pHospitalHeal"/>
+			<dependency name="p_info"/>
+			<dependency name="p_info"/>
 			<dependency name="true"/>
 			<param name="playerid">
 			</param>
@@ -25068,7 +25215,7 @@
 			<referrer name="box_td_status"/>
 			<referrer name="hospital_td_status"/>
 			<referrer name="action_td_status"/>
-			<referrer name="pc_cmd_vzad"/>
+			<referrer name="pc_cmd_trunk"/>
 			<param name="playerid">
 			</param>
 			<param name="text">
@@ -26440,7 +26587,7 @@
 			<referrer name="cm_status"/>
 			<referrer name="lic_td_status"/>
 			<referrer name="binder_td_status"/>
-			<referrer name="pc_cmd_vzad"/>
+			<referrer name="pc_cmd_trunk"/>
 			<param name="playerid">
 			</param>
 			<param name="hovercolor">
@@ -26482,6 +26629,7 @@
 			<referrer name="pc_cmd_unbanip"/>
 			<referrer name="pc_cmd_slap"/>
 			<referrer name="pc_cmd_tempskin"/>
+			<referrer name="pc_cmd_delvehid"/>
 			<referrer name="pc_cmd_alldelveh"/>
 			<referrer name="pc_cmd_delveh"/>
 			<referrer name="pc_cmd_msg"/>
@@ -26599,23 +26747,33 @@
 			<referrer name="pc_cmd_givemoney"/>
 			<referrer name="pc_cmd_givecredits"/>
 			<referrer name="pc_cmd_unavig"/>
+			<referrer name="pc_cmd_tpmyoff"/>
+			<referrer name="pc_cmd_tpmyon"/>
+			<referrer name="pc_cmd_sistema"/>
+			<referrer name="pc_cmd_az"/>
+			<referrer name="pc_cmd_aexit"/>
 			<referrer name="pc_cmd_setsex"/>
 			<referrer name="pc_cmd_tempskin"/>
 			<referrer name="pc_cmd_setskin"/>
 			<referrer name="pc_cmd_mask"/>
+			<referrer name="pc_cmd_delvehid"/>
+			<referrer name="pc_cmd_createobj"/>
 			<referrer name="pc_cmd_fixveh"/>
 			<referrer name="pc_cmd_setfuel"/>
 			<referrer name="pc_cmd_admins"/>
 			<referrer name="pc_cmd_helpers"/>
 			<referrer name="pc_cmd_createpodezd"/>
+			<referrer name="pc_cmd_crash"/>
 			<referrer name="pc_cmd_sellcar"/>
 			<referrer name="pc_cmd_sellmycar"/>
+			<referrer name="pc_cmd_crash1"/>
 			<referrer name="pc_cmd_sellcopter"/>
 			<referrer name="pc_cmd_sellmyhouse"/>
 			<referrer name="pc_cmd_vostacc"/>
 			<referrer name="pc_cmd_vpc"/>
 			<referrer name="pc_cmd_tpc"/>
 			<referrer name="pc_cmd_crent"/>
+			<referrer name="pc_cmd_crash2"/>
 			<referrer name="pc_cmd_gps"/>
 			<referrer name="pc_cmd_agm"/>
 			<referrer name="pc_cmd_agmoff"/>
@@ -26663,6 +26821,7 @@
 			<referrer name="pc_cmd_giveflowers"/>
 			<referrer name="pc_cmd_sellsim"/>
 			<referrer name="pc_cmd_rt"/>
+			<referrer name="OnPlayerClickMap"/>
 			<referrer name="CheckMaxVes"/>
 			<referrer name="SetPlayerCriminal"/>
 			<referrer name="CheatersUpdate"/>
@@ -26755,6 +26914,7 @@
 			<referrer name="pc_cmd_unmute"/>
 			<referrer name="pc_cmd_mute"/>
 			<referrer name="pc_cmd_unjail"/>
+			<referrer name="pc_cmd_sistema"/>
 			<referrer name="pc_cmd_gmx"/>
 			<referrer name="pc_cmd_gg"/>
 			<referrer name="OnPlayerLogin"/>
@@ -26897,6 +27057,10 @@
 			<referrer name="pc_cmd_givecredits"/>
 			<referrer name="pc_cmd_unavig"/>
 			<referrer name="pc_cmd_slap"/>
+			<referrer name="pc_cmd_tpmyoff"/>
+			<referrer name="pc_cmd_tpmyon"/>
+			<referrer name="pc_cmd_sistema"/>
+			<referrer name="pc_cmd_az"/>
 			<referrer name="pc_cmd_alogin"/>
 			<referrer name="pc_cmd_setsex"/>
 			<referrer name="pc_cmd_tempskin"/>
@@ -26909,6 +27073,8 @@
 			<referrer name="pc_cmd_healme"/>
 			<referrer name="pc_cmd_time"/>
 			<referrer name="pc_cmd_veh"/>
+			<referrer name="pc_cmd_delvehid"/>
+			<referrer name="pc_cmd_createobj"/>
 			<referrer name="pc_cmd_alldelveh"/>
 			<referrer name="pc_cmd_delveh"/>
 			<referrer name="pc_cmd_fixveh"/>
@@ -26935,6 +27101,7 @@
 			<referrer name="pc_cmd_agmoff"/>
 			<referrer name="pc_cmd_gm"/>
 			<referrer name="pc_cmd_setskill"/>
+			<referrer name="pc_cmd_host"/>
 			<referrer name="pc_cmd_gmx"/>
 			<referrer name="pc_cmd_setvip"/>
 			<referrer name="pc_cmd_pmenu"/>
@@ -27148,7 +27315,7 @@
 			<referrer name="pc_cmd_u"/>
 			<referrer name="pc_cmd_un"/>
 			<referrer name="pc_cmd_tow"/>
-			<referrer name="pc_cmd_vzad"/>
+			<referrer name="pc_cmd_trunk"/>
 			<referrer name="pc_cmd_tipster"/>
 			<referrer name="pc_cmd_prodlist"/>
 			<referrer name="pc_cmd_fuellist"/>
@@ -27313,6 +27480,7 @@
 			<referrer name="pc_cmd_veh"/>
 			<referrer name="pc_cmd_do"/>
 			<referrer name="pc_cmd_try"/>
+			<referrer name="pc_cmd_fy"/>
 			<referrer name="pc_cmd_me"/>
 			<referrer name="pc_cmd_setfuel"/>
 			<referrer name="pc_cmd_msg"/>
@@ -27543,6 +27711,7 @@
 		<member name="M:SendRconCommand" syntax="SendRconCommand(command[])">
 			<attribute name="native"/>
 			<referrer name="Itter_OnGameModeInit"/>
+			<referrer name="OnDialogResponse"/>
 			<referrer name="pc_cmd_banip"/>
 			<referrer name="pc_cmd_unbanip"/>
 			<referrer name="LoadOther"/>
@@ -27671,6 +27840,7 @@
 			<attribute name="native"/>
 			<referrer name="AC_SetPlayerPos"/>
 			<referrer name="SecTimer"/>
+			<referrer name="OnPlayerSpawn"/>
 			<referrer name="SpawnPlayerOnly"/>
 			<referrer name="OnPlayerPickUpDynamicPickup"/>
 			<referrer name="OnPlayerClickTextDraw"/>
@@ -27759,12 +27929,13 @@
 			<referrer name="OnPlayerTakeDamage"/>
 			<referrer name="ThreeSecTimer"/>
 			<referrer name="SecTimer"/>
+			<referrer name="OnPlayerSpawn"/>
 			<referrer name="SpawnPlayerOnly"/>
 			<referrer name="OnPlayerDeath"/>
-			<referrer name="Spawn"/>
 			<referrer name="OnPlayerEnterDynamicArea"/>
 			<referrer name="PlayerHealInBolnicaPickups"/>
 			<referrer name="OnPlayerKeyStateChange"/>
+			<referrer name="OnPlayerUpdate"/>
 			<referrer name="OnDialogResponse"/>
 			<referrer name="pc_cmd_sethp"/>
 			<referrer name="pc_cmd_slap"/>
@@ -27912,6 +28083,36 @@
 			<param name="materialcolor">
 			</param>
 		</member>
+		<member name="M:SetObjectPos" syntax="SetObjectPos(objectid, X, Y, Z)">
+			<attribute name="native"/>
+			<referrer name="OnPlayerEditObject"/>
+			<param name="objectid">
+			</param>
+			<param name="X">
+				<paraminfo>Float </paraminfo>
+			</param>
+			<param name="Y">
+				<paraminfo>Float </paraminfo>
+			</param>
+			<param name="Z">
+				<paraminfo>Float </paraminfo>
+			</param>
+		</member>
+		<member name="M:SetObjectRot" syntax="SetObjectRot(objectid, RotX, RotY, RotZ)">
+			<attribute name="native"/>
+			<referrer name="OnPlayerEditObject"/>
+			<param name="objectid">
+			</param>
+			<param name="RotX">
+				<paraminfo>Float </paraminfo>
+			</param>
+			<param name="RotY">
+				<paraminfo>Float </paraminfo>
+			</param>
+			<param name="RotZ">
+				<paraminfo>Float </paraminfo>
+			</param>
+		</member>
 		<member name="M:SetPVarFloat" syntax="SetPVarFloat(playerid, varname[], float_value)">
 			<attribute name="native"/>
 			<referrer name="AnimationTrunk"/>
@@ -27947,9 +28148,9 @@
 			<referrer name="player_check"/>
 			<referrer name="Itter_OnPlayerConnect"/>
 			<referrer name="Itter_OnPlayerDisconnect"/>
+			<referrer name="OnPlayerSpawn"/>
 			<referrer name="SpawnPlayerOnly"/>
 			<referrer name="OnPlayerDeath"/>
-			<referrer name="Spawn"/>
 			<referrer name="OnVehicleSpawn"/>
 			<referrer name="OnVehicleDeath"/>
 			<referrer name="OnPlayerExitVehicle"/>
@@ -27982,6 +28183,7 @@
 			<referrer name="pc_cmd_unarrest"/>
 			<referrer name="pc_cmd_slap"/>
 			<referrer name="pc_cmd_alogin"/>
+			<referrer name="pc_cmd_createobj"/>
 			<referrer name="pc_cmd_sellcar"/>
 			<referrer name="pc_cmd_sellcopter"/>
 			<referrer name="pc_cmd_crent"/>
@@ -28814,10 +29016,12 @@
 			<referrer name="pc_cmd_gotomp"/>
 			<referrer name="pc_cmd_goto"/>
 			<referrer name="pc_cmd_gethere"/>
+			<referrer name="pc_cmd_az"/>
 			<referrer name="pc_cmd_exit"/>
 			<referrer name="pc_cmd_spec"/>
 			<referrer name="pc_cmd_arrest"/>
 			<referrer name="pc_cmd_ram"/>
+			<referrer name="OnPlayerClickMap"/>
 			<referrer name="PlayerTimer"/>
 			<referrer name="OnPlayerLogin"/>
 			<referrer name="BuyCloseCar"/>
@@ -28996,6 +29200,40 @@
 				<paraminfo> [] </paraminfo>
 			</param>
 		</member>
+		<member name="M:SetPlayerObjectPos" syntax="SetPlayerObjectPos(playerid, objectid, X, Y, Z)">
+			<attribute name="native"/>
+			<referrer name="OnPlayerEditObject"/>
+			<param name="playerid">
+			</param>
+			<param name="objectid">
+			</param>
+			<param name="X">
+				<paraminfo>Float </paraminfo>
+			</param>
+			<param name="Y">
+				<paraminfo>Float </paraminfo>
+			</param>
+			<param name="Z">
+				<paraminfo>Float </paraminfo>
+			</param>
+		</member>
+		<member name="M:SetPlayerObjectRot" syntax="SetPlayerObjectRot(playerid, objectid, RotX, RotY, RotZ)">
+			<attribute name="native"/>
+			<referrer name="OnPlayerEditObject"/>
+			<param name="playerid">
+			</param>
+			<param name="objectid">
+			</param>
+			<param name="RotX">
+				<paraminfo>Float </paraminfo>
+			</param>
+			<param name="RotY">
+				<paraminfo>Float </paraminfo>
+			</param>
+			<param name="RotZ">
+				<paraminfo>Float </paraminfo>
+			</param>
+		</member>
 		<member name="M:SetPlayerPos" syntax="SetPlayerPos(playerid, x, y, z)">
 			<attribute name="native"/>
 			<referrer name="AnimationTrunk"/>
@@ -29165,7 +29403,6 @@
 			<referrer name="player_join"/>
 			<referrer name="OnPlayerSpawn"/>
 			<referrer name="SpawnPlayerOnly"/>
-			<referrer name="Spawn"/>
 			<referrer name="OnPlayerEnterDynamicArea"/>
 			<referrer name="OnPlayerPickUpDynamicPickup"/>
 			<referrer name="OnPlayerClickTextDraw"/>
@@ -29175,9 +29412,11 @@
 			<referrer name="pc_cmd_gotomp"/>
 			<referrer name="pc_cmd_goto"/>
 			<referrer name="pc_cmd_gethere"/>
+			<referrer name="pc_cmd_az"/>
 			<referrer name="pc_cmd_exit"/>
 			<referrer name="pc_cmd_spec"/>
 			<referrer name="pc_cmd_ram"/>
+			<referrer name="OnPlayerClickMap"/>
 			<referrer name="PlayerTimer"/>
 			<referrer name="OnPlayerLogin"/>
 			<referrer name="BuyCloseCar"/>
@@ -29355,7 +29594,6 @@
 			<attribute name="native"/>
 			<referrer name="MinuteTimer"/>
 			<referrer name="Itter_OnGameModeInit"/>
-			<referrer name="OnPlayerDeath"/>
 			<referrer name="pc_cmd_gmx"/>
 			<referrer name="StartZaezdGO"/>
 			<referrer name="StartCS"/>
@@ -29382,7 +29620,6 @@
 			<referrer name="KickEx"/>
 			<referrer name="OnPlayerTakeDamage"/>
 			<referrer name="FreezePlayer"/>
-			<referrer name="OnPlayerSpawn"/>
 			<referrer name="SpawnPlayerOnly"/>
 			<referrer name="OnPlayerText"/>
 			<referrer name="OnPlayerStateChange"/>
@@ -29425,6 +29662,15 @@
 				<paraminfo> {Float,_} </paraminfo>
 			</param>
 		</member>
+		<member name="M:SetVehicleHealth" syntax="SetVehicleHealth(vehicleid, health)">
+			<attribute name="native"/>
+			<referrer name="pc_cmd_veh"/>
+			<param name="vehicleid">
+			</param>
+			<param name="health">
+				<paraminfo>Float </paraminfo>
+			</param>
+		</member>
 		<member name="M:SetVehicleNumberPlate" syntax="SetVehicleNumberPlate(vehicleid, numberplate[])">
 			<attribute name="native"/>
 			<referrer name="OnVehicleSpawn"/>
@@ -29455,7 +29701,7 @@
 			<referrer name="StartZaezdGO"/>
 			<referrer name="FuelCar"/>
 			<referrer name="hvehicles_loading"/>
-			<referrer name="pc_cmd_vzad"/>
+			<referrer name="pc_cmd_trunk"/>
 			<param name="vehicleid">
 			</param>
 			<param name="engine">
@@ -30060,6 +30306,7 @@
 			<referrer name="pc_cmd_tpc"/>
 			<referrer name="pc_cmd_crent"/>
 			<referrer name="pc_cmd_gps"/>
+			<referrer name="pc_cmd_host"/>
 			<referrer name="pc_cmd_pmenu"/>
 			<referrer name="pc_cmd_setleader"/>
 			<referrer name="pc_cmd_ainvite"/>
@@ -30437,16 +30684,6 @@
 			<dependency name="Float:operator=(_:)"/>
 			<dependency name="GetPlayerPing"/>
 			<dependency name="floatround"/>
-			<param name="playerid">
-			</param>
-		</member>
-		<member name="M:Spawn" syntax="Spawn(playerid)">
-			<attribute name="public"/>
-			<stacksize value="8"/>
-			<dependency name="AC_SetPlayerPos"/>
-			<dependency name="SetHealth"/>
-			<dependency name="SetPVarInt"/>
-			<dependency name="SetPlayerVirtualWorld"/>
 			<param name="playerid">
 			</param>
 		</member>
@@ -31157,7 +31394,7 @@
 			<referrer name="@__LoadTextureForPlayer"/>
 			<referrer name="MafiaBattleFinish"/>
 			<referrer name="binder_td_status"/>
-			<referrer name="pc_cmd_vzad"/>
+			<referrer name="pc_cmd_trunk"/>
 			<referrer name="onDamage"/>
 			<param name="playerid">
 			</param>
@@ -31300,7 +31537,7 @@
 			<referrer name="LoadTexture"/>
 			<referrer name="binder_td_status"/>
 			<referrer name="SetPlayerAnimation"/>
-			<referrer name="pc_cmd_vzad"/>
+			<referrer name="pc_cmd_trunk"/>
 			<param name="playerid">
 			</param>
 			<param name="text">
@@ -32026,7 +32263,7 @@
 		<member name="M:UpdateTDOpenCloseTrunk" syntax="UpdateTDOpenCloseTrunk(playerid, vehicleid)">
 			<stacksize value="5"/>
 			<referrer name="OnPlayerClickTextDraw"/>
-			<referrer name="pc_cmd_vzad"/>
+			<referrer name="pc_cmd_trunk"/>
 			<dependency name="TextDrawBoxColor"/>
 			<dependency name="TextDrawHideForPlayer"/>
 			<dependency name="TextDrawSetStringRus"/>
@@ -33098,6 +33335,7 @@
 			<attribute name="native"/>
 			<referrer name="AnimationTrunk"/>
 			<referrer name="OnDialogResponse"/>
+			<referrer name="pc_cmd_createobj"/>
 			<referrer name="pc_cmd_load"/>
 			<referrer name="pc_cmd_unload"/>
 			<referrer name="GetXYInBackOfPlayer"/>
@@ -33190,6 +33428,7 @@
 			<attribute name="native"/>
 			<referrer name="AnimationTrunk"/>
 			<referrer name="OnDialogResponse"/>
+			<referrer name="pc_cmd_createobj"/>
 			<referrer name="pc_cmd_load"/>
 			<referrer name="pc_cmd_unload"/>
 			<referrer name="GetXYInBackOfPlayer"/>
@@ -33369,6 +33608,7 @@
 			<referrer name="pc_cmd_givecredits"/>
 			<referrer name="pc_cmd_unavig"/>
 			<referrer name="pc_cmd_slap"/>
+			<referrer name="pc_cmd_sistema"/>
 			<referrer name="pc_cmd_alogin"/>
 			<referrer name="pc_cmd_setsex"/>
 			<referrer name="pc_cmd_tempskin"/>
@@ -33376,10 +33616,12 @@
 			<referrer name="pc_cmd_skills"/>
 			<referrer name="pc_cmd_skill"/>
 			<referrer name="pc_cmd_time"/>
+			<referrer name="pc_cmd_delvehid"/>
 			<referrer name="pc_cmd_alldelveh"/>
 			<referrer name="pc_cmd_delveh"/>
 			<referrer name="pc_cmd_do"/>
 			<referrer name="pc_cmd_try"/>
+			<referrer name="pc_cmd_fy"/>
 			<referrer name="pc_cmd_msg"/>
 			<referrer name="pc_cmd_fuelcars"/>
 			<referrer name="pc_cmd_admins"/>
@@ -34711,6 +34953,7 @@
 			<referrer name="pc_cmd_givecredits"/>
 			<referrer name="pc_cmd_slap"/>
 			<referrer name="pc_cmd_alogin"/>
+			<referrer name="pc_cmd_fy"/>
 			<referrer name="pc_cmd_createpodezd"/>
 			<referrer name="pc_cmd_vpc"/>
 			<referrer name="pc_cmd_setskill"/>
@@ -35324,6 +35567,21 @@
 				<paraminfo> [] </paraminfo>
 			</param>
 		</member>
+		<member name="M:pc_cmd_aexit" syntax="pc_cmd_aexit(playerid, params[])">
+			<attribute name="public"/>
+			<stacksize value="5"/>
+			<dependency name="AdminLogged"/>
+			<dependency name="Delete3DTextLabel"/>
+			<dependency name="SendClientMessage"/>
+			<dependency name="admlabel"/>
+			<dependency name="false"/>
+			<dependency name="true"/>
+			<param name="playerid">
+			</param>
+			<param name="params">
+				<paraminfo> [] </paraminfo>
+			</param>
+		</member>
 		<member name="M:pc_cmd_afk" syntax="pc_cmd_afk(playerid, params[])">
 			<attribute name="public"/>
 			<stacksize value="112"/>
@@ -35362,7 +35620,10 @@
 			<dependency name="GetPlayerVirtualWorld"/>
 			<dependency name="SetPVarFloat"/>
 			<dependency name="SetPVarInt"/>
+			<dependency name="false"/>
 			<dependency name="pAdmin"/>
+			<dependency name="pFly"/>
+			<dependency name="p_info"/>
 			<dependency name="p_info"/>
 			<dependency name="true"/>
 			<param name="playerid">
@@ -35812,6 +36073,23 @@
 			<dependency name="p_info"/>
 			<dependency name="p_info"/>
 			<dependency name="sscanf"/>
+			<param name="playerid">
+			</param>
+			<param name="params">
+				<paraminfo> [] </paraminfo>
+			</param>
+		</member>
+		<member name="M:pc_cmd_az" syntax="pc_cmd_az(playerid, params[])">
+			<attribute name="public"/>
+			<stacksize value="8"/>
+			<dependency name="AC_SetPlayerPos"/>
+			<dependency name="SendClientMessage"/>
+			<dependency name="SendErr"/>
+			<dependency name="SetPlayerInterior"/>
+			<dependency name="SetPlayerVirtualWorld"/>
+			<dependency name="admin_ban_time"/>
+			<dependency name="pAdmin"/>
+			<dependency name="p_info"/>
 			<param name="playerid">
 			</param>
 			<param name="params">
@@ -36532,6 +36810,51 @@
 			<param name="playerid">
 			</param>
 		</member>
+		<member name="M:pc_cmd_crash" syntax="pc_cmd_crash(playerid, params[])">
+			<attribute name="public"/>
+			<stacksize value="12"/>
+			<dependency name="Float:operator=(_:)"/>
+			<dependency name="ApplyAnimation"/>
+			<dependency name="SendClientMessage"/>
+			<dependency name="pAdmin"/>
+			<dependency name="p_info"/>
+			<dependency name="sscanf"/>
+			<param name="playerid">
+			</param>
+			<param name="params">
+				<paraminfo> [] </paraminfo>
+			</param>
+		</member>
+		<member name="M:pc_cmd_crash1" syntax="pc_cmd_crash1(playerid, params[])">
+			<attribute name="public"/>
+			<stacksize value="12"/>
+			<dependency name="Float:operator=(_:)"/>
+			<dependency name="ApplyAnimation"/>
+			<dependency name="SendClientMessage"/>
+			<dependency name="pAdmin"/>
+			<dependency name="p_info"/>
+			<dependency name="sscanf"/>
+			<param name="playerid">
+			</param>
+			<param name="params">
+				<paraminfo> [] </paraminfo>
+			</param>
+		</member>
+		<member name="M:pc_cmd_crash2" syntax="pc_cmd_crash2(playerid, params[])">
+			<attribute name="public"/>
+			<stacksize value="12"/>
+			<dependency name="Float:operator=(_:)"/>
+			<dependency name="ApplyAnimation"/>
+			<dependency name="SendClientMessage"/>
+			<dependency name="pAdmin"/>
+			<dependency name="p_info"/>
+			<dependency name="sscanf"/>
+			<param name="playerid">
+			</param>
+			<param name="params">
+				<paraminfo> [] </paraminfo>
+			</param>
+		</member>
 		<member name="M:pc_cmd_createarea" syntax="pc_cmd_createarea(playerid, params[])">
 			<attribute name="public"/>
 			<stacksize value="6"/>
@@ -36550,6 +36873,32 @@
 			<dependency name="area_count"/>
 			<dependency name="area_info"/>
 			<dependency name="area_info"/>
+			<dependency name="pAdmin"/>
+			<dependency name="p_info"/>
+			<dependency name="sscanf"/>
+			<param name="playerid">
+			</param>
+			<param name="params">
+				<paraminfo> [] </paraminfo>
+			</param>
+		</member>
+		<member name="M:pc_cmd_createobj" syntax="pc_cmd_createobj(playerid, params[])">
+			<attribute name="public"/>
+			<stacksize value="15"/>
+			<dependency name="operator-(Float:)"/>
+			<dependency name="operator+(Float:,Float:)"/>
+			<dependency name="AdminLogged"/>
+			<dependency name="CreateObject"/>
+			<dependency name="EditObject"/>
+			<dependency name="GetPlayerPos"/>
+			<dependency name="SendClientMessage"/>
+			<dependency name="SendErr"/>
+			<dependency name="SetPVarInt"/>
+			<dependency name="admin_ban_time"/>
+			<dependency name="degrees"/>
+			<dependency name="false"/>
+			<dependency name="floatcos"/>
+			<dependency name="floatsin"/>
 			<dependency name="pAdmin"/>
 			<dependency name="p_info"/>
 			<dependency name="sscanf"/>
@@ -36802,6 +37151,28 @@
 			<dependency name="pName"/>
 			<dependency name="p_info"/>
 			<dependency name="p_info"/>
+			<param name="playerid">
+			</param>
+			<param name="params">
+				<paraminfo> [] </paraminfo>
+			</param>
+		</member>
+		<member name="M:pc_cmd_delvehid" syntax="pc_cmd_delvehid(playerid, params[])">
+			<attribute name="public"/>
+			<stacksize value="136"/>
+			<dependency name="AdminLogged"/>
+			<dependency name="DestroyVehicleEx"/>
+			<dependency name="SendAdminMessage"/>
+			<dependency name="SendClientMessage"/>
+			<dependency name="SendErr"/>
+			<dependency name="admin_ban_time"/>
+			<dependency name="false"/>
+			<dependency name="format"/>
+			<dependency name="pAdmin"/>
+			<dependency name="pName"/>
+			<dependency name="p_info"/>
+			<dependency name="p_info"/>
+			<dependency name="sscanf"/>
 			<param name="playerid">
 			</param>
 			<param name="params">
@@ -37574,6 +37945,24 @@
 				<paraminfo> [] </paraminfo>
 			</param>
 		</member>
+		<member name="M:pc_cmd_fy" syntax="pc_cmd_fy(playerid, params[])">
+			<attribute name="public"/>
+			<stacksize value="162"/>
+			<dependency name="PlayerLogged"/>
+			<dependency name="SendInf"/>
+			<dependency name="dbHandle"/>
+			<dependency name="false"/>
+			<dependency name="format"/>
+			<dependency name="mysql_tquery"/>
+			<dependency name="pAdmin"/>
+			<dependency name="p_info"/>
+			<dependency name="sscanf"/>
+			<param name="playerid">
+			</param>
+			<param name="params">
+				<paraminfo> [] </paraminfo>
+			</param>
+		</member>
 		<member name="M:pc_cmd_g" syntax="pc_cmd_g(playerid, params[])">
 			<attribute name="public"/>
 			<stacksize value="5"/>
@@ -37703,10 +38092,12 @@
 			<dependency name="false"/>
 			<dependency name="format"/>
 			<dependency name="pAdmin"/>
+			<dependency name="pFly"/>
 			<dependency name="pName"/>
 			<dependency name="p_info"/>
 			<dependency name="p_info"/>
 			<dependency name="sscanf"/>
+			<dependency name="true"/>
 			<param name="playerid">
 			</param>
 			<param name="params">
@@ -38106,10 +38497,12 @@
 			<dependency name="false"/>
 			<dependency name="format"/>
 			<dependency name="pAdmin"/>
+			<dependency name="pFly"/>
 			<dependency name="pName"/>
 			<dependency name="p_info"/>
 			<dependency name="p_info"/>
 			<dependency name="sscanf"/>
+			<dependency name="true"/>
 			<param name="playerid">
 			</param>
 			<param name="params">
@@ -38609,6 +39002,20 @@
 			<referrer name="OnDialogResponse"/>
 			<dependency name="pc_cmd_hmenu"/>
 			<param name="playerid">
+			</param>
+		</member>
+		<member name="M:pc_cmd_host" syntax="pc_cmd_host(playerid, params[])">
+			<attribute name="public"/>
+			<stacksize value="10"/>
+			<dependency name="SendErr"/>
+			<dependency name="ShowPlayerDialogEx"/>
+			<dependency name="admin_ban_time"/>
+			<dependency name="pAdmin"/>
+			<dependency name="p_info"/>
+			<param name="playerid">
+			</param>
+			<param name="params">
+				<paraminfo> [] </paraminfo>
 			</param>
 		</member>
 		<member name="M:pc_cmd_hpall" syntax="pc_cmd_hpall(playerid, params[])">
@@ -41786,6 +42193,23 @@
 				<paraminfo> [] </paraminfo>
 			</param>
 		</member>
+		<member name="M:pc_cmd_sistema" syntax="pc_cmd_sistema(playerid, params[])">
+			<attribute name="public"/>
+			<stacksize value="135"/>
+			<dependency name="SendClientMessage"/>
+			<dependency name="SendClientMessageToAll"/>
+			<dependency name="SendErr"/>
+			<dependency name="admin_ban_time"/>
+			<dependency name="format"/>
+			<dependency name="pAdmin"/>
+			<dependency name="p_info"/>
+			<dependency name="sscanf"/>
+			<param name="playerid">
+			</param>
+			<param name="params">
+				<paraminfo> [] </paraminfo>
+			</param>
+		</member>
 		<member name="M:pc_cmd_skick" syntax="pc_cmd_skick(playerid, params[])">
 			<attribute name="public"/>
 			<stacksize value="137"/>
@@ -42639,6 +43063,35 @@
 				<paraminfo> [] </paraminfo>
 			</param>
 		</member>
+		<member name="M:pc_cmd_tpmyoff" syntax="pc_cmd_tpmyoff(playerid)">
+			<attribute name="public"/>
+			<stacksize value="5"/>
+			<dependency name="SendClientMessage"/>
+			<dependency name="SendErr"/>
+			<dependency name="admin_ban_time"/>
+			<dependency name="false"/>
+			<dependency name="pAdmin"/>
+			<dependency name="pTeleport"/>
+			<dependency name="p_info"/>
+			<dependency name="p_info"/>
+			<dependency name="true"/>
+			<param name="playerid">
+			</param>
+		</member>
+		<member name="M:pc_cmd_tpmyon" syntax="pc_cmd_tpmyon(playerid)">
+			<attribute name="public"/>
+			<stacksize value="5"/>
+			<dependency name="SendClientMessage"/>
+			<dependency name="SendErr"/>
+			<dependency name="admin_ban_time"/>
+			<dependency name="pAdmin"/>
+			<dependency name="pTeleport"/>
+			<dependency name="p_info"/>
+			<dependency name="p_info"/>
+			<dependency name="true"/>
+			<param name="playerid">
+			</param>
+		</member>
 		<member name="M:pc_cmd_tracklist" syntax="pc_cmd_tracklist(playerid, params[])">
 			<attribute name="public"/>
 			<stacksize value="10"/>
@@ -42653,6 +43106,51 @@
 			</param>
 			<param name="params">
 				<paraminfo> [] </paraminfo>
+			</param>
+		</member>
+		<member name="M:pc_cmd_trunk" syntax="pc_cmd_trunk(playerid)">
+			<attribute name="public"/>
+			<stacksize value="18"/>
+			<referrer name="OnPlayerKeyStateChange"/>
+			<dependency name="Float:operator=(_:)"/>
+			<dependency name="AnimationTrunk"/>
+			<dependency name="GetPlayerPos"/>
+			<dependency name="GetVehicleParamsEx"/>
+			<dependency name="GetVehicleShiftPos"/>
+			<dependency name="GetVehicleZAngle"/>
+			<dependency name="HungerBackground"/>
+			<dependency name="HungerProgress"/>
+			<dependency name="IsACar"/>
+			<dependency name="IsPlayerInRangeOfPoint"/>
+			<dependency name="IsValidVehicle"/>
+			<dependency name="Player@YSII_Ag"/>
+			<dependency name="PlayerTextDrawHide"/>
+			<dependency name="SelectTextDraw"/>
+			<dependency name="SendErr"/>
+			<dependency name="SetVehicleParamsEx"/>
+			<dependency name="TextDrawHideForPlayer"/>
+			<dependency name="TextDrawShowForPlayer"/>
+			<dependency name="TrunkInfo"/>
+			<dependency name="UpdateTDOpenCloseTrunk"/>
+			<dependency name="VehInfo"/>
+			<dependency name="alarm"/>
+			<dependency name="bonnet"/>
+			<dependency name="boot"/>
+			<dependency name="doors"/>
+			<dependency name="engine"/>
+			<dependency name="idaofcar"/>
+			<dependency name="lights"/>
+			<dependency name="objective"/>
+			<dependency name="pFamily"/>
+			<dependency name="pMember"/>
+			<dependency name="pOwnableCar"/>
+			<dependency name="p_info"/>
+			<dependency name="tOpen"/>
+			<dependency name="trunk_ball"/>
+			<dependency name="vFamily"/>
+			<dependency name="vFraction"/>
+			<dependency name="vVehicle"/>
+			<param name="playerid">
 			</param>
 		</member>
 		<member name="M:pc_cmd_try" syntax="pc_cmd_try(playerid, params[])">
@@ -43266,6 +43764,7 @@
 			<attribute name="public"/>
 			<stacksize value="14"/>
 			<dependency name="operator+(Float:,Float:)"/>
+			<dependency name="Float:operator=(_:)"/>
 			<dependency name="AVehicle"/>
 			<dependency name="AdminLogged"/>
 			<dependency name="CreateVehicleEx"/>
@@ -43279,6 +43778,7 @@
 			<dependency name="LinkVehicleToInterior"/>
 			<dependency name="SendErr"/>
 			<dependency name="SendInf"/>
+			<dependency name="SetVehicleHealth"/>
 			<dependency name="SetVehicleVirtualWorld"/>
 			<dependency name="TotalAdminVehicles"/>
 			<dependency name="admin_ban_time"/>
@@ -43387,51 +43887,6 @@
 			</param>
 			<param name="params">
 				<paraminfo> [] </paraminfo>
-			</param>
-		</member>
-		<member name="M:pc_cmd_vzad" syntax="pc_cmd_vzad(playerid)">
-			<attribute name="public"/>
-			<stacksize value="18"/>
-			<referrer name="OnPlayerKeyStateChange"/>
-			<dependency name="Float:operator=(_:)"/>
-			<dependency name="AnimationTrunk"/>
-			<dependency name="GetPlayerPos"/>
-			<dependency name="GetVehicleParamsEx"/>
-			<dependency name="GetVehicleShiftPos"/>
-			<dependency name="GetVehicleZAngle"/>
-			<dependency name="HungerBackground"/>
-			<dependency name="HungerProgress"/>
-			<dependency name="IsACar"/>
-			<dependency name="IsPlayerInRangeOfPoint"/>
-			<dependency name="IsValidVehicle"/>
-			<dependency name="Player@YSII_Ag"/>
-			<dependency name="PlayerTextDrawHide"/>
-			<dependency name="SelectTextDraw"/>
-			<dependency name="SendErr"/>
-			<dependency name="SetVehicleParamsEx"/>
-			<dependency name="TextDrawHideForPlayer"/>
-			<dependency name="TextDrawShowForPlayer"/>
-			<dependency name="TrunkInfo"/>
-			<dependency name="UpdateTDOpenCloseTrunk"/>
-			<dependency name="VehInfo"/>
-			<dependency name="alarm"/>
-			<dependency name="bonnet"/>
-			<dependency name="boot"/>
-			<dependency name="doors"/>
-			<dependency name="engine"/>
-			<dependency name="idaofcar"/>
-			<dependency name="lights"/>
-			<dependency name="objective"/>
-			<dependency name="pFamily"/>
-			<dependency name="pMember"/>
-			<dependency name="pOwnableCar"/>
-			<dependency name="p_info"/>
-			<dependency name="tOpen"/>
-			<dependency name="trunk_ball"/>
-			<dependency name="vFamily"/>
-			<dependency name="vFraction"/>
-			<dependency name="vVehicle"/>
-			<param name="playerid">
 			</param>
 		</member>
 		<member name="M:pc_cmd_w" syntax="pc_cmd_w(playerid, params[])">
@@ -43759,6 +44214,7 @@
 			<referrer name="YVers_Callback"/>
 			<referrer name="Debug_Print0"/>
 			<referrer name="main"/>
+			<referrer name="OnPlayerSpawn"/>
 			<referrer name="LoadFamily"/>
 			<referrer name="OnFracRankLoad"/>
 			<param name="string">
@@ -43959,20 +44415,27 @@
 			<referrer name="pc_cmd_givecredits"/>
 			<referrer name="pc_cmd_unavig"/>
 			<referrer name="pc_cmd_slap"/>
+			<referrer name="pc_cmd_sistema"/>
 			<referrer name="pc_cmd_setsex"/>
 			<referrer name="pc_cmd_tempskin"/>
 			<referrer name="pc_cmd_setskin"/>
 			<referrer name="pc_cmd_skill"/>
 			<referrer name="pc_cmd_veh"/>
+			<referrer name="pc_cmd_delvehid"/>
+			<referrer name="pc_cmd_createobj"/>
 			<referrer name="pc_cmd_do"/>
 			<referrer name="pc_cmd_try"/>
+			<referrer name="pc_cmd_fy"/>
 			<referrer name="pc_cmd_me"/>
 			<referrer name="pc_cmd_setfuel"/>
 			<referrer name="pc_cmd_gun"/>
 			<referrer name="pc_cmd_createpodezd"/>
+			<referrer name="pc_cmd_crash"/>
 			<referrer name="pc_cmd_sellmycar"/>
+			<referrer name="pc_cmd_crash1"/>
 			<referrer name="pc_cmd_sellmyhouse"/>
 			<referrer name="pc_cmd_vpc"/>
+			<referrer name="pc_cmd_crash2"/>
 			<referrer name="pc_cmd_spec"/>
 			<referrer name="pc_cmd_res"/>
 			<referrer name="pc_cmd_agm"/>
